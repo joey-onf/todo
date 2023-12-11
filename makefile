@@ -19,6 +19,7 @@ create :
 	@rsync -v --checksum 'voltha/voltha-docs/md-header.md'  "$(create-topic)/."
 	@rsync -v --checksum 'voltha/voltha-docs/md-trailer.md' "$(create-topic)/."
 	@rsync -v --checksum 'voltha/voltha-docs/tickets.md'    "$(create-topic)/."
+	@echo '| [$(notdir $(create-topic))](voltha/$(create-topic)/README.md)         | Jira tickets for ???????? |' >> README.md
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
@@ -43,6 +44,11 @@ bbsim-args += --text bbsim
 
 bbsim :
 	bin/jira-search.sh $(bbsim-args)
+
+## -----------------------------------------------------------------------
+## -----------------------------------------------------------------------
+view ::
+	pandoc README.md | lynx --stdin
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------

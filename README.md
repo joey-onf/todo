@@ -13,4 +13,5 @@ This repository is used for task tracking
 | [bbsim](voltha/bbsim/README.md)     | Simulator tickets                    |
 | [jjb](voltha/jjb/README.md)         | Jira tickets for syntax checking targets |
 | [voltctl](voltha/votlctl/README.md) | voltctl tickets                      | 
-| [voltha-docs](voltha/voltha-docs/README.md) | Tickets for REPO:voltha-docs |
+| [voltha-docs](voltha/voltha-docs/README.md)     | Tickets for REPO:voltha-docs |
+| [voltha-openolt-adapter](voltha/voltha-openolt-adapter/README.md)  | Jira tickets for REPO: voltha-openolt-adapter |
