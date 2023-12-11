@@ -9,12 +9,16 @@ Jira Ticket Search
 
 Epic
 ----
-    
+
 | jira | gerrit | Description |
 | -----| ------ | ------------|
-| [VOL-5004](https://jira.opencord.org/browse/VOL-5004) | | Release v2.12: Tracking Ticket |
 | [VOL-5125](https://jira.opencord.org/browse/VOL-5125) | | Tracking ticket for bbsim failures in jenkins vip job view |
 
+### Job Failures
+
+| jenkins | gerrit | Description |
+| --------| ------ | ------------|
+| [x](https://jenkins.opencord.org/view/All%20Jobs/job/periodic-voltha-openonu-go-test-bbsim) [2313](https://jenkins.opencord.org/view/All%20Jobs/job/periodic-voltha-openonu-go-test-bbsim/2313/) |  | periodic-voltha-openonu-go-test-bbsim |
 
 Makefile tickets
 ----------------
@@ -53,8 +57,7 @@ Testing: BBSIM
 | [VOL-5094](https://jira.opencord.org/browse/VOL-5094) | | test failure: periodic-voltha-memory-leak-test-bbsim |
 | [VOL-5157](https://jira.opencord.org/browse/VOL-5157) | | verify_bbsim_unit-test failures in history |
 
-verify_bbsim_sanity-test
-^^^^^^^^^^^^^^^^^^^^^^^^
+### verify_bbsim_sanity-test
 
 | jira | gerrit | Description |
 | -----| ------ | ------------|

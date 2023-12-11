@@ -24,9 +24,13 @@ create :
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
 regen:
-	@$(MAKE) --no-print-directory -C voltha all
-	@$(MAKE) --no-print-directory -C voltha/bbsim all
-	@$(MAKE) --no-print-directory -C voltha/voltctl all
+	find . -mindepth 2 -name 'makefile' -print0 \
+	  | xargs -0 -n1 dirname \
+	  | xargs -I'{}' $(MAKE) --no-print-directory -C {} all
+
+#	@$(MAKE) --no-print-directory -C voltha all
+#	@$(MAKE) --no-print-directory -C voltha/bbsim all
+#	@$(MAKE) --no-print-directory -C voltha/voltctl all
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
