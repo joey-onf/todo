@@ -1,7 +1,0 @@
-
-
-Build
------
-
-| jira | gerrit | Description |
-| -----| ------ | ------------|

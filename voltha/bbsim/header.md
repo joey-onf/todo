@@ -1,2 +1,0 @@
-VOLTHA Jira Tickets
-===================

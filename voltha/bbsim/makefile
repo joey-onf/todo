@@ -1,4 +1,8 @@
 # -*- makefile -*-
+## -----------------------------------------------------------------------
+## -----------------------------------------------------------------------
+
+HIDE ?= @
 
 all: README.md
 
@@ -9,23 +13,24 @@ view :: README.md
 
 	pandoc $(view-doc) | lynx --stdin
 
-
 md-src-raw     = $(sort $(wildcard *.md))
 
+md-src-top     += md-header.md
+md-src-top     += epic.md
+
 md-src-excl    += README.md
-md-src-excl    += head.md
-md-src-excl    += tail.md
+md-src-excl    += $(md-src-top)
+md-src-excl    += md-%.md
 
-md-src-ordered += epic.md
+md-src += $(md-src-top)
+md-src += $(sort $(filter-out $(md-src-excl),$(md-src-raw)))
 
-md-src         = $(filter-out $(md-src-excl) $(md-src-ordered),$(md-src-raw))
+$(if $(DEBUG),$(foreach md,$(md-src),$(info ** $(md-src))))
+# $(if $(DEBUG),$(foreach md,$(md-src),$(info ** $(md))))
 
 README.md : $(md-src)
 	$(RM) $@
-	@cat header.md         >> $@
-	@cat $(md-src-ordered) >> $@
-	@cat $(md-src)         >> $@
-	@echo                  >> $@
+	$(HIDE)cat $(md-src) > $@
 
 clean ::
 	$(RM) README.md

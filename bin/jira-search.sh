@@ -23,8 +23,7 @@ declare -g -a labels_excl=()
 ##---]  INCLUDES  [---##
 ##--------------------##
 source "${0/.sh/\/derive-program-paths.sh}"
-# source "$pgmlib/xxx"
-exit 1
+source "$pgmlib/string-utils.sh"
 
 ## --------------------------------------------------------------------
 ## --------------------------------------------------------------------
@@ -143,10 +142,7 @@ function do_labels()
         tokens+=('(' "labels NOT IN ($labels)" ')')
     fi
 
-    declare -p tokens
-
     ans+=("${tokens[@]}")
-    echo "ANS=${ans[@]}"
     return
 }
 
@@ -327,6 +323,10 @@ Usage: $0
 [RANGE]
   --newer [d]   Search for tickets created < [n] days ago.
   --older [d]   Search for tickets created > [n] days ago.
+
+[JIRA ORGs]
+  CORD-*           View OpenCORD ticket(s) by ID
+  VOL-*            View VOL(tha) ticket(s) by ID
 
 [USAGE]
   $0 --assigned
@@ -513,11 +513,9 @@ if [ ${#urls_raw} -eq 0 ]; then
     urls_filt+=("$url")
 fi
 
-[[ -v debug ]] && echo "URL: $url"
 browser="${BROWSER:-firefox}"
 # browser="${BROWSER:-google-chrome}"
 # browser="${BROWSER:-opera}"
-echo "$browser ${urls_filt[@]} ${urls_raw[@]}"
 
 if [[ ! -v dry_run ]]; then
     "$browser" "${urls_filt[@]}" "${urls_raw[@]}" >/dev/null 2>/dev/null &
