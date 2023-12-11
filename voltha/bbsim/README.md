@@ -43,8 +43,8 @@ REPO: voltha-protos
 | [VOL-5125](https://jira.opencord.org/browse/VOL-5122) | [G:34206](https://gerrit.opencord.orlg/c/voltha-protos/+/34206) | Triage repo:voltha-protos failure, job verify_voltha-protos_unit-test failing </code>|
 | [VOL-5192](https://jira.opencord.org/browse/VOL-5192) | | bbsim: update voltha-protos to version v5.4.10 |
 
-Test
-----
+Testing: BBSIM
+--------------
 
 | jira | gerrit | Description |
 | -----| ------ | ------------|
@@ -52,3 +52,10 @@ Test
 | [VOL-4853](https://jira.opencord.org/browse/VOL-4853) | | Triage bulk test failures in periodic-voltha-multiple-olts-test-bbsim |
 | [VOL-5094](https://jira.opencord.org/browse/VOL-5094) | | test failure: periodic-voltha-memory-leak-test-bbsim |
 | [VOL-5157](https://jira.opencord.org/browse/VOL-5157) | | verify_bbsim_unit-test failures in history |
+
+verify_bbsim_sanity-test
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+| jira | gerrit | Description |
+| -----| ------ | ------------|
+| [VOL-5145](https://jira.opencord.org/browse/VOL-5145) | | v2.12 - verify_bbsim_sanity-test failure |
