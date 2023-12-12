@@ -11,6 +11,6 @@ Topic Index
 | [makefiles](topics/makefiles.md)     | BBSIM Makefile tickets  |
 | [jenkins urls](topics/jenkins.md)    | BBSIM Jenkins URLs      |
 | [release](topics/release.md)         | BBSIM Release Tickets   |
-| [Test Failures](topics/jenkins.md)   | Jenkins Job Failures    |
+| [test](topics/tests.md)              | Jenkins Job Failures    |
 | [voltha-protos](topics/repo-voltha-protos.md) | REPO:voltha-proto jira tickets |
    
