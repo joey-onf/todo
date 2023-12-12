@@ -1,6 +1,6 @@
 VOLTHA
 ======
-;
+
 Topic Index
 -----------
 
