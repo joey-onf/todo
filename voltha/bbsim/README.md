@@ -6,6 +6,12 @@ Jira Ticket Search
 
 - [bbsim](https://jira.opencord.org/issues/?jql=(text%20~%20"bbsim")%20AND%20(resolution%20IS%20EMPTY))
 
+| Topic | Description |
+| ----- | ------------|
+| [makefiles](topic/makefiles.md)  | BBSIM Makefile Tickets |
+| [jenkins jobs](topic/jenkisn.md) | BBSIM Jenkins job URLs |
+
+
 
 Epic
 ----
@@ -20,15 +26,6 @@ Epic
 | --------| ------ | ------------|
 | [x](https://jenkins.opencord.org/view/All%20Jobs/job/periodic-voltha-openonu-go-test-bbsim) [2313](https://jenkins.opencord.org/view/All%20Jobs/job/periodic-voltha-openonu-go-test-bbsim/2313/) |  | periodic-voltha-openonu-go-test-bbsim |
 
-Makefile tickets
-----------------
-
-| jira | gerrit | Description |
-| -----| ------ | ------------|
-| [VOL-4883](https://jira.opencord.org/browse/VOL-4883) | | github-release-bbsim: downstream pipeline failure.  GO_SH problem with dangling quotes|
-
-
-
 Release Tickets
 ---------------
 
@@ -37,7 +34,7 @@ Release Tickets
 | [VOL-5118](https://jira.opencord.org/browse/VOL-5118) | | repo:bbsim, jenkins: github-release-bbsim failure |
 | [VOL-4974](https://jira.opencord.org/browse/VOL-4974) | | bbsim-release job: kind command not found |
 | [VOL-4906](https://jira.opencord.org/browse/VOL-4906) | | github-release-bbsim job failing |
-
+| [VOL5021](https://jira.opencord.org/browse/VOL-5021)  | | Deploy bbsim |
 
 REPO: voltha-protos
 -------------------
@@ -62,11 +59,4 @@ Testing: BBSIM
 | jira | gerrit | Description |
 | -----| ------ | ------------|
 | [VOL-5145](https://jira.opencord.org/browse/VOL-5145) | | v2.12 - verify_bbsim_sanity-test failure |
-
-Jenkins Jobs
-------------
-
-| jenkins | Description |
-| ------- | ------------|
-| [x](https://jenkins.opencord.org/job/verify_bbsim_unit-test)   | verify_bbsim_unit-test   |
-| [x](https://jenkins.opencord.org/job/verify_bbsim_sanity-test) | verify_bbsim_sanity-test |
+| [VOL-5127](https://jira.opencord.org/browse/VOL-5127) | | verify_bbsim_sanity-test failure         |
