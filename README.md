@@ -15,3 +15,4 @@ This repository is used for task tracking
 | [voltctl](voltha/votlctl/README.md) | voltctl tickets                      | 
 | [voltha-docs](voltha/voltha-docs/README.md)     | Tickets for REPO:voltha-docs |
 | [voltha-openolt-adapter](voltha/voltha-openolt-adapter/README.md)  | Jira tickets for REPO: voltha-openolt-adapter |
+| [voltha-protos](voltha/voltha-protos/README.md)  | repo:[voltha-protos](https://gerrit.opencord.org/plugins/gitiles/voltha-protos) |
