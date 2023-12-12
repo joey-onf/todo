@@ -1,5 +1,3 @@
-VOLTHA
-======
 
 Topic Index
 -----------
