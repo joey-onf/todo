@@ -58,8 +58,10 @@ view ::
 ## -----------------------------------------------------------------------
 help ::
 	@printf '  %-33.33s %s\n' 'bbsim' 'Search for bbsim jira tickets'
-	@printf '  %-33.33s %s\n' \
-	  'create' 'Create a new topic subdir for tracking jira tickets'
-	@printf '  %-33.33s %s\n' 'regen' 'Regenerate README.md files'
+	@printf '  %-33.33s %s\n' 'create'
+	  'Create a new topic subdir for tracking jira tickets'
+	@printf '  %-33.33s %s\n' 'regen' 'Regenerate README.md files for viewing on github'
+	@printf '  %-33.33s %s\n' 'view'
+	  'Regenerate and load README.md for viewing'
 
 # [EOF]
