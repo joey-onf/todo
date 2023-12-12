@@ -62,3 +62,10 @@ Testing: BBSIM
 | jira | gerrit | Description |
 | -----| ------ | ------------|
 | [VOL-5145](https://jira.opencord.org/browse/VOL-5145) | | v2.12 - verify_bbsim_sanity-test failure |
+
+Jenkins Jobs
+------------
+
+| jenkins | Description |
+| [x](https://jenkins.opencord.org/job/verify_bbsim_unit-test) | verify_bbsim_unit-test |
+| [x](https://jenkins.opencord.org/job/verify_bbsim_sanity-test) | verify_bbsim_sanity-test |
