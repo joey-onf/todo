@@ -31,7 +31,8 @@ Topic(s)
 Software Upgrades
 -----------------
 
-- [docker](upgrades/README.md)
+- [docker](docker/README.md)
+- [docker lib ver deps](upgrades/README.md)
 
 Jira search strings
 -------------------
