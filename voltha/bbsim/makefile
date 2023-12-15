@@ -13,7 +13,7 @@ view :: README.md
 
 	pandoc $(view-doc) | lynx --stdin
 
-md-src-raw     = $(sort $(wildcard *.md))
+md-src-raw     = $(sort $(wildcard *.md topics/*.md))
 
 md-src-top     += md-header.md
 
