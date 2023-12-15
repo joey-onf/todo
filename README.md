@@ -6,8 +6,8 @@ Search
 
 | Topic     | Description                                |
 | --------- | -------------------------------------------|
-| [repo:voltha](https://jira.opencord.org/issues/?jql=%40;resolution%20IS%20EMPTY%41%20AND%20%40;labels%20in%20%40;"release"%41%41) | Search for open release tasks. |
-| [repo:voltha-docs](https://jira.opencord.org/issues/?jql=(resolution%20IS%20EMPTY)%20AND%20(labels in ("release-notes"))) | Search for open documentation tasks. |
+| [repo:voltha](https://jira.opencord.org/browse/VOL-5226?jql=labels%20IN%20(release-notes)%20AND%20(resolution%20IS%20EMPTY) | Search for lingering release tasks. |
+| [repo:voltha-docs](https://jira.opencord.org/browse/VOL-5226?jql=labels%20IN%20(release)%20AND%20(resolution%20IS%20EMPTY)  | Search for lingering documentation tasks. |
 
 Topic(s)
 --------
