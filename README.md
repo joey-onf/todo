@@ -24,6 +24,7 @@ Topic(s)
 | [voltha](voltha/README.md)          | VOLTHA tracking tickets              |
 | [bbsim](voltha/bbsim/README.md)     | Simulator tickets                    |
 | [jjb](voltha/jjb/README.md)         | Jira tickets for syntax checking targets |
+| [voltha-onos](voltha/voltha-onos/README.md) | REPO:voltha-onos patches and jira tickets |
 | [voltctl](voltha/votlctl/README.md) | voltctl tickets                      | 
 | [voltha-docs](voltha/voltha-docs/README.md)     | Tickets for REPO:voltha-docs |
 | [voltha-openolt-adapter](voltha/voltha-openolt-adapter/README.md)  | Jira tickets for REPO: voltha-openolt-adapter |
