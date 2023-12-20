@@ -1,6 +1,3 @@
-VOLTHA: Pending Code Reviews
-----------------------------
-
 
 ---
 
