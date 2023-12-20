@@ -16,7 +16,6 @@ view :: README.md
 md-src-raw     = $(sort $(wildcard *.md))
 
 md-src-top     += md-header.md
-md-src-top     += epic.md
 
 md-src-tail    += $(wildcard jenkins.md md-index.md)
 
