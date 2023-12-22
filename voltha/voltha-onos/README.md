@@ -2,6 +2,14 @@ REPO: voltha-protos
 ===================
 
 
+
+Epic
+----
+    
+| jira | gerrit | Description |
+| -----| ------ | ------------|
+| [VOL-5019](https://jira.opencord.org/browse/VOL-5019) | | Publish latest version of VOLTHA software |
+
 Topic Index
 -----------
 
@@ -9,5 +17,4 @@ Topic Index
 
 | Topic | Description |
 | ----- | ------------|
-| [{SEARCH}](https://jira.opencord.org/issues/?jql=(text%20~%20"voltha-protos")%20AND%20(resolution%20IS%20EMPTY))   | Jira Search |
-| [golang](topics/golang-upgrade.md) | golang interpreter upgrade |
+| [openolt](topics/openolt.md) | Package installation failure |
