@@ -14,7 +14,7 @@ will need to be resolved.
 | repo  | jira | gerrit             | jenkins | Triage | Notes               |
 | ----- | ---- | ------------------ | ------- | ------ | --------------------|
 | bbsim-sadis-server |  | [34894](https://gerrit.opencord.org/c/bbsim-sadis-server/+/34894) | [48](https://jenkins.opencord.org/job/verify_bbsim-sadis-server_unit-test/48), [47](https://jenkins.opencord.org/job/verify_bbsim-sadis-server_sanity-test/47) | ![#808080](https://placehold.co/15x15/808080/808080.png) |  |
-| bbsim | [VOL-5242](https://jira.opencord.org/browse/VOL-5242) | [34896](https://gerrit.opencord.org/c/bbsim/+/34896) | [1284](https://jenkins.opencord.org/job/verify_bbsim_unit-test/1284/console), [1264](https://jenkins.opencord.org/job/verify_bbsim_sanity-test/1264/console) | ![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png) |  |
+| bbsim | [VOL-5242](https://jira.opencord.org/browse/VOL-5242) | [34896](https://gerrit.opencord.org/c/bbsim/+/34896) | [1284](https://jenkins.opencord.org/job/verify_bbsim_unit-test/1284/console), [1264](https://jenkins.opencord.org/job/verify_bbsim_sanity-test/1264/console) | ![#32CD32](https://placehold.co/15x15/633974/633974.png) |  |
 | voltha-go-controller |  | [34893](https://gerrit.opencord.org/c/voltha-go-controller/+/34893) | [223](https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/223) | ![#808080](https://placehold.co/15x15/808080/808080.png) |  |
 | voltha-go |  | [34889](https://gerrit.opencord.org/c/voltha-go/+/34889) | [1891](https://jenkins.opencord.org/job/verify_voltha-go_sanity-test/1891/console), [2793](https://jenkins.opencord.org/job/verify_voltha-go_unit-test-tests/2793/console), [2790](https://jenkins.opencord.org/job/verify_voltha-go_unit-test-lint/2790/console) | ![#808080](https://placehold.co/15x15/808080/808080.png) |  |
 | voltha-helm-charts |  | [34898](https://gerrit.opencord.org/c/voltha-helm-charts/+/34898) | [219](https://jenkins.opencord.org/job/tag-check_voltha-helm-charts/219/console) | ![#808080](https://placehold.co/15x15/808080/808080.png) |  |
@@ -33,4 +33,5 @@ Legend
 | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | FAIL  |
 | ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) | PASS  |
 | ![#808080](https://placehold.co/15x15/808080/808080.png) | IDLE  |
-| ![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png) | UNSET |
+| ![#32CD32](https://placehold.co/15x15/633974/633974.png) | UNSET |
+| ![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png) | LIME |
