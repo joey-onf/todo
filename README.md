@@ -20,7 +20,7 @@ Topic(s)
 
 | Subdir    | Description                                |
 | --------- | -------------------------------------------|
-| [reviews](reviews/README.md)        | Pending code reviews  |
+| [code-reviews](reviews/README.md)        | Pending code reviews  |
 | [voltha](voltha/README.md)          | VOLTHA tracking tickets              |
 | [bbsim](voltha/bbsim/README.md)     | Simulator tickets                    |
 | [jjb](voltha/jjb/README.md)         | Jira tickets for syntax checking targets |
