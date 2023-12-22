@@ -93,7 +93,7 @@ function jira_urls()
         for idx in $(seq $((${#fields[@]}-1)) -1 0);
         do
             field="${fields[$idx]}"
-            if [[ $field =~ ^-?[0-9]+$ ]]; then
+            if [[ $field =~ VOL-[0-9]+$ ]]; then
                 id="$field"
                 buffer+=("[$id]($jira)")
                 break
@@ -108,7 +108,7 @@ function jira_urls()
 # | repo  | jira | gerrit             | jenkins | Triage | Notes               |
 # | ----- | ---- | ------------------ | ------- | ------ | --------------------|
 
-readarray -t repos < <(find . -name 'urls' -print)
+readarray -t repos < <(find . -name 'urls' -print | sort)
 # readarray -t repos < <(find . -name 'urls' -print | awk -F'/' '{print $(NF-1)}')
 
 for urls in "${repos[@]}";

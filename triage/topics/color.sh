@@ -13,5 +13,6 @@ tmp="${path}.tmp"
     esac
 ) > "$tmp"
 
-diff "$tmp" "$path"
+# diff "$tmp" "$path"
+mv "$tmp" "$path"
     
