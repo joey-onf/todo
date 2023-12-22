@@ -16,6 +16,24 @@ function join_by()
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
+function do_notes()
+{
+    local src="$1"; shift
+    local -n ref=$1; shift
+
+    local notes_file="${src%/*}/notes"
+    
+    local -a notes=()
+    if [[ -f "$notes_file" ]]; then
+        readarray -t notes < "$notes_file"
+    fi
+
+    ref="$(join_by '<br>' "${notes[@]}")"
+    return
+}
+
+## -----------------------------------------------------------------------
+## -----------------------------------------------------------------------
 function gerrit_urls()
 {
     local src="$1"; shift
@@ -142,7 +160,10 @@ do
     color_urls "$urls" color_str
     gather+=("$color_str") # triage
 
-    gather+=('') # notes
+    declare notes_str
+    do_notes "$urls" notes_str
+    gather+=("$notes_str")
+
     line="$(join_by ' | ' "${gather[@]}")"
     echo "| $line |"
     # declare -p line
