@@ -50,7 +50,9 @@ function color_urls()
     declare -a colors=()
     readarray -t colors < <(grep '://placehold.co' "$src")
 
-    [[ ${#colors[@]} -eq 0 ]] && { colors+=("![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png)"); }
+    local purple='![#32CD32](https://placehold.co/15x15/633974/633974.png)'
+    local lime='![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png)'
+    [[ ${#colors[@]} -eq 0 ]] && { colors+=("$purple"); }
     ref="$(join_by ', ' "${colors[@]}")"
     return
 }
