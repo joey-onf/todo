@@ -10,3 +10,4 @@ xclip -sel c ./color.tmp
 /bin/rm -f color.tmp
 
 
+# [EOF] - 20231222: Ignore, this triage patch will be abandoned

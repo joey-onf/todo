@@ -89,8 +89,17 @@ if [[ $# -eq 0 ]]; then
 elif [[ ! -f "$1" ]]; then
     error "A filename is required"
 fi
+
+src="$1"; shift
 # readarray -t urls < "$1"
-readarray -t urls < <(grep '://' "$1" | cut -d'#' -f1 | grep '://')
+readarray -t urls < <(grep '://' "$src" | cut -d'#' -f1 | grep '://')
+
+while [[ $# -gt 0 ]]; do
+    arg="$1"; shift
+    case "$arg" in
+        --out*) declare output="$1"; shift ;;
+    esac
+done
 
 
 declare work=''
@@ -106,6 +115,11 @@ pushd "$work" || { error "pushd $work failed"; }
 declare -a buffer=()
 for url in "${urls[@]}";
 do
+    # echo "${str: -1}"
+    # echo "${std:~0}"
+    declare lastch="${url:~0}"
+    [[ "${lastch}" == '/' ]] && { job="${url%/*}"; }
+
     job="${url%/*}"
     job="${job##*/}"
     buffer+=( $(printf '[%s](%s)' "$job" "$url") )
@@ -113,11 +127,14 @@ done
 
 #@ declare -p buffer
 line=$(join_by ', ' "${buffer[@]}")
-printf "$line" > url.txt
-xclip -sel c ./url.txt # copy buffer for paste into document
 
-echo "All set, now paste the url buffer into README.md"
+if [[ -v output ]]; then
+    printf "$line" > "$output"    
+else 
+    xclip -sel c ./url.txt # copy buffer for paste into document
+    echo "All set, now paste the url buffer into README.md"
+fi
 
 popd      || { error "popd $work failed"; }
 
-# [EOF]
+# [EOF] - 20231222: Ignore, this triage patch will be abandoned
