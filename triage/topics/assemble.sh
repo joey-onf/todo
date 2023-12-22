@@ -47,9 +47,11 @@ function color_urls()
     local src="$1"; shift
     local -n ref=$1; shift
 
-    declare -a buffer=()
-    readarray -t colors < <(cut -d'#' -f1 "$src" | grep '://placehold.co')
-    ref="$(join_by ', ' "${buffer[@]}")"
+    declare -a colors=()
+    readarray -t colors < <(grep '://placehold.co' "$src")
+
+    [[ ${#colors[@]} -eq 0 ]] && { colors+=("![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png)"); }
+    ref="$(join_by ', ' "${colors[@]}")"
     return
 }
 

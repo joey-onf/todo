@@ -4,7 +4,9 @@ all:
 
 assemble: README.md
 
-README.md: makefile $(wildcard topics/*/urls)
+README.md: makefile $(wildcard topics/*/urls) \
+  topics/assemble.sh \
+  $(filter-out README.md,$(wildcard *.md))
 	@(\
 		cat header.md; \
 		cat table-header.md; \
