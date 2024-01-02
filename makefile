@@ -40,13 +40,14 @@ regen : $(regen)
 $(regen) :
 	$(MAKE) -C $(lastword $(subst ^,$(space),$@))
 
-
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
 bbsim-args += --opencord
 bbsim-args += --me
 bbsim-args += --text bbsim
 
+## -----------------------------------------------------------------------
+## -----------------------------------------------------------------------
 bbsim :
 	bin/jira-search.sh $(bbsim-args)
 
@@ -58,11 +59,14 @@ view ::
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
 help ::
-	@printf '  %-33.33s %s\n' 'bbsim' 'Search for bbsim jira tickets'
-	@printf '  %-33.33s %s\n' 'create'
-	  'Create a new topic subdir for tracking jira tickets'
-	@printf '  %-33.33s %s\n' 'regen' 'Regenerate README.md files for viewing on github'
-	@printf '  %-33.33s %s\n' 'view'
-	  'Regenerate and load README.md for viewing'
+	@printf 'Usage: $(MAKE) [options] [target] ...\n'
+	@printf '  %-33.33s %s\n' 'bbsim' \
+	  'Search for bbsim jira tickets'
+	@printf '  %-33.33s %s\n' 'create' \
+	  'Create a new repo:todo topic subdir for tracking jira tickets'
+	@printf '  %-33.33s %s\n' 'regen' \
+	  'Regenerate README.md files for viewing on github'
+	@printf '  %-33.33s %s\n' 'view' \
+	  'Regenerate and load README.md for interactive viewing'
 
 # [EOF]
