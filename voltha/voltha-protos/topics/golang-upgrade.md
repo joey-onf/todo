@@ -6,4 +6,4 @@ Makefile tickets
 | [VOL-5222](https://jira.opencord.org/browse/VOL-5222) | | Golang interpreter upgrade |
 | | [34868](https://gerrit.opencord.org/c/voltha-protos/+/34868) | Add repo:onf-make library functions |
 | | [34868](https://gerrit.opencord.org/c/voltha-protos/+/34868) | Add makefiles/golang/upgrade.mk |
-
+| | [34867](https://gerrit.opencord.org/c/voltha-protos/+/34867) | docker/include.mk, sca.mk, golang/include.mk |
