@@ -4,12 +4,14 @@ declare -a args=()
 args+=('--project' 'SEBA')
 args+=('--project' 'VOL')
 args+=('--opencord')
-# args+=('--resolved-is-empty')
-args+=('--resolved-not-empty')
+
+args+=('--resolved-is-empty')
+# args+=('--resolved-not-empty')
 
 args+=('--fixversion-not-empty')
 # args+=('--component' 'bbsim')
-# args+=('--label' 'bbsim')
+args+=('--label' 'bbsim')
+args+=('--label' 'Testing')
 # args+=('--text' 'bbsim')
 
 jira-search.sh "${args[@]}" &
