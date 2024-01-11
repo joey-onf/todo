@@ -3,8 +3,8 @@ VOLTHA Release Tracker
 
 | Repository | Version | REL | A | B | C | D | E | F |
 | ---------- | --------| --- | - | - | - | - | - | - |
-| [voltha-protos](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/25589d8650beed2fddfabc923c63f152f19b27e4/VERSION) | [5.4.11](gerrit.opencord.org/plugin81f6fe53dc173c20c4402f4b061acc785f718e46s/gitiles/voltha-protos/+/refs/heads/voltha-2.12) | X | X | - | - | X | [34934](https://gerrit.opencord.org/c/voltha-protos/+/34934) | [34936](https://gerrit.opencord.org/c/voltha-protos/+/34936) |
-| voltha-lib-go | 7.5.1  | [3491](https://gerrit.opencord.org/c/voltha-lib-go/+/3491) | | | | | | |
+| [voltha-protos](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12) | [5.4.11](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12/VERSION) | X | X | - | - | X | [34934](https://gerrit.opencord.org/c/voltha-protos/+/34934) | [34936](https://gerrit.opencord.org/c/voltha-protos/+/34936) |
+| voltha-lib-go | 7.5.1  | [34919](https://gerrit.opencord.org/c/voltha-lib-go/+/34919) | | | | | | |
 | voltha-go     | 3.5.3  | [34922](https://gerrit.opencord.org/c/voltha-go/+/34922) | | | | | | |
 |               | | | | | | | | |
 |               | | | | | | | | |
