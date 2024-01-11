@@ -2,8 +2,12 @@
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
 
+.DEFAULT_GOAL := all
+
 null	:=#
 space	:= $(space) $(space)
+
+include makefiles/include.mk
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
@@ -53,8 +57,8 @@ bbsim :
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
-view ::
-	pandoc README.md | lynx --stdin
+# view ::
+#	pandoc README.md | lynx --stdin
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
@@ -66,7 +70,7 @@ help ::
 	  'Create a new repo:todo topic subdir for tracking jira tickets'
 	@printf '  %-33.33s %s\n' 'regen' \
 	  'Regenerate README.md files for viewing on github'
-	@printf '  %-33.33s %s\n' 'view' \
-	  'Regenerate and load README.md for interactive viewing'
+#	@printf '  %-33.33s %s\n' 'view' \
+#	  'Regenerate and load README.md for interactive viewing'
 
 # [EOF]

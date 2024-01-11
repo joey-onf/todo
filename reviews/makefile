@@ -4,14 +4,17 @@
 
 HIDE ?= @
 
+MAKEDIR ?= makefiles/
+include $(MAKEDIR)/makefiles/include.mk
+
+
 all: README.md
 
 # view-doc ?= $(error $(MAKE) $@ view-doc={README.md} is required)
 view-doc := README.md
 
-view :: README.md
-
-	pandoc $(view-doc) | lynx --stdin
+#view :: README.md
+#	pandoc $(view-doc) | lynx --stdin
 
 md-src-raw     = $(sort $(wildcard *.md))
 
