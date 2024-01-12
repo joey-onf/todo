@@ -17,3 +17,5 @@ README.md: makefile $(wildcard topics/*/urls) \
 
 clean:
 	find . -name '*.tmp' | xargs --no-run-if-empty $(RM)
+
+# [EOF]

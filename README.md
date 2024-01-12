@@ -48,5 +48,5 @@ Jira search strings
 ## See Also
 | Label         | Search for jira tickets decorated with a label |
 | ------------- | -----------------------------------------------|
-| [X](../jcl/README.md) | JCL: Jira Ticket Search                |
+| [X](jcl/README.md) | JCL: Jira Ticket Search                   |
     

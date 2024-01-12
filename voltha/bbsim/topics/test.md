@@ -15,4 +15,6 @@ Testing: BBSIM
 | jira | gerrit | Description |
 | -----| ------ | ------------|
 | [VOL-5145](https://jira.opencord.org/browse/VOL-5145) | | v2.12 - verify_bbsim_sanity-test failure |
-| [VOL-5127](https://jira.opencord.org/browse/VOL-5127) | | verify_bbsim_sanity-test failure         |
+
+
+  

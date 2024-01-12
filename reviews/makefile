@@ -2,10 +2,9 @@
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
 
-HIDE ?= @
-
-MAKEDIR ?= makefiles/
-include $(MAKEDIR)/makefiles/include.mk
+HIDE ?= 
+@
+include ../makefiles/include.mk
 
 
 all: README.md

@@ -54,6 +54,21 @@ REPO: voltha-protos
 Testing: BBSIM
 --------------
 
+## verify_bbsim_sanity-test
+
+| jira | gerrit | Description |
+| -----| ------ | ------------|
+| [VOL-5127](https://jira.opencord.org/browse/VOL-5127) | | verify_bbsim_sanity-test failure         |
+
+
+### [VOL-5127](https://jira.opencord.org/browse/VOL-5127)
+
+- Intermittent ONOS failure, unrelated to VOLTHA.
+
+
+Testing: BBSIM
+--------------
+
 | jira | gerrit | Description |
 | -----| ------ | ------------|
 | [VOL-4849](https://jira.opencord.org/browse/VOL-4849) | | Test suite: status=UNSATABLE periodic-software-upgrade-tests-bbsim |
@@ -66,8 +81,9 @@ Testing: BBSIM
 | jira | gerrit | Description |
 | -----| ------ | ------------|
 | [VOL-5145](https://jira.opencord.org/browse/VOL-5145) | | v2.12 - verify_bbsim_sanity-test failure |
-| [VOL-5127](https://jira.opencord.org/browse/VOL-5127) | | verify_bbsim_sanity-test failure         |
 
+
+  
 Topic Index
 -----------
 

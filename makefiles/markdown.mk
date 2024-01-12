@@ -8,7 +8,8 @@ gen-deps = $(addprefix $(1)^,$($(2)))
 get-dep  = $(lastword $(subst ^,$(space),$(1)))
 get-deps = $(foreach dep,$($(1)),$(call get-dep,$(dep)))
 
-markdown-src := README.md $(wildcard *.md)
+markdown-raw := $(wildcard *.md)
+markdown-src := README.md $(filter-out README.md,$(markdown-raw))
 markdown-view-deps := $(call gen-deps,view-markdown,markdown-src)
 
 ## -----------------------------------------------------------------------
