@@ -27,10 +27,12 @@ create :
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
+xargs-args := $(null)
+$(if $(DEBUG),$(eval regen-args += --verbose))
 regen:
 	find . -mindepth 2 -name 'makefile' -print0 \
 	  | xargs -0 -n1 dirname \
-	  | xargs -I'{}' $(MAKE) --no-print-directory -C {} all
+	  | xargs -I'{}' $(xargs-args) $(MAKE) --no-print-directory -C {} all
 	$(HIDE)$(MAKE) -C triage --no-print-directory assemble
 
 ## -----------------------------------------------------------------------
