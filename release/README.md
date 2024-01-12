@@ -4,9 +4,9 @@ VOLTHA Release Tracker
 | Repository | Version | REL | A | B | C | D | E | F |
 | ---------- | --------| --- | - | - | - | - | - | - |
 | [voltha-protos](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12) | [5.4.11](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12/VERSION) | X | X | - | - | X | [34934](https://gerrit.opencord.org/c/voltha-protos/+/34934) | [34936](https://gerrit.opencord.org/c/voltha-protos/+/34936) |
-| voltha-lib-go | 7.5.1  | [34919](https://gerrit.opencord.org/c/voltha-lib-go/+/34919) | | | | | | |
-| voltha-go     | 3.5.3  | [34922](https://gerrit.opencord.org/c/voltha-go/+/34922) | | | | | | |
-|               | | | | | | | | |
+| voltha-lib-go | 7.5.1  | X-[34919](https://gerrit.opencord.org/c/voltha-lib-go/+/34919) | | | | X | [34946](https://gerrit.opencord.org/c/voltha-lib-go/+/34946) | [34948](https://gerrit.opencord.org/c/voltha-lib-go/+/34948) |
+| voltha-go     | 3.5.3  | X-[34922](https://gerrit.opencord.org/c/voltha-go/+/34922) | | | | | | |
+| ofagent-go    | | | [VOL-5254](https://jira.opencord.org/browse/VOL-5254) | | | | | |
 |               | | | | | | | | |
 |               | | | | | | | | |
 |               | | | | | | | | |
@@ -33,4 +33,3 @@ Legend
 | [ONOS-component-deps](ONOS-component-deps.md) | External dependency version for ONOS components |
 | [X](../jcl/README.md)     | JCL: Jira Ticket Search |
 | [X](../tag-and-branch.md) | Release {tag,branch}ing by repository |
- 
