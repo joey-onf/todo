@@ -1,0 +1,9 @@
+** -----------------------------------------------------------------------
+** git log --graph --decorate --oneline | grep "2.12"
+** -----------------------------------------------------------------------
+* 9cdee9f (HEAD -> voltha-2.12, tag: v7.5.1, tag: v2.12.0, origin/voltha-2.12, origin/master, origin/HEAD, master) [VOL-5245] branch and release repo:voltha-lib-go
+* 81e4202 (tag: v7.4.6) VOL-5115 - Create release branch voltha-2.12-beta
+* 840e00d go.mod updated with latest voltha-protos version before release 2.12
+* 42bcb67 (tag: v3.0.19) [VOL-2312] Logging - Integrate voltctl with new etcd-based dynamic loglevel mechanism
+* defa2bf (tag: v2.2.12) VOL-2098 Add probe argument to NewGrpcServer; Release 2.2.12
+

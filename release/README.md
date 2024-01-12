@@ -31,4 +31,6 @@ Legend
 | ----- | ----------- |
 | [ONOS-components](ONOS-components.md)         | ONOS Components and versions |
 | [ONOS-component-deps](ONOS-component-deps.md) | External dependency version for ONOS components |
-| [X](../jcl/README.md) | JCL: Jira Ticket Search |
+| [X](../jcl/README.md)     | JCL: Jira Ticket Search |
+| [X](../tag-and-branch.md) | Release {tag,branch}ing by repository |
+ 
