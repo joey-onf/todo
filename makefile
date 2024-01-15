@@ -56,8 +56,8 @@ bbsim :
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
+# [SUPPORTED TARGETS]
 # view ::
-#	pandoc README.md | lynx --stdin
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
@@ -71,5 +71,8 @@ help ::
 	  'Regenerate README.md files for viewing on github'
 #	@printf '  %-33.33s %s\n' 'view' \
 #	  'Regenerate and load README.md for interactive viewing'
+
+edit ::
+	echo emacs $$(find release/assemble -mindepth 1 -maxdepth 1 -type f -print) &
 
 # [EOF]

@@ -9,7 +9,7 @@ get-dep  = $(lastword $(subst ^,$(space),$(1)))
 get-deps = $(foreach dep,$($(1)),$(call get-dep,$(dep)))
 
 markdown-raw := $(wildcard *.md)
-markdown-src := README.md $(filter-out README.md,$(markdown-raw))
+markdown-src ?= README.md $(filter-out README.md,$(markdown-raw))
 markdown-view-deps := $(call gen-deps,view-markdown,markdown-src)
 
 ## -----------------------------------------------------------------------
@@ -25,6 +25,6 @@ $(markdown-view-deps) :
 help ::
 	@printf 'Usage: $(MAKE) [options] [target] ...\n'
 	@printf '  %-33.33s %s\n' 'view' \
-	  'Regenerate and load README.md for interactive viewing'
+	  'Regenerate and load README.md for interactive viewing (markdown-src=)'
 
 # [EOF]

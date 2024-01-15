@@ -2,12 +2,12 @@
 | ---------- | --------| --- | - | - | - | - | - | - |
 REPOSITORY ^ [voltha-protos](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12)
 VERSION    ^ [5.4.11](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12/VERSION)
-REL        ^ [5.5.0-dev1](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/master/VERSION)
-A^
-B^
+REL        ^ [5.5.0](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/master/VERSION)
+A^X
+B^X
 C^
 D^
-E^
-F^
-G^
-H^
+E^[34934](https://gerrit.opencord.org/c/voltha-protos/+/34934)
+F^[34936](https://gerrit.opencord.org/c/voltha-protos/+/34936)
+G^[5.4.11](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12/VERSION)
+H^[34956](https://gerrit.opencord.org/c/voltha-protos/+/34956)

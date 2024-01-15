@@ -41,6 +41,8 @@ cd "$pgmbin" || { error "cd $pgmbin failed"; }
 
 
 ## -----------------------------------------------------------------------
+## Intent: Render a table legend using column names and description
+## from the legend.raw config file.
 ## -----------------------------------------------------------------------
 function draw_legend()
 {
@@ -53,6 +55,25 @@ function draw_legend()
         sed -e 's/[[:blank:]]*^[[:blank:]]*/|/' legend.raw \
             | column --table --separator '|' --output-separator ' | '
     ) > "$out"
+    return
+}
+
+## -----------------------------------------------------------------------
+## Intent: Render a markdown table using column names from legend.raw
+## -----------------------------------------------------------------------
+function draw_table_header()
+{
+    local out="$1"; shift
+
+    tmp='tmp/gen-header'
+    ( printf '|%s' "${fields[@]}" ; echo '|') > "$tmp"
+
+    /bin/rm -f "$out"
+    (
+        column --separator '|' --output-separator ' | ' --table "$tmp"
+        echo ' | ---------- | ------- | --- | - | - | - | - | - | - | - | - |'
+    ) > "$out"
+    /bin/rm "$tmp"
     return
 }
 
@@ -77,8 +98,9 @@ function trim()
 }
 
 ## -----------------------------------------------------------------------
+## Intent: 
 ## -----------------------------------------------------------------------
-function do_legend()
+function get_legend_fields()
 {
     local dir="$1"; shift
     local -n ref=$1; shift
@@ -95,29 +117,25 @@ function do_legend()
 ##----------------##
 ##---]  MAIN  [---##
 ##----------------##
-
 rm -fr tmp
 mkdir -p tmp
 
 declare -a fields=()
-do_legend 'tmp' fields
+get_legend_fields 'tmp' fields
 
-( printf '|%s' "${fields[@]}" ; echo '|') > tmp/xyz
-column --separator '|' --output-separator ' | ' --table tmp/xyz > tmp/header
-echo ' | ---------- | ------- | --- | - | - | - | - | - | - | - | - |' >> tmp/header
-/bin/rm tmp/xyz
-
+draw_table_header 'tmp/header'
 draw_legend 'tmp/legend'
-
-# sed -e 's/[[:blank:]]*^[[:blank:]]*/|/' legend.raw \
-#     | column --table --separator '|' --output-separator ' | ' \
-#    > tmp/legend
 
 
 declare -a repos=()
 repos+=('voltha-protos.raw')
 repos+=('voltha-lib-go.raw')
 
+
+## ----------------------------------------------------------------------
+## Iterate over table columns, gather per-repo data, write to a temp file
+## used by the paste command to assemble a table.
+## ----------------------------------------------------------------------
 for key in "${fields[@]}";
 do
     declare -a gather=()
@@ -142,8 +160,10 @@ pushd tmp >/dev/null
 
 printf "\n" "${gather[@]}" > 'null' # Create pre/post delimiters
 
+## Table generation
 (
     cat header
+
     paste --delimiter '|' 'null' "${fields[@]}" 'null' \
         | column --separator '|' --output-separator ' | '  --table
 
