@@ -49,6 +49,8 @@ function draw_legend()
     local out="$1"; shift
 
     (
+        printf '\n\n%s\n\n' '---'
+
         echo '| Label | Description |'
         echo '| ----- | ----------- |'
 
