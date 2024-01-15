@@ -53,6 +53,7 @@ function draw_legend()
         echo '| ----- | ----------- |'
 
         sed -e 's/[[:blank:]]*^[[:blank:]]*/|/' legend.raw \
+            | xargs -I'{}' echo "| {} |" \
             | column --table --separator '|' --output-separator ' | '
     ) > "$out"
     return

@@ -14,7 +14,7 @@ all:
 assemble:
 	(\
 	    assemble/assemble.sh; \
-	    printf '\n\n\n'; \
+	    printf '\n---\n\n'; \
 		cat topics/see-also; \
 	) > release-meta.md
 

@@ -1,6 +1,6 @@
 | Repository | Version | REL | A | B | C | D | E | F |
 | ---------- | --------| --- | - | - | - | - | - | - |
-REPOSITORY ^
+REPOSITORY ^ voltha-openolt-adapter
 VERSION    ^
 REL        ^
 A^[34952](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/34952)
