@@ -77,6 +77,31 @@ function draw_table_header()
     return
 }
 
+
+## -----------------------------------------------------------------------
+## Intent: Render a markdown table using column names from legend.raw
+## -----------------------------------------------------------------------
+function get_repositories_raw
+{
+    local -n ref=$1; shift
+
+    readarray -t raw < <(awk -F\# '{print $1}' repos/voltha \
+                             | grep '[a-z]')
+
+    raw=( "${raw[@]/%+([[:blank:]])/}" ) # remove trailing space/tab from each element
+    raw=( "${raw[@]/%+([[:blank:]])/}" ) # remove trailing space/tab from each element
+    
+    ref=()
+    # repos+=('voltha-protos.raw')
+    # repos+=('voltha-lib-go.raw') 
+    for val in "${raw[@]}";
+    do
+        ref+=("${val}.raw")
+    done
+
+    return
+}
+
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
 function trim()
@@ -118,6 +143,9 @@ get_legend_fields 'tmp' fields
 
 draw_table_header 'tmp/header'
 draw_legend 'tmp/legend'
+
+declare -a repos_raw=()
+get_repositories_raw repos_raw
 
 readarray -t raw < <(awk -F\# '{print $1}' repos/voltha | grep '[a-z]')
 raw=( "${raw[@]/%+([[:blank:]])/}" ) # remove trailing space/tab from each element
