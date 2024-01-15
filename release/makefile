@@ -12,6 +12,10 @@ all:
 
 .PHONY: assemble
 assemble:
-	assemble/assemble.sh > release-meta.md
+	(\
+	    assemble/assemble.sh; \
+	    printf '\n\n\n'; \
+		cat topics/see-also; \
+	) > release-meta.md
 
 # [EOF]

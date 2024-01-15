@@ -51,7 +51,7 @@ function draw_legend()
     (
         echo '| Label | Description |'
         echo '| ----- | ----------- |'
-        
+
         sed -e 's/[[:blank:]]*^[[:blank:]]*/|/' legend.raw \
             | column --table --separator '|' --output-separator ' | '
     ) > "$out"
