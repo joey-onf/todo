@@ -1,14 +1,14 @@
 VOLTHA Release Tracker
-s======================
+======================
 
 | Repository | Version | REL | A | B | C | D | E | F |
 | ---------- | --------| --- | - | - | - | - | - | - |
-| [voltha-protos](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12) | [5.4.11](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12/VERSION) | X | X | - | - | X | [34934](https://gerrit.opencord.org/c/voltha-protos/+/34934) | [34936](https://gerrit.opencord.org/c/voltha-protos/+/34936) |
-| voltha-lib-go | 7.5.1  | X-[34919](https://gerrit.opencord.org/c/voltha-lib-go/+/34919) | | | | X | [34946](https://gerrit.opencord.org/c/voltha-lib-go/+/34946) | [34948](https://gerrit.opencord.org/c/voltha-lib-go/+/34948) |
+| [voltha-protos](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12) | [5.4.11](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12/VERSION), [5.5.0-dev1](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/master/VERSION) | X | X | - | - | X | [34934](https://gerrit.opencord.org/c/voltha-protos/+/34934) | [34936](https://gerrit.opencord.org/c/voltha-protos/+/34936) |
+| voltha-lib-go | [7.5.2](https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go/+/refs/tags/v7.5.2), 7.6.0-dev | X-[34919](https://gerrit.opencord.org/c/voltha-lib-go/+/34919) | | | | X | [34946](https://gerrit.opencord.org/c/voltha-lib-go/+/34946) | [34948](https://gerrit.opencord.org/c/voltha-lib-go/+/34948) |
 | voltha-go     | 3.5.3  | X-[34922](https://gerrit.opencord.org/c/voltha-go/+/34922) | | | | | | |
 | ofagent-go    | | | [VOL-5254](https://jira.opencord.org/browse/VOL-5254) | | | | | |
 | voltha-openonu-adapter-go | 2.11.11 | | | [34951](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/34951) | | | | |
-| voltha-openolt-adapter    | 4.4.10 | | | [34952](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/34952) | | | | |
+| voltha-openolt-adapter    | 4.4.10 | | [34952](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/34952) | [34952](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/34952) | | | | |
 |               | | | | | | | | |
 |               | | | | | | | | |
  
@@ -29,6 +29,7 @@ Legend
 
 | Topic | Description |
 | ----- | ----------- |
+| [Released](release-meta.md)                   | Release status of tagging and branching by repository |
 | [ONOS-components](ONOS-components.md)         | ONOS Components and versions |
 | [ONOS-component-deps](ONOS-component-deps.md) | External dependency version for ONOS components |
 | [X](../jcl/README.md)     | JCL: Jira Ticket Search |

@@ -1,0 +1,13 @@
+| Repository | Version | REL | A | B | C | D | E | F |
+| ---------- | --------| --- | - | - | - | - | - | - |
+REPOSITORY ^ [voltha-protos](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12)
+VERSION    ^ [5.4.11](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12/VERSION)
+REL        ^ [5.5.0-dev1](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/master/VERSION)
+A^
+B^
+C^
+D^
+E^
+F^
+G^
+H^

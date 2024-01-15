@@ -10,4 +10,8 @@ include ../makefiles/include.mk
 ## -----------------------------------------------------------------------
 all:
 
+.PHONY: assemble
+assemble:
+	assemble/assemble.sh > release-meta.md
+
 # [EOF]

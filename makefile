@@ -33,7 +33,8 @@ regen:
 	find . -mindepth 2 -name 'makefile' -print0 \
 	  | xargs -0 -n1 dirname \
 	  | xargs -I'{}' $(xargs-args) $(MAKE) --no-print-directory -C {} all
-	$(HIDE)$(MAKE) -C triage --no-print-directory assemble
+	$(HIDE)$(MAKE) -C triage  --no-print-directory assemble
+	$(HIDE)$(MAKE) -C release/assemble --no-print-directory assemble
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
