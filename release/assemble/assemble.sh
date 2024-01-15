@@ -38,12 +38,29 @@ function program_paths()
 }
 program_paths
 cd "$pgmbin" || { error "cd $pgmbin failed"; }
-    
+
+
+## -----------------------------------------------------------------------
+## -----------------------------------------------------------------------
+function draw_legend()
+{
+    local out="$1"; shift
+
+    (
+        echo '| Label | Description |'
+        echo '| ----- | ----------- |'
+        
+        sed -e 's/[[:blank:]]*^[[:blank:]]*/|/' legend.raw \
+            | column --table --separator '|' --output-separator ' | '
+    ) > "$out"
+    return
+}
+
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
 function trim()
-{
-    local ref=$1; shift
+{ 
+   local ref=$1; shift
 
     local abc=("${ref[@]}")
 #     ref=( "${ref[@]/#+([[:blank:]])/}" ) # remove leading space/tab from each element
@@ -88,6 +105,14 @@ do_legend 'tmp' fields
 ( printf '|%s' "${fields[@]}" ; echo '|') > tmp/xyz
 column --separator '|' --output-separator ' | ' --table tmp/xyz > tmp/header
 echo ' | ---------- | ------- | --- | - | - | - | - | - | - | - | - |' >> tmp/header
+/bin/rm tmp/xyz
+
+draw_legend 'tmp/legend'
+
+# sed -e 's/[[:blank:]]*^[[:blank:]]*/|/' legend.raw \
+#     | column --table --separator '|' --output-separator ' | ' \
+#    > tmp/legend
+
 
 declare -a repos=()
 repos+=('voltha-protos.raw')
@@ -95,9 +120,6 @@ repos+=('voltha-lib-go.raw')
 
 for key in "${fields[@]}";
 do
-#    echo
-#    echo "LEGEND: [$key]"
-
     declare -a gather=()
     for repo in "${repos[@]}";
     do
@@ -124,9 +146,11 @@ printf "\n" "${gather[@]}" > 'null' # Create pre/post delimiters
     cat header
     paste --delimiter '|' 'null' "${fields[@]}" 'null' \
         | column --separator '|' --output-separator ' | '  --table
+
+    echo
+    echo
+    cat legend
 )
-# paste --delimiter '|' tmp/null tmp/legend tmp/null \
-#      | column --separator '|' --output-separator ' | '  --table
 
 popd > /dev/null
 
