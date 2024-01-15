@@ -84,13 +84,6 @@ function trim()
    local ref=$1; shift
 
     local abc=("${ref[@]}")
-#     ref=( "${ref[@]/#+([[:blank:]])/}" ) # remove leading space/tab from each element
-    # var="${var#"${var%%[![:space:]]*}"}"    # leading
-    # $ var="${var%"${var##*[![:space:]]}"}"  # trailiing
-
-    # ref=("${ref%"${ref##*[![:blank:]]}"}") # trailiing
-    # declare -p ref
-    
     abc=( "${abc[@]/%+([[:blank:]])/}" ) # remove trailing space/tab from each element
     abc=( "${abc[@]/%+([[:blank:]])/}" ) # remove trailing space/tab from each element
     ref=("${abc[@]}")
@@ -126,11 +119,19 @@ get_legend_fields 'tmp' fields
 draw_table_header 'tmp/header'
 draw_legend 'tmp/legend'
 
+readarray -t raw < <(awk -F\# '{print $1}' repos/voltha | grep '[a-z]')
+raw=( "${raw[@]/%+([[:blank:]])/}" ) # remove trailing space/tab from each element
+raw=( "${raw[@]/%+([[:blank:]])/}" ) # remove trailing space/tab from each element
 
 declare -a repos=()
-repos+=('voltha-protos.raw')
-repos+=('voltha-lib-go.raw')
+for val in "${raw[@]}";
+do
+    repos+=("${val}.raw")
+done
 
+                     
+# repos+=('voltha-protos.raw')
+# repos+=('voltha-lib-go.raw')
 
 ## ----------------------------------------------------------------------
 ## Iterate over table columns, gather per-repo data, write to a temp file
@@ -141,6 +142,10 @@ do
     declare -a gather=()
     for repo in "${repos[@]}";
     do
+        if [[ ! -f "$repo" ]]; then
+            cp 'template.raw' "$repo"
+        fi
+
         xyz=$(grep "^$key[[:blank:]]*^" "${repo}" | awk -F'^' '{print $2}')
         gather+=("$xyz")
     done

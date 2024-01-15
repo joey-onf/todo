@@ -1,0 +1,20 @@
+voltha-protos
+voltha-lib-go
+
+# -----------------------------------------------------------------------
+# -----------------------------------------------------------------------
+voltha-go
+voltha-onos
+voltha-openonu-adapter-go
+voltha-openolt-adapter
+voltha-system-tools
+segmentrouting
+
+ofagent-go
+openolt-agent
+    
+bbsim
+bbsim-sadis-server
+voltctl
+
+voltha-helm-charts
