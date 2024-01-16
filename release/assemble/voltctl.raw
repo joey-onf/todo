@@ -1,6 +1,6 @@
 | Repository | Version | REL | A | B | C | D | E | F |
 | ---------- | --------| --- | - | - | - | - | - | - |
-REPOSITORY ^ voltctl
+REPOSITORY ^ [voltctl](https://gerrit.opencord.org/plugins/gitiles/voltctl)
 VERSION    ^
 REL        ^
 A^

@@ -1,6 +1,6 @@
 | Repository | Version | REL | A | B | C | D | E | F |
 | ---------- | --------| --- | - | - | - | - | - | - |
-REPOSITORY ^ bbsim
+REPOSITORY ^ [bbsim](https://gerrit.opencord.org/plugins/gitiles/bbsim)
 VERSION    ^
 REL        ^
 A^

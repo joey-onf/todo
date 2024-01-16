@@ -83,7 +83,7 @@ do
         *)
             paste --delimiter='|||' "${data_prefix}.url.json" "${data_prefix}.cm.json" > "${repo}.md"
             
-#    | jq -r '["URL" "Description"], ["--","-----------"], (.[] | [.url, .commitMesage]) | @tsv' \
+#    | jq -r '["URL" "Description"], ["--","-----------"], (.[] | [.url, .commitMessage]) | @tsv' \
 #    | column -ts $'\t'
 #     | jq '.url,.commitMessage' 
 	;;

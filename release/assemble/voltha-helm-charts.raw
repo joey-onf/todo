@@ -1,6 +1,6 @@
 | Repository | Version | REL | A | B | C | D | E | F |
 | ---------- | --------| --- | - | - | - | - | - | - |
-REPOSITORY ^ voltha-helm-charts
+REPOSITORY ^ [voltha-helm-charts](https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts)
 VERSION    ^
 REL        ^
 A^

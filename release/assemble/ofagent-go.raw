@@ -1,6 +1,6 @@
 | Repository | Version | REL | A | B | C | D | E | F |
 | ---------- | --------| --- | - | - | - | - | - | - |
-REPOSITORY ^ ofagent-go
+REPOSITORY ^ [ofagent-go](https://gerrit.opencord.org/plugins/gitiles/ofagent-go)
 VERSION    ^
 REL        ^
 A^[VOL-5254](https://jira.opencord.org/browse/VOL-5254)

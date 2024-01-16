@@ -1,6 +1,6 @@
 | Repository | Version | REL | A | B | C | D | E | F |
 | ---------- | --------| --- | - | - | - | - | - | - |
-REPOSITORY ^ voltha-system-tools
+REPOSITORY ^ [voltha-system-tests](https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests)
 VERSION    ^
 REL        ^
 A^

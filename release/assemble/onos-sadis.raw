@@ -1,7 +1,7 @@
 | Repository | Version | REL | A | B | C | D | E | F |
 | ---------- | --------| --- | - | - | - | - | - | - |
 REPOSITORY ^ sadis
-VERSION    ^ 2.12.1
+VERSION    ^ [5.12.1](https://mvnrepository.com/artifact/org.opencord/sadis), 5.12.2-SNAPSHOT
 REL        ^ 
 A^
 B^N/A

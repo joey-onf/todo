@@ -1,6 +1,6 @@
 | Repository | Version | REL | A | B | C | D | E | F |
 | ---------- | --------| --- | - | - | - | - | - | - |
-REPOSITORY ^ bbsim-sadis-server
+REPOSITORY ^ [bbsim-sadis-server](https://gerrit.opencord.org/plugins/gitiles/bbsim-sadis-server)
 VERSION    ^
 REL        ^
 A^

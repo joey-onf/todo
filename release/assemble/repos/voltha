@@ -7,7 +7,7 @@ voltha-go
 voltha-onos
 voltha-openonu-adapter-go
 voltha-openolt-adapter
-voltha-system-tools
+voltha-system-tests
 segmentrouting
 
 ofagent-go
