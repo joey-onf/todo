@@ -95,6 +95,7 @@ function get_repositories_raw
     raw=( "${raw[@]/%+([[:blank:]])/}" ) # remove trailing space/tab from each element
     
     ref=()
+
     # repos+=('voltha-protos.raw')
     # repos+=('voltha-lib-go.raw') 
     for val in "${raw[@]}";
@@ -102,6 +103,8 @@ function get_repositories_raw
         ref+=("${val}.raw")
     done
 
+    ref+=('onos-sadis.raw')
+    
     return
 }
 

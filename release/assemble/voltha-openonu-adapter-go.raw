@@ -1,9 +1,9 @@
 | Repository | Version | REL | A | B | C | D | E | F |
 | ---------- | --------| --- | - | - | - | - | - | - |
 REPOSITORY ^ voltha-openonu-adapter-go
-VERSION    ^
+VERSION    ^ 2.11.11
 REL        ^
-A^
+A^[34951](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/34951)
 B^
 C^
 D^

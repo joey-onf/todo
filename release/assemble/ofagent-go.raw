@@ -3,7 +3,7 @@
 REPOSITORY ^ ofagent-go
 VERSION    ^
 REL        ^
-A^
+A^[VOL-5254](https://jira.opencord.org/browse/VOL-5254)
 B^
 C^
 D^
