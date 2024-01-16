@@ -34,7 +34,7 @@ regen:
 	  | xargs -0 -n1 dirname \
 	  | xargs -I'{}' $(xargs-args) $(MAKE) --no-print-directory -C {} all
 	$(HIDE)$(MAKE) -C triage  --no-print-directory assemble
-	$(HIDE)$(MAKE) -C release/assemble --no-print-directory assemble
+	$(HIDE)$(MAKE) -C release --no-print-directory assemble
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
