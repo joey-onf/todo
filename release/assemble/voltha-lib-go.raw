@@ -1,14 +1,12 @@
-![x](https://placehold.co/15x15/DAFDAF/DAFDAF.png)
-
-    REPOSITORY ^ [voltha-lib-go](https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go)
+REPOSITORY ^ [voltha-lib-go](https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go)
 VERSION    ^ [7.5.2](https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go/+/refs/tags/v7.5.2)
-REL        ^ ![x](https://placehold.co/15x15/DAFDAF/DAFDAF.png) [34919](https://gerrit.opencord.org/c/voltha-lib-go/+/34919)
+REL        ^ ![G](https://placehold.co/15x15/c5f015/c5f015.png) [34919](https://gerrit.opencord.org/c/voltha-lib-go/+/34919)
     [34919](https://gerrit.opencord.org/c/voltha-lib-go/+/34919)
 A^X
-B^![x](https://placehold.co/15x15/f03c15/f03c15.png) ![x](https://placehold.co/15x15/DAFDAF/DAFDAF.png) [34963](https://gerrit.opencord.org/c/voltha-lib-go/+/34963)
+B^![R](https://placehold.co/15x15/f03c15/f03c15.png) ![G](https://placehold.co/15x15/c5f015/c5f015.png) [34963](https://gerrit.opencord.org/c/voltha-lib-go/+/34963)
 C^
 D^
 E^[34946](https://gerrit.opencord.org/c/voltha-lib-go/+/34946)[34963](https://gerrit.opencord.org/c/voltha-lib-go/+/34963)
 F^[34948](https://gerrit.opencord.org/c/voltha-lib-go/+/34948)
-G^ 7.6.0-dev
+G^ [34964](https://gerrit.opencord.org/c/voltha-lib-go/+/34964)
 H^[7.5.2](http://gerrit.opencord.org/plugins/gitiles/voltha-lib-go/+/refs/tags/v7.5.2/VERSION)
