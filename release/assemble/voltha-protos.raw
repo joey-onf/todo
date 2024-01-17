@@ -5,8 +5,8 @@ VERSION    ^ [5.4.11](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/
 REL        ^ [5.5.0](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/master/VERSION)
 A^X
 B^X
-C^
-D^
+C^N/A
+D^X
 E^[34934](https://gerrit.opencord.org/c/voltha-protos/+/34934)
 F^[34936](https://gerrit.opencord.org/c/voltha-protos/+/34936)
 G^[5.4.11](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12/VERSION)

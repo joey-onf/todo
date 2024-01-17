@@ -1,7 +1,7 @@
 REPOSITORY ^ [voltha-lib-go](https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go)
 VERSION    ^ [7.5.2](https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go/+/refs/tags/v7.5.2)
 REL        ^X-[34919](https://gerrit.opencord.org/c/voltha-lib-go/+/34919)
-A^
+A^X
 B^
 C^
 D^
