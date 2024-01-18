@@ -3,7 +3,7 @@
 REPOSITORY ^ [ofagent-go](https://gerrit.opencord.org/plugins/gitiles/ofagent-go)
 VERSION    ^
 REL        ^ [x](ofagent-go/A.md)
-A^ :green_circle: [X](ofagent-go/A.md)
+A^ :hammer: [X](ofagent-go/A.md)
 B^ [x](ofagent-go/B.md)
 C^ [x](ofagent-go/C.md)
 D^ [x](ofagent-go/D.md)

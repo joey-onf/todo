@@ -3,7 +3,7 @@
 REPOSITORY ^ [voltha-openolt-adapter](https://gerrit.opencord.org/plugins/gitiles/voltha-openolt-adapter)
 VERSION    ^ 4.4.10
 REL        ^
-A^:green_circle: [x](voltha-openolt-adapter/A.md)
+A^ :hammer: [x](voltha-openolt-adapter/A.md)
 B^ [x](voltha-openolt-adapter/B.md)
 C^ [x](voltha-openolt-adapter/C.md)
 D^ [x](voltha-openolt-adapter/D.md)
