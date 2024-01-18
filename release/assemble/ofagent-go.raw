@@ -2,14 +2,13 @@
 | ---------- | --------| --- | - | - | - | - | - | - |
 REPOSITORY ^ [ofagent-go](https://gerrit.opencord.org/plugins/gitiles/ofagent-go)
 VERSION    ^
-REL        ^
-A^:green_circle: [X](ofagent-go/A.md)
-B^
-C^
-D^
-E^
-F^
-G^
-H^
-Z^ [X](ofagent-go/Z.md)
-    
+REL        ^ [x](ofagent-go/A.md)
+A^ :green_circle: [X](ofagent-go/A.md)
+B^ [x](ofagent-go/B.md)
+C^ [x](ofagent-go/C.md)
+D^ [x](ofagent-go/D.md)
+E^ [x](ofagent-go/E.md)
+F^ [x](ofagent-go/F.md)
+G^ [x](ofagent-go/G.md)
+H^ [x](ofagent-go/H.md)
+Z^ [x](ofagent-go/Z.md)

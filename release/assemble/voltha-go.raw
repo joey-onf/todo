@@ -2,7 +2,7 @@
 | ---------- | --------| --- | - | - | - | - | - | - |
 REPOSITORY ^ [voltha-go](https://gerrit.opencord.org/plugins/gitiles/voltha-go)
 VERSION    ^
-REL        ^ [x](voltha-go/A.md) [VOL-5247](https://jira.opencord.org/browse/VOL-5247)
+REL        ^ [x](voltha-go/A.md)
 A^ [x](voltha-go/A.md)
 B^ [x](voltha-go/B.md)
 C^ [x](voltha-go/C.md)
