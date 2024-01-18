@@ -4,6 +4,8 @@
 
 .DEFAULT_GOAL: view
 
+BROWSER ?= opera
+
 include ../makefiles/include.mk
 
 ## -----------------------------------------------------------------------

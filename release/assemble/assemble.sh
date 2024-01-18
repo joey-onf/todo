@@ -128,13 +128,12 @@ function get_legend_fields()
     local dir="$1"; shift
     local -n ref=$1; shift
 
-    readarray -t xyzzy < <(awk -F'^' '{print $1}' 'legend.raw' | grep '[a-z][A-Z]')
-    declare -p xyzzy | tr '=' '\n'
+    readarray -t xyzzy < <(awk -F'^' '{print $1}' 'legend.raw' | grep '^[A-Z]')
 
     xyzzy=( "${xyzzy[@]/%+([[:blank:]])/}" ) # remove trailing space/tab from each element
     xyzzy=( "${xyzzy[@]/%+([[:blank:]])/}" ) # remove trailing space/tab from each element
     ref=("${xyzzy[@]}")
-    
+
     return
 }
 
