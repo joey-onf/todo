@@ -3,3 +3,4 @@
 
 | Status | Jira | Gerrit | Jenkins | Description |
 | ------ | ---- | ------ | ------- | ----------- |
+| | | [34965](https://gerrit.opencord.org/c/voltha-go/+/34965) | | |
