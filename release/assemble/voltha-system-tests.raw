@@ -5,9 +5,10 @@ VERSION    ^
 REL        ^
 A^ [VOL-5256](https://jira.opencord.org/browse/VOL-5256) [34966](https://gerrit.opencord.org/c/voltha-system-tests/+/34966)
 B^
-C^
-D^
-E^
-F^
-G^
+C^ :hurtrealbad:
+D^ :orange_circle: :green_circle: :green_square:
+E^ :small_orange_diamond:
+F^ :small_red_triangle:
+G^ :new: :x: :question: 
 H^
+Z^

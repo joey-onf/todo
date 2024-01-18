@@ -74,12 +74,11 @@ function draw_table_header()
     /bin/rm -f "$out"
     (
         column --separator '|' --output-separator ' | ' --table "$tmp"
-        echo ' | ---------- | ------- | --- | - | - | - | - | - | - | - | - |'
+        echo ' | ---------- | ------- | --- | - | - | - | - | - | - | - | - | - |'
     ) > "$out"
     /bin/rm "$tmp"
     return
 }
-
 
 ## -----------------------------------------------------------------------
 ## Intent: Render a markdown table using column names from legend.raw
@@ -129,7 +128,9 @@ function get_legend_fields()
     local dir="$1"; shift
     local -n ref=$1; shift
 
-    readarray -t xyzzy < <(awk -F'^' '{print $1}' 'legend.raw')
+    readarray -t xyzzy < <(awk -F'^' '{print $1}' 'legend.raw' | grep '[a-z][A-Z]')
+    declare -p xyzzy | tr '=' '\n'
+
     xyzzy=( "${xyzzy[@]/%+([[:blank:]])/}" ) # remove trailing space/tab from each element
     xyzzy=( "${xyzzy[@]/%+([[:blank:]])/}" ) # remove trailing space/tab from each element
     ref=("${xyzzy[@]}")
@@ -208,7 +209,7 @@ printf "\n" "${gather[@]}" > 'null' # Create pre/post delimiters
 
     echo
     echo
-    cat legend
+    grep -v -e 'EOF' legend
 )
 
 popd > /dev/null
