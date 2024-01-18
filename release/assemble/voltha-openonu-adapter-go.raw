@@ -3,7 +3,7 @@
 REPOSITORY ^ [voltha-openonu-adapter-go](https://gerrit.opencord.org/plugins/gitiles/voltha-openonu-adapter-go)
 VERSION    ^ 2.11.11
 REL        ^
-A^[34951](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/34951)
+A^ :green_circle: [X](voltha-openonu-adapter-go/A.md)
 B^
 C^
 D^

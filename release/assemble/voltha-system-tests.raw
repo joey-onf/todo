@@ -3,7 +3,7 @@
 REPOSITORY ^ [voltha-system-tests](https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests)
 VERSION    ^
 REL        ^
-A^ :green_circle: [X](voltha-system/tests.md)
+A^ :green_circle: [X](voltha-system/A.md)
 B^
 C^ :hurtrealbad:
 D^ :orange_circle: :green_circle: :green_square:
