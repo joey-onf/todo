@@ -3,7 +3,7 @@
 REPOSITORY ^ [voltha-system-tests](https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests)
 VERSION    ^
 REL        ^
-A^
+A^ [VOL-5256](https://jira.opencord.org/browse/VOL-5256) [34966](https://gerrit.opencord.org/c/voltha-system-tests/+/34966)
 B^
 C^
 D^
