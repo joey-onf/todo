@@ -187,7 +187,7 @@ if true; then
     declare width='|'
     for col in $(seq 0 ${#fields[@]}); do
         case "$col" in
-            0) width+=' <img width=400/>' ;;
+            0) width+=' <img width=800/>' ;;
         esac
         width+=' |'
     done
