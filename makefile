@@ -75,4 +75,9 @@ help ::
 edit ::
 	echo emacs $$(find release/assemble -mindepth 1 -maxdepth 1 -type f -print) &
 
+view-meta:
+	$(MAKE) regen
+	-emacs release/release-meta.md &
+	pandoc release/release-meta.md | lynx -stdin
+
 # [EOF]

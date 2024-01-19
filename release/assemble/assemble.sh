@@ -14,6 +14,16 @@ function error
 }
 
 ## -----------------------------------------------------------------------
+## Intent: Helper method
+## -----------------------------------------------------------------------
+## Usage : local path="$(join_by '/' 'lib' "${fields[@]}")"
+## -----------------------------------------------------------------------
+function join_by()
+{
+    local d=${1-} f=${2-}; if shift 2; then printf %s "$f" "${@/#/$d}"; fi;
+}
+
+## -----------------------------------------------------------------------
 ## Intent: Parse command line paths
 ## -----------------------------------------------------------------------
 function program_paths()
@@ -171,6 +181,20 @@ done
 ## Iterate over table columns, gather per-repo data, write to a temp file
 ## used by the paste command to assemble a table.
 ## ----------------------------------------------------------------------
+## Cannot use array + $(join_by) here, elements are whitespace, not preserved
+## ----------------------------------------------------------------------
+if true; then
+    declare width='|'
+    for col in $(seq 0 ${#fields[@]}); do
+        case "$col" in
+            0) width+=' <img width=200/>' ;;
+        esac
+        width+=' |'
+    done
+    column_widths="$width"
+fi
+
+
 for key in "${fields[@]}";
 do
     declare -a gather=()
@@ -202,7 +226,7 @@ printf "\n" "${gather[@]}" > 'null' # Create pre/post delimiters
 ## Table generation
 (
     cat header
-
+    echo "$column_widths"
     paste --delimiter '|' 'null' "${fields[@]}" 'null' \
         | column --separator '|' --output-separator ' | '  --table
 
