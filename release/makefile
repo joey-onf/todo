@@ -16,7 +16,9 @@ all:
 assemble:
 	(\
 	    assemble/assemble.sh; \
-	    printf '\n\n'; \
+	    printf '\n---\n'; \
+		cat topics/onos-components; \
+	    printf '\n---\n'; \
 		cat topics/see-also; \
 	) > release-meta.md
 

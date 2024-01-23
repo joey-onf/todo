@@ -37,7 +37,14 @@
  |  H          | branch=voltha-2.12 version                                                              | 
  |  Z          | Jira tickets                                                                            | 
 
+---
+ONOS Components
+---------------
 
+| Name | Notes |
+| ---- | ----- |
+| [sadis](https://jenkins.opencord.org/job/maven-publish_sadis/107/consoleText) | |6
+---
 ---
 
 ## See Also
