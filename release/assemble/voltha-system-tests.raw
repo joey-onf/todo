@@ -3,12 +3,12 @@
 REPOSITORY ^ [voltha-system-tests](https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests)
 VERSION    ^
 REL        ^
-A^ :orange_circle: [X](voltha-system/A.md)
-B^
-C^
-D^
-E^
-F^
-G^
-H^
-Z^[VOL-5256](https://jira.opencord.org/browse/VOL-5256)
+A^ :orange_circle: [X](voltha-system-tests/A.md)
+B^ [x](voltha-system-tests/B.md)
+C^ [x](voltha-system-tests/C.md)
+D^ [x](voltha-system-tests/D.md)
+E^ [x](voltha-system-tests/E.md)
+F^ [x](voltha-system-tests/F.md)
+G^ [x](voltha-system-tests/G.md)
+H^ [x](voltha-system-tests/H.md)
+Z^ [x](voltha-system-tests/Z.md)
