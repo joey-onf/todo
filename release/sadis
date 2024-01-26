@@ -1,8 +1,0 @@
-# -*- makefile -*-
-
-https://jenkins.opencord.org/job/onos-app-release/284/consoleFull
-
-## Publishing job hung: ONOS:sadis-api
-https://jenkins.opencord.org/job/maven-publish_sadis/107/console
-
-# [EOF]
