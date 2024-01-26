@@ -1,4 +1,5 @@
 ONOS Component: mcast
+=====================
 
 | What | URL | Status | Notes |
 | ---- | --- | ------ | ----- |
@@ -8,3 +9,4 @@ ONOS Component: mcast
 | api-job    | | | |
 | nexus-rel  | | | Merge patch: nexus staging, release artifact |
 | nexus-snap | | | Merge patch: publish snapshot artifact to nexus |
+| maven | [bng](https://mvnrepository.com/artifact/org.opencord/bng) | | |
