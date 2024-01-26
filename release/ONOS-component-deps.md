@@ -3,14 +3,10 @@ ONOS Component Versions
 
 | Component | Status | Notes |
 | --------- | ------ | ----- |
+| [bng](bng/README.md)     | :new:    | |
 | [mcast](mcast/README.md) | :hammer: | |
+| [sadis](sadis/README.md) | :green_circle | |
 
-| Component | Status | Current | Release | Snapshot | mvn | J:app-rel | Notes |
-| --------- | ------ | --------| ------- | -------- | --- | --------- | ----- |
-| [bng](https://gerrit.opencord.org/plugins/gitiles/bng) | :new: | 2.5.1-SNAPSHOT | | | [2.5.0](https://mvnrepository.com/artifact/org.opencord/bng) | | |
-
- https://gerrit.opencord.org/c/mcast/+/34995
-    
 | Dependency | Package | Version |
 | ---------- | ------- | --------|
 | com.fasterxml.jackson.core | [jackson-databind](https://gerrit.opncord.org/plugins/gitiles/sadis/+/refs/heads/master/app/pom.xml#90) | 2.10.2 |     
