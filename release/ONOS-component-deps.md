@@ -3,8 +3,10 @@ ONOS Component Versions
 
 | Component | Status | Notes |
 | --------- | ------ | ----- |
+| [aaa](aaa/README.md)               | :new:          | |
 | [bng](bng/README.md)               | :new:          | |
 | [mcast](mcast/README.md)           | :hammer:       | |
+| [olt](olt/README.md)               | :new:          | |
 | [pppoeagent](pppoeagent/README.md) | :hammer:       | |
 | [sadis](sadis/README.md)           | :green_circle: | |
 
