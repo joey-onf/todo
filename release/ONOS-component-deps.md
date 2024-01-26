@@ -10,6 +10,7 @@ ONOS Component Versions
 | [kafka](kafka-onos/README.md)        |                | |
 | [mcast](mcast/README.md)             | :hammer:       | |
 | [olt](olt/README.md)                 | :hammer:       | |
+| [olttopology](olttopology/README.md  |                | |
 | [pppoeagent](pppoeagent/README.md)   | :hammer:       | |
 | [sadis](sadis/README.md)             | :green_circle: | |
 
