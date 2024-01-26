@@ -1,11 +1,16 @@
 ONOS Component Versions
 =======================
 
+| Component | Notes |
+| --------- | ----- |
+| [mcast](mcast/README.md) | |
+
 | Component | Status | Current | Release | Snapshot | mvn | J:app-rel | Notes |
 | --------- | ------ | --------| ------- | -------- | --- | --------- | ----- |
-| [bng](https://gerrit.opencord.org/plugins/gitiles/bng) | :new: | 2.5.1-SNAPSHOT | | | [2.5.0](https://mvnrepository.com/artifact/org.opencord/bng) | [303](https://jenkins.opencord.org/job/onos-app-release/303/console) | |
-| [mcast](https://gerrit.opencord.org/plugins/gitiles/mcast) | :hammer: | 2.9.1-SNAPSHOT | 2.9.1 | | [2.5.0](https://mvnrepository.com/artifact/org.opencord/bng) | [303](https://jenkins.opencord.org/job/onos-app-release/303/console) | |
+| [bng](https://gerrit.opencord.org/plugins/gitiles/bng) | :new: | 2.5.1-SNAPSHOT | | | [2.5.0](https://mvnrepository.com/artifact/org.opencord/bng) | | |
+| [mcast](https://gerrit.opencord.org/plugins/gitiles/mcast) | :hammer: | 2.9.1-SNAPSHOT | 2.9.1 | | [2.5.0](https://mvnrepository.com/artifact/org.opencord/mcast) | [34987](https://gerrit.opencord.org/c/mcast/+/34987), [303](https://jenkins.opencord.org/job/onos-app-release/303/console) | |
 
+ https://gerrit.opencord.org/c/mcast/+/34995
     
 | Component | Release | Snapshot | mvn | Notes |
 | sadis     | 5.12.0 [34943](https://gerrit.opencord.orgc/sadis/+/34943) | | [5.12.0](https://mvnrepository.com/artifact/org.opencord/sadis) | Built using jackson-{core,databind} v 2.15 |
