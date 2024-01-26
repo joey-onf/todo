@@ -7,6 +7,7 @@ ONOS Component Versions
 | [bng](bng/README.md)                 | :new:          | |
 | [dhcpl2relay](dhcpl2relay/README.md) | :hammer:       | |
 | [igmpproxy](igmpproxy/README.md)     |                | |
+| [kafka](kafka-onos/README.md)        |                | |
 | [mcast](mcast/README.md)             | :hammer:       | |
 | [olt](olt/README.md)                 | :hammer:       | |
 | [pppoeagent](pppoeagent/README.md)   | :hammer:       | |
