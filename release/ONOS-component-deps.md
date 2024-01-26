@@ -3,12 +3,13 @@ ONOS Component Versions
 
 | Component | Status | Notes |
 | --------- | ------ | ----- |
-| [aaa](aaa/README.md)               | :new:          | |
-| [bng](bng/README.md)               | :new:          | |
-| [mcast](mcast/README.md)           | :hammer:       | |
-| [olt](olt/README.md)               | :new:          | |
-| [pppoeagent](pppoeagent/README.md) | :hammer:       | |
-| [sadis](sadis/README.md)           | :green_circle: | |
+| [aaa](aaa/README.md)                 | :hammer:       | |
+| [bng](bng/README.md)                 | :new:          | |
+| [dhcpl2relay](dhcpl2relay/README.md) | :hammer:       | |
+| [mcast](mcast/README.md)             | :hammer:       | |
+| [olt](olt/README.md)                 | :hammer:       | |
+| [pppoeagent](pppoeagent/README.md)   | :hammer:       | |
+| [sadis](sadis/README.md)             | :green_circle: | |
 
 | Dependency | Package | Version |
 | ---------- | ------- | --------|
