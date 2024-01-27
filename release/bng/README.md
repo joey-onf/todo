@@ -10,13 +10,6 @@ ONOS Component: mcast
 | nexus-rel  | | | Merge patch: nexus staging, release artifact |
 | nexus-snap | | | Merge patch: publish snapshot artifact to nexus |
 | maven | [bng](https://mvnrepository.com/artifact/org.opencord/bng) | | |
-## Released: v{x.y.z}
-
-| Artifact | Notes |
-| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
-| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
-| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
-
 
 ## Released: bng[2.5.1]
 

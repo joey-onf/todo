@@ -1,6 +1,11 @@
 ONOS Component: mac-learning
 ============================
 
+| key        | value |
+| ---------- | ----- |
+| repository | mac-learning              |
+| package    | maclearner | mac-learning |
+    
 | What | URL | Status | Notes |
 | ---- | --- | ------ | ----- |
 | Component  | [maclearner](https://gerrit.opencord.org/plugins/gitiles/maclearner) | | |
@@ -11,23 +16,15 @@ ONOS Component: mac-learning
 | nexus-snap | | | Merge patch: publish snapshot artifact to nexus |
 | maven | [maclearner](https://mvnrepository.com/artifact/org.opencord/maclearner) | | | Release staged on nexus, publishing to mvc |
 
-## Released: v{x.y.z}
-
-| Artifact | Notes |
-| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
-| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
-| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
-
-
-## Released: {pkg}[{ver}]
+## Released: maclearner[1.2.3]
 
 | Artifact | Notes |
 | -------- | ----- |
-| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}) | |
-| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api) | |
-| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app) | |
+| [package](https://mvnrepository.com/artifact/org.opencord/maclearner) | |
+| [API](https://mvnrepository.com/artifact/org.opencord/maclearner-api) | |
+| [APP](https://mvnrepository.com/artifact/org.opencord/maclearner-app) | |
 | -------- | ----- |
-| [package-{ver}](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
-| [API-{ver}](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
-| [APP-{ver}](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
+| [package-1.2.3](https://mvnrepository.com/artifact/org.opencord/maclearner/1.2.3) | |
+| [API-1.2.3](https://mvnrepository.com/artifact/org.opencord/maclearner-api/1.2.3) | |
+| [APP-1.2.3](https://mvnrepository.com/artifact/org.opencord/maclearner-app/1.2.3) | |
 

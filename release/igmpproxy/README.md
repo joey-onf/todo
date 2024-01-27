@@ -11,14 +11,6 @@ ONOS Component: igmpproxy
 | nexus-snap | | | Merge patch: publish snapshot artifact to nexus |
 | maven | [igmpproxy](https://mvnrepository.com/artifact/org.opencord/igmpproxy) | | | Release staged on nexus, publishing to mvc |
 
-## Released: v{x.y.z}
-
-| Artifact | Notes |
-| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
-| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
-| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
-
-
 ## Released: igmpproxy[2.9.0]
 
 | Artifact | Notes |

@@ -11,14 +11,6 @@ ONOS Component: pppoeagent
 | [nexus-snap]() | | :new: | Merge patch: publish snapshot artifact to nexus |
 | maven | [mast](https://mvnrepository.com/artifact/org.opencord/pppoeagent) | :new: | Release staged on nexus, publishing to mvc |
 
-## Released: v{x.y.z}
-
-| Artifact | Notes |
-| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
-| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
-| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
-
-
 ## Released: pppoeagent[1.3.0]
 
 | Artifact | Notes |

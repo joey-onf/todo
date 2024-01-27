@@ -11,14 +11,6 @@ ONOS Component: aaa
 | nexus-snap | 2.11.1-SNAPSHOT | | Merge patch: publish snapshot artifact to nexus |
 | maven      | [aaa](https://mvnrepository.com/artifact/org.opencord/aaa) | | | Release staged on nexus, publishing to mvc |
 
-## Released: v{x.y.z}
-
-| Artifact | Notes |
-| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
-| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
-| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
-
-
 ## Released: aaa[2.11.0]
 
 | Artifact | Notes |

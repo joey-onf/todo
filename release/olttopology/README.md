@@ -11,14 +11,6 @@ ONOS Component: olttopology
 | nexus-snap | 5.2.6-SNAP | | Merge patch: publish snapshot artifact to nexus |
 | maven      | [olttopology](https://mvnrepository.com/artifact/org.opencord/olttopology) | | | Release staged on nexus, publishing to mvc |
 
-## Released: v{x.y.z}
-
-| Artifact | Notes |
-| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
-| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
-| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
-
-
 ## Released: olttopology[1.3.1]
 
 | Artifact | Notes |

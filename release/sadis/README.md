@@ -11,21 +11,6 @@ ONOS Component: sadis
 | nexus-snap | | :new: | Merge patch: publish snapshot artifact to nexus |
 | maven | [sadis](https://mvnrepository.com/artifact/org.opencord/sadis) | :green_square: | v2.15.2 published to maven central |
 
-## Released: v5.12.2
-
-| Artifact | Notes |
-| [package](https://mvnrepository.com/artifact/org.opencord/sadis/5.12.2) | |
-| [API](https://mvnrepository.com/artifact/org.opencord/sadis-api/5.12.2) | |
-| [APP](https://mvnrepository.com/artifact/org.opencord/sadis-app/5.12.2) | |
-
-## Released: v{x.y.z}
-
-| Artifact | Notes |
-| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
-| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
-| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
-
-
 ## Released: sadis[5.12.2]
 
 | Artifact | Notes |

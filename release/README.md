@@ -29,3 +29,16 @@ VOLTHA Release Tracker
 | [API-{ver}](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
 | [APP-{ver}](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
 
+
+## Released: {pkg}[{ver}]
+
+| Artifact | Notes |
+| -------- | ----- |
+| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}) | |
+| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api) | |
+| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app) | |
+| -------- | ----- |
+| [package-{ver}](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
+| [API-{ver}](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
+| [APP-{ver}](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
+

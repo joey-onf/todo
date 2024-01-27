@@ -1,5 +1,10 @@
-ONOS Component: mac-learning
-============================
+ONOS Component: kafka
+=====================
+
+| Key        | Value
+| ---------- | ---------- |
+| repository | kafka-onos |
+| package    | kafka      |  
 
 | What | URL | Status | Notes |
 | ---- | --- | ------ | ----- |
@@ -11,23 +16,15 @@ ONOS Component: mac-learning
 | nexus-snap | | | Merge patch: publish snapshot artifact to nexus |
 | maven | [kafka-onos](https://mvnrepository.com/artifact/org.opencord/kafka-onos) | | | Release staged on nexus |
 
-## Released: v{x.y.z}
-
-| Artifact | Notes |
-| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
-| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
-| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
-
-
-## Released: {pkg}[{ver}]
+## Released: kafka[2.13.0]
 
 | Artifact | Notes |
 | -------- | ----- |
-| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}) | |
-| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api) | |
-| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app) | |
+| [package](https://mvnrepository.com/artifact/org.opencord/kafka) | |
+| [API](https://mvnrepository.com/artifact/org.opencord/kafka-api) | |
+| [APP](https://mvnrepository.com/artifact/org.opencord/kafka-app) | |
 | -------- | ----- |
-| [package-{ver}](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
-| [API-{ver}](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
-| [APP-{ver}](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
+| [package-2.13.0](https://mvnrepository.com/artifact/org.opencord/kafka/2.13.0) | |
+| [API-2.13.0](https://mvnrepository.com/artifact/org.opencord/kafka-api/2.13.0) | |
+| [APP-2.13.0](https://mvnrepository.com/artifact/org.opencord/kafka-app/2.13.0) | |
 
