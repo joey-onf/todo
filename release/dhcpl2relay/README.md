@@ -10,3 +10,24 @@ ONOS Component: mcast
 | nexus-rel  | [G:35001](https://gerrit.opencord.org/c/dhcpl2relay/+/35001) | | Merge patch: nexus staging, release artifact, started: 2024-01-26, 02:46:57 |
 | nexus-snap | [G:35002](https://gerrit.opencord.org/c/dhcpl2relay/+/35002) | :new: | Merge patch: publish snapshot artifact to nexus |
 | maven      | [dhcpl2relay](https://mvnrepository.com/artifact/org.opencord/dhcpl2relay) | | | Release staged on nexus, publishing to mvc |
+
+## Released: v{x.y.z}
+
+| Artifact | Notes |
+| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
+| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
+| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
+
+
+## Released: dhcpl2relay[2.11.0]
+
+| Artifact | Notes |
+| -------- | ----- |
+| [package](https://mvnrepository.com/artifact/org.opencord/dhcpl2relay) | |
+| [API](https://mvnrepository.com/artifact/org.opencord/dhcpl2relay-api) | |
+| [APP](https://mvnrepository.com/artifact/org.opencord/dhcpl2relay-app) | |
+| -------- | ----- |
+| [package-2.11.0](https://mvnrepository.com/artifact/org.opencord/dhcpl2relay/2.11.0) | |
+| [API-2.11.0](https://mvnrepository.com/artifact/org.opencord/dhcpl2relay-api/2.11.0) | |
+| [APP-2.11.0](https://mvnrepository.com/artifact/org.opencord/dhcpl2relay-app/2.11.0) | |
+

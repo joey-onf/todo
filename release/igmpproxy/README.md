@@ -10,3 +10,24 @@ ONOS Component: igmpproxy
 | nexus-rel  | [35003](https://gerrit.opencord.org/c/igmpproxy/+/35003) | :new: | Merge patch: nexus staging, release artifact |
 | nexus-snap | | | Merge patch: publish snapshot artifact to nexus |
 | maven | [igmpproxy](https://mvnrepository.com/artifact/org.opencord/igmpproxy) | | | Release staged on nexus, publishing to mvc |
+
+## Released: v{x.y.z}
+
+| Artifact | Notes |
+| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
+| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
+| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
+
+
+## Released: igmpproxy[2.9.0]
+
+| Artifact | Notes |
+| -------- | ----- |
+| [package](https://mvnrepository.com/artifact/org.opencord/igmpproxy) | |
+| [API](https://mvnrepository.com/artifact/org.opencord/igmpproxy-api) | |
+| [APP](https://mvnrepository.com/artifact/org.opencord/igmpproxy-app) | |
+| -------- | ----- |
+| [package-2.9.0](https://mvnrepository.com/artifact/org.opencord/igmpproxy/2.9.0) | |
+| [API-2.9.0](https://mvnrepository.com/artifact/org.opencord/igmpproxy-api/2.9.0) | |
+| [APP-2.9.0](https://mvnrepository.com/artifact/org.opencord/igmpproxy-app/2.9.0) | |
+

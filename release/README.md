@@ -1,0 +1,8 @@
+
+## Released: v{x.y.z}
+
+| Artifact | Notes |
+| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
+| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
+| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
+

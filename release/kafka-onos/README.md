@@ -10,3 +10,24 @@ ONOS Component: mac-learning
 | nexus-rel  | | | Merge patch: nexus staging, release artifact |
 | nexus-snap | | | Merge patch: publish snapshot artifact to nexus |
 | maven | [kafka-onos](https://mvnrepository.com/artifact/org.opencord/kafka-onos) | | | Release staged on nexus |
+
+## Released: v{x.y.z}
+
+| Artifact | Notes |
+| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
+| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
+| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
+
+
+## Released: {pkg}[{ver}]
+
+| Artifact | Notes |
+| -------- | ----- |
+| [package](https://mvnrepository.com/artifact/org.opencord/{pkg}) | |
+| [API](https://mvnrepository.com/artifact/org.opencord/{pkg}-api) | |
+| [APP](https://mvnrepository.com/artifact/org.opencord/{pkg}-app) | |
+| -------- | ----- |
+| [package-{ver}](https://mvnrepository.com/artifact/org.opencord/{pkg}/{ver}) | |
+| [API-{ver}](https://mvnrepository.com/artifact/org.opencord/{pkg}-api/{ver}) | |
+| [APP-{ver}](https://mvnrepository.com/artifact/org.opencord/{pkg}-app/{ver}) | |
+
