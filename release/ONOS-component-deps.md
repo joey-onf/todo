@@ -13,7 +13,9 @@ ONOS Component Versions
 | [olttopology](olttopology/README.md  |                | |
 | [pppoeagent](pppoeagent/README.md)   | :hammer:       | |
 | [sadis](sadis/README.md)             | :green_circle: | |
-
+ 
+## ONOS package dependencies: External
+   
 | Dependency | Package | Version |
 | ---------- | ------- | --------|
 | com.fasterxml.jackson.core | [jackson-databind](https://gerrit.opncord.org/plugins/gitiles/sadis/+/refs/heads/master/app/pom.xml#90) | 2.10.2 |     
@@ -22,6 +24,7 @@ ONOS Component Versions
 ## See Also
 
 | URL | Description |
+| --- | ----------- |
 | [publish patches](https://gerrit.opencord.org/q/owner:do-not-reply%2540opennetworking.org) | ONOS Patches for publishing release/dev versions |
 
 
