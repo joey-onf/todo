@@ -3,12 +3,13 @@
 REPOSITORY ^ [voltha-protos](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12)
 VERSION    ^ [5.4.11](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12/VERSION)
 REL        ^ [5.5.0](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/master/VERSION)
-A^X
-B^X
-C^N/A
-D^X
-E^[34934](https://gerrit.opencord.org/c/voltha-protos/+/34934)
-F^[34936](https://gerrit.opencord.org/c/voltha-protos/+/34936)
-G^[5.4.11](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12/VERSION)
-H^[34956](https://gerrit.opencord.org/c/voltha-protos/+/34956)
+A^ :green_circle: [x](voltha-protos/A.md)
+B^ :green_circle: [x](voltha-protos/B.md)
+C^ N/A            [x](voltha-protos/C.md)
+D^ :green_circle: [x](voltha-protos/D.md)
+E^ :hammer:       [x](voltha-protos/E.md)
+F^ :hammer:       [x](voltha-protos/F.md)
+G^ :hammer:       [x](voltha-protos/G.md)
+H^ :hammer:       [x](voltha-protos/H.md)
+I^
 Z^
