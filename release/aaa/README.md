@@ -16,9 +16,9 @@ ONOS Component: aaa
 ARTIFACTS: Publishing
 =====================
 
-| Status   | Artifact         | Notes |
-| ------   | ---------------- | ----- |
-| :hammer: | [maven-artifacts](maven-artifacts.md) | |
+| Status         | Artifact         | Notes |
+| ------         | ---------------- | ----- |
+| :green_circle: | [maven-artifacts](maven-artifacts.md) | |
 
 Artifacts: Maven
 ================
