@@ -7,7 +7,7 @@ ONOS Component: mcast
 | Triage     | [35019](https://gerrit.opencord.org/c/bng/+/35019) | :hammer: | |
 | current    | 2.5.1-SNAPSHOT | | |    
 | released   | | | |
-| api-job    | | | |
+| api-job    | [J:311](https://jenkins.opencord.org/job/onos-app-release/311/console) | :hammer: | |
 | nexus-rel  | | | Merge patch: nexus staging, release artifact |
 | nexus-snap | | | Merge patch: publish snapshot artifact to nexus |
 | maven | [bng](https://mvnrepository.com/artifact/org.opencord/bng) | | |

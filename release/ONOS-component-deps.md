@@ -6,10 +6,10 @@ ONOS Component Versions
 | [aaa](aaa/README.md)                 | :green_circle: | |
 | [bng](bng/README.md)                 | :hammer:       | |
 | [dhcpl2relay](dhcpl2relay/README.md) | :hammer:       | |
-| [igmpproxy](igmpproxy/README.md)     |                | |
+| [igmpproxy](igmpproxy/README.md)     | :green_circle: | |
 | [kafka](kafka-onos/README.md)        |                | |
 | [mcast](mcast/README.md)             | :green_circle: | |
-| [olt](olt/README.md)                 | :hammer:       | |
+| [olt](olt/README.md)                 | :green_circle: | |
 | [olttopology](olttopology/README.md) |                | |
 | [pppoeagent](pppoeagent/README.md)   | :hammer:       | |
 | [sadis](sadis/README.md)             | :green_circle: | |
