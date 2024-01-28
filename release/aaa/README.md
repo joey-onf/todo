@@ -18,7 +18,7 @@ Artifacts
 
 | Status   | Artifact         | Notes |
 | ------   | ---------------- | ----- |
-| :hammer: | [maven-artifacts](maven-artifacts.md
+| :hammer: | [maven-artifacts](maven-artifacts.md) | |
 
 Artifacts: Maven
 ================
