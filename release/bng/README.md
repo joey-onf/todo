@@ -11,6 +11,17 @@ ONOS Component: mcast
 | nexus-snap | | | Merge patch: publish snapshot artifact to nexus |
 | maven | [bng](https://mvnrepository.com/artifact/org.opencord/bng) | | |
 
+
+ARTIFACTS: Publishing
+=====================
+
+| Status   | Artifact         | Notes |
+| ------   | ---------------- | ----- |
+| :hammer: | [maven-artifacts](maven-artifacts.md) | |
+
+ARTIFACTS: Published
+====================
+    
 ## Released: bng[2.5.1]
 
 | Artifact | Notes |
@@ -22,4 +33,3 @@ ONOS Component: mcast
 | [package-2.5.1](https://mvnrepository.com/artifact/org.opencord/bng/2.5.1) | |
 | [API-2.5.1](https://mvnrepository.com/artifact/org.opencord/bng-api/2.5.1) | |
 | [APP-2.5.1](https://mvnrepository.com/artifact/org.opencord/bng-app/2.5.1) | |
-

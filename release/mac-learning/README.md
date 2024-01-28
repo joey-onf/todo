@@ -18,6 +18,17 @@ ONOS Component: mac-learning
 
 ## Released: maclearner[1.2.3]
 
+
+ARTIFACTS: Publishing
+=====================
+
+| Status   | Artifact         | Notes |
+| ------   | ---------------- | ----- |
+| :hammer: | [maven-artifacts](maven-artifacts.md) | |
+
+ARTIFACTS: Published
+====================
+    
 | Artifact | Notes |
 | -------- | ----- |
 | [package](https://mvnrepository.com/artifact/org.opencord/maclearner) | |
@@ -27,4 +38,3 @@ ONOS Component: mac-learning
 | [package-1.2.3](https://mvnrepository.com/artifact/org.opencord/maclearner/1.2.3) | |
 | [API-1.2.3](https://mvnrepository.com/artifact/org.opencord/maclearner-api/1.2.3) | |
 | [APP-1.2.3](https://mvnrepository.com/artifact/org.opencord/maclearner-app/1.2.3) | |
-

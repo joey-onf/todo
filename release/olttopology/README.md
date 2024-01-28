@@ -13,6 +13,17 @@ ONOS Component: olttopology
 
 ## Released: olttopology[1.3.1]
 
+
+ARTIFACTS: Publishing
+=====================
+
+| Status   | Artifact         | Notes |
+| ------   | ---------------- | ----- |
+| :hammer: | [maven-artifacts](maven-artifacts.md) | |
+
+ARTIFACTS: Published
+====================
+    
 | Artifact | Notes |
 | -------- | ----- |
 | [package](https://mvnrepository.com/artifact/org.opencord/olttopology) | |
@@ -22,4 +33,3 @@ ONOS Component: olttopology
 | [package-1.3.1](https://mvnrepository.com/artifact/org.opencord/olttopology/1.3.1) | |
 | [API-1.3.1](https://mvnrepository.com/artifact/org.opencord/olttopology-api/1.3.1) | |
 | [APP-1.3.1](https://mvnrepository.com/artifact/org.opencord/olttopology-app/1.3.1) | |
-

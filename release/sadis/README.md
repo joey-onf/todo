@@ -13,6 +13,17 @@ ONOS Component: sadis
 
 ## Released: sadis[5.12.2]
 
+
+ARTIFACTS: Publishing
+=====================
+
+| Status   | Artifact         | Notes |
+| ------   | ---------------- | ----- |
+| :hammer: | [maven-artifacts](maven-artifacts.md) | |
+
+ARTIFACTS: Published
+====================
+    
 | Artifact | Notes |
 | -------- | ----- |
 | [package](https://mvnrepository.com/artifact/org.opencord/sadis) | |
@@ -22,4 +33,3 @@ ONOS Component: sadis
 | [package-5.12.2](https://mvnrepository.com/artifact/org.opencord/sadis/5.12.2) | |
 | [API-5.12.2](https://mvnrepository.com/artifact/org.opencord/sadis-api/5.12.2) | |
 | [APP-5.12.2](https://mvnrepository.com/artifact/org.opencord/sadis-app/5.12.2) | |
-

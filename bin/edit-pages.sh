@@ -15,6 +15,10 @@ readonly onos_packages
 
 for onos_package in "${onos_packages[@]}";
 do
+    declare -a edit=()
+    readme_md="release/${onos_package}/README.md"
+    edit+=("$readme_md")
+
     case "$onos_package" in
         kafka) continue ;;
         maclearner) continue ;;
@@ -22,16 +26,20 @@ do
 
     for prefix in 'maven-artifacts';
     do
-        echo "** repo=[$onos_pacakge], template=[$prefix]"
+        echo "** repo=[$onos_package], template=[$prefix]"
         path="release/${onos_package}"
         md="${path}/${prefix}.md"
-        # if [[ ! -f "$md" ]]; then
-        if true; then
-            sed -e 's/{pkg}/$onos_package/g' \
+        /bin/rm -f "$md"
+        if [[ ! -f "$md" ]]; then
+	        declare -p onos_package
+            sed -e "s/{pkg}/${onos_package}/g" \
                 "release/template/${prefix}.tmpl" \
                 > "$md"
 
-            cat <<EOM
+	    edit+=("$md")
+
+        if ! grep -q 'ARTIFACTS: Publishing' "$readme_md"; then
+            cat <<EOM >> "$readme_md"
 
 ARTIFACTS: Publishing
 =====================
@@ -44,9 +52,10 @@ ARTIFACTS: Published
 ====================
 
 EOM
-        fi
-        
+            fi # if grep Publishing
+        fi # if ! template
 
+        /usr/bin/emacs "${edit[@]}"
 
     done
     

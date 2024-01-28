@@ -13,6 +13,17 @@ ONOS Component: olt
 
 ## Released: olt[5.2.5]
 
+
+ARTIFACTS: Publishing
+=====================
+
+| Status   | Artifact         | Notes |
+| ------   | ---------------- | ----- |
+| :hammer: | [maven-artifacts](maven-artifacts.md) | |
+
+ARTIFACTS: Published
+====================
+    
 | Artifact | Notes |
 | -------- | ----- |
 | [package](https://mvnrepository.com/artifact/org.opencord/olt) | |
@@ -22,4 +33,3 @@ ONOS Component: olt
 | [package-5.2.5](https://mvnrepository.com/artifact/org.opencord/olt/5.2.5) | |
 | [API-5.2.5](https://mvnrepository.com/artifact/org.opencord/olt-api/5.2.5) | |
 | [APP-5.2.5](https://mvnrepository.com/artifact/org.opencord/olt-app/5.2.5) | |
-

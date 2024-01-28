@@ -18,6 +18,16 @@ ONOS Component: kafka
 
 ## Released: kafka[2.13.0]
 
+ARTIFACTS: Publishing
+=====================
+
+| Status   | Artifact         | Notes |
+| ------   | ---------------- | ----- |
+| :hammer: | [maven-artifacts](maven-artifacts.md) | |
+
+ARTIFACTS: Published
+====================
+
 | Artifact | Notes |
 | -------- | ----- |
 | [package](https://mvnrepository.com/artifact/org.opencord/kafka) | |
@@ -27,4 +37,3 @@ ONOS Component: kafka
 | [package-2.13.0](https://mvnrepository.com/artifact/org.opencord/kafka/2.13.0) | |
 | [API-2.13.0](https://mvnrepository.com/artifact/org.opencord/kafka-api/2.13.0) | |
 | [APP-2.13.0](https://mvnrepository.com/artifact/org.opencord/kafka-app/2.13.0) | |
-

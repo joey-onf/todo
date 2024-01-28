@@ -13,6 +13,17 @@ ONOS Component: mcast
 
 ## Released: mcast[2.9.1]
 
+
+ARTIFACTS: Publishing
+=====================
+
+| Status   | Artifact         | Notes |
+| ------   | ---------------- | ----- |
+| :hammer: | [maven-artifacts](maven-artifacts.md) | |
+
+ARTIFACTS: Published
+====================
+    
 | Artifact | Notes |
 | -------- | ----- |
 | [package](https://mvnrepository.com/artifact/org.opencord/mcast) | |
@@ -22,3 +33,4 @@ ONOS Component: mcast
 | [package-2.9.1](https://mvnrepository.com/artifact/org.opencord/mcast/2.9.1) | |
 | [API-2.9.1](https://mvnrepository.com/artifact/org.opencord/mcast-api/2.9.1) | |
 | [APP-2.9.1](https://mvnrepository.com/artifact/org.opencord/mcast-app/2.9.1) | |
+

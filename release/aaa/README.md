@@ -13,8 +13,8 @@ ONOS Component: aaa
 | publish-mvn | [x](https://jenkins.opencord.org/job/maven-publish_aaa/98/consoleFull) | :green_circle: | |
 | maven-central | | :hammer: | Waiting for artifact to appear on maven central. |
 
-Artifacts
-=========
+ARTIFACTS: Publishing
+=====================
 
 | Status   | Artifact         | Notes |
 | ------   | ---------------- | ----- |
@@ -32,3 +32,4 @@ Artifacts: Maven
 | [package-2.11.0](https://mvnrepository.com/artifact/org.opencord/aaa/2.11.0) | |
 | [API-2.11.0](https://mvnrepository.com/artifact/org.opencord/aaa-api/2.11.0) | |
 | [APP-2.11.0](https://mvnrepository.com/artifact/org.opencord/aaa-app/2.11.0) | |
+

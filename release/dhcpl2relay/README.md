@@ -12,7 +12,17 @@ ONOS Component: dhcpl2relay
 | maven      | [dhcpl2relay](https://mvnrepository.com/artifact/org.opencord/dhcpl2relay) | | | Release staged on nexus, publishing to mvc |
 
 ## Released: dhcpl2relay[2.11.0]
+    
+ARTIFACTS: Publishing
+=====================
 
+| Status   | Artifact         | Notes |
+| ------   | ---------------- | ----- |
+| :hammer: | [maven-artifacts](maven-artifacts.md) | |
+
+ARTIFACTS: Published
+====================
+    
 | Artifact | Notes |
 | -------- | ----- |
 | [package](https://mvnrepository.com/artifact/org.opencord/dhcpl2relay) | |
