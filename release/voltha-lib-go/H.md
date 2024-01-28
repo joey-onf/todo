@@ -3,5 +3,5 @@
 
 | Status | Jira | Gerrit | Jenkins | Description |
 | ------ | ---- | ------ | ------- | ----------- |
-|        |      | [7.5.3](http://gerrit.opencord.org/plugins/gitiles/voltha-lib-go/+/refs/tags/v7.5.3/VERSION) | | |
+| :green_square: |      | [7.5.3](http://gerrit.opencord.org/plugins/gitiles/voltha-lib-go/+/refs/tags/v7.5.3/VERSION )| | |
 

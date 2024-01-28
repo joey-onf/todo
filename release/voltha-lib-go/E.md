@@ -3,4 +3,4 @@
 
 | Status | Jira | Gerrit | Jenkins | Description |
 | ------ | ---- | ------ | ------- | ----------- |
-| | | [34946](https://gerrit.opencord.org/c/voltha-lib-go/+/34946)[34963](https://gerrit.opencord.org/c/voltha-lib-go/+/34963) | |
+| :green_square: | | [34946](https://gerrit.opencord.org/c/voltha-lib-go/+/34946), [34963](https://gerrit.opencord.org/c/voltha-lib-go/+/34963) | |
