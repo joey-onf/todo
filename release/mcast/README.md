@@ -8,7 +8,7 @@ ONOS Component: mcast
 | released   | [2.9.1](https://mvnrepository.com/artifact/org.opencord/mcast) | :green_circle: | |
 | api-job    | | :green_circle: | |
 | nexus-rel  | [G:34995](https://gerrit.opencord.org/c/mcast/+/34995) | :green_circle: | Merge patch: nexus staging, release artifact |
-| nexus-snap | | | Merge patch: publish snapshot artifact to nexus |
+| nexus-snap | | :green_circle: | Merge patch: publish snapshot artifact to nexus |
 | maven | [mcast](https://mvnrepository.com/artifact/org.opencord/mcast) | :green_circle: | | Release staged on nexus, publishing to mvc |
 
 ## Released: mcast[2.9.1]
