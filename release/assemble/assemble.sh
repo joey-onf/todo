@@ -84,7 +84,7 @@ function draw_table_header()
     /bin/rm -f "$out"
     (
         column --separator '|' --output-separator ' | ' --table "$tmp"
-        echo ' | ---------- | ------- | --- | - | - | - | - | - | - | - | - | - |'
+        echo ' | ---------- | ------- | --- | - | - | - | - | - | - | - | - | - | - |'
     ) > "$out"
     /bin/rm "$tmp"
     return
