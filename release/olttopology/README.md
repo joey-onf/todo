@@ -6,7 +6,7 @@ ONOS Component: olttopology
 | Component  | [olttopology](https://gerrit.opencord.org/plugins/gitiles/olttopology) | | |
 | current    | 5.2.5-SNAPSHOT | | |
 | released   | [5.2.5](https://mvnrepository.com/artifact/org.opencord/olttopology) | | |
-| api-job    | | | |
+| api-job    | [J:312](https://jenkins.opencord.org/job/onos-app-release/312/console) | :hammer: | |
 | nexus-rel  | | | Merge patch: nexus staging, release artifact.  Staging:closed |
 | nexus-snap | 5.2.6-SNAP | | Merge patch: publish snapshot artifact to nexus |
 | maven      | [olttopology](https://mvnrepository.com/artifact/org.opencord/olttopology) | | | Release staged on nexus, publishing to mvc |
