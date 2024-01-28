@@ -9,7 +9,7 @@ ONOS Component: igmpproxy
 | api-job    | [J:309](https://jenkins.opencord.org/job/onos-app-release/307/console) | :green_circle: | |
 | nexus-rel  | [35003](https://gerrit.opencord.org/c/igmpproxy/+/35003) | :green_circle: | Merge patch: nexus staging, release artifact |
 | nexus-snap | | :green_circle: | Merge patch: publish snapshot artifact to nexus |
-| maven | [igmpproxy](https://mvnrepository.com/artifact/org.opencord/igmpproxy) | | :green_circle: | Release staged on nexus, publishing to mvc |
+| maven | [igmpproxy](https://mvnrepository.com/artifact/org.opencord/igmpproxy) | :green_circle: | Release staged on nexus, publishing to mvc |
 
 ## Released: igmpproxy[2.9.0]
 
