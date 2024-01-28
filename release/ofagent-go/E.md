@@ -3,3 +3,4 @@
 
 | Status | Jira | Gerrit | Jenkins | Description |
 | ------ | ---- | ------ | ------- | ----------- |
+| :hammer: | | [35017](https://gerrit.opencord.org/c/ofagent-go/+/35017) | | |

@@ -9,5 +9,6 @@ E          ^ Update .gitreview and VERSION release branch (5.4.11)
 F          ^ Update .gitreview and VERSION on master (5.5.0)
 G          ^ branch=master version
 H          ^ branch=voltha-2.12 version
+I          ^ Jenkins publish {pkg}
 Z          ^ Jira tickets
 # EOF
