@@ -1,5 +1,13 @@
 #!/bin/bash
 
+while [[ $# -gt 0 ]]; do
+    arg="$1"; shift
+    case "$arg" in
+        --edit) declare -i argv_edit=1 ;;
+        --force) declare -i argv_force=1 ;;
+    esac
+done
+
 declare -a onos_packages=()
 onos_packages+=('aaa')
 onos_packages+=('bng')
@@ -29,7 +37,7 @@ do
         echo "** repo=[$onos_package], template=[$prefix]"
         path="release/${onos_package}"
         md="${path}/${prefix}.md"
-        /bin/rm -f "$md"
+        [[ -v argv_force ]] && { /bin/rm -f "$md"; }
         if [[ ! -f "$md" ]]; then
 	        declare -p onos_package
             sed -e "s/{pkg}/${onos_package}/g" \
@@ -55,12 +63,10 @@ EOM
             fi # if grep Publishing
         fi # if ! template
 
-        /usr/bin/emacs "${edit[@]}"
+        [[ -v argv_edit ]] && { /usr/bin/emacs "${edit[@]}"; }
 
     done
-    
-    /bin/ls "release/${onos_package}/README.md"
-#    /usr/bin/emacs "release/${onos_package}/README.md"
+
 done
 
 
