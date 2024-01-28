@@ -4,12 +4,12 @@ REPOSITORY ^ [voltha-openonu-adapter-go](https://gerrit.opencord.org/plugins/git
 VERSION    ^ 2.11.11
 REL        ^
 A^ :hammer: [X](voltha-openonu-adapter-go/A.md)
-B^
-C^
-D^
-E^
-F^
-G^
-H^
-Z^
-    
+B^ :hammer: [X](voltha-openonu-adapter-go/B.md)
+C^ :hammer: [X](voltha-openonu-adapter-go/C.md)
+D^ :hammer: [X](voltha-openonu-adapter-go/D.md)
+E^ :hammer: [X](voltha-openonu-adapter-go/E.md)
+F^ :hammer: [X](voltha-openonu-adapter-go/F.md)
+G^ :hammer: [X](voltha-openonu-adapter-go/G.md)
+H^ :hammer: [X](voltha-openonu-adapter-go/H.md)
+I^ :hammer: [X](voltha-openonu-adapter-go/A.md)
+Z^ 
