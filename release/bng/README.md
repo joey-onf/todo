@@ -8,7 +8,7 @@ ONOS Component: mcast
 | current    | 2.5.1-SNAPSHOT | | |    
 | released   | 2.5.1 | | |
 | api-job    | [J:311](https://jenkins.opencord.org/job/onos-app-release/311/console) | :green_circle: | |
-| nexus-rel  | [2.5.1](https://gerrit.opencord.org/c/bng/+/35021) | :green: | Merge patch: nexus staging, release artifact <br> Launched 2024-01-28 16:09 |
+| nexus-rel  | [2.5.1](https://gerrit.opencord.org/c/bng/+/35021) | :green_circle: | Merge patch: nexus staging, release artifact <br> Launched 2024-01-28 16:09 |
 | nexus-snap | | | Merge patch: publish snapshot artifact to nexus |
 | maven | [bng](https://mvnrepository.com/artifact/org.opencord/bng) | | |
 
