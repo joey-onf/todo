@@ -2,7 +2,7 @@ ONOS Component: aaa
 ===================
 
 | What | URL | Status | Notes |
-| ---- | --- | ------ | ----- |
+| ---- | --------------------- | ------ | ----- |
 | Component  | [aaa](https://gerrit.opencord.org/plugins/gitiles/aaa) | | |
 | current    | 2.11.0-SNAPSHOT | | |
 | released   | [2.11.0](https://mvnrepository.com/artifact/org.opencord/aaa) | | |
@@ -13,9 +13,15 @@ ONOS Component: aaa
 | publish-mvn | [x](https://jenkins.opencord.org/job/maven-publish_aaa/98/consoleFull) | :green_circle: | |
 | maven-central | | :hammer: | Waiting for artifact to appear on maven central. |
 
-| Status   | URL              | Notes |
+Artifacts
+=========
+
+| Status   | Artifact         | Notes |
 | ------   | ---------------- | ----- |
 | :hammer: | [maven-artifacts](maven-artifacts)
+
+Artifacts: Maven
+================
 
 | Artifact | Notes |
 | -------- | ----- |
