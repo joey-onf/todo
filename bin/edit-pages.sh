@@ -25,11 +25,29 @@ do
         echo "** repo=[$onos_pacakge], template=[$prefix]"
         path="release/${onos_package}"
         md="${path}/${prefix}.md"
-        [[ -f "$md" ]] && { continue; }
+        # if [[ ! -f "$md" ]]; then
+        if true; then
+            sed -e 's/{pkg}/$onos_package/g' \
+                "release/template/${prefix}.tmpl" \
+                > "$md"
+
+            cat <<EOM
+
+ARTIFACTS: Publishing
+=====================
+
+| Status   | Artifact         | Notes |
+| ------   | ---------------- | ----- |
+| :hammer: | [maven-artifacts](maven-artifacts.md) | |
+
+ARTIFACTS: Published
+====================
+
+EOM
+        fi
         
-        sed -e 's/{pkg}/$onos_package/g' \
-            "release/template/${prefix}.tmpl" \
-            > "$md"
+
+
     done
     
     /bin/ls "release/${onos_package}/README.md"
