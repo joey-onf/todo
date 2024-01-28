@@ -3,8 +3,8 @@ ONOS Component Versions
 
 | Component | Status | Notes |
 | --------- | ------ | ----- |
-| [aaa](aaa/README.md)                 | :hammer:       | |
-| [bng](bng/README.md)                 | :new:          | |
+| [aaa](aaa/README.md)                 | :green_circle: | |
+| [bng](bng/README.md)                 | :hammer:       | |
 | [dhcpl2relay](dhcpl2relay/README.md) | :hammer:       | |
 | [igmpproxy](igmpproxy/README.md)     |                | |
 | [kafka](kafka-onos/README.md)        |                | |
