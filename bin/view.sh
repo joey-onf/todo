@@ -1,6 +1,7 @@
 #!/bin/bash
 # -----------------------------------------------------------------------
 # Intent: View rendered todo/README.md pages on github
+#   - When --pkg and --ver are specified load component pom.xml for viewing
 # -----------------------------------------------------------------------
 
 declare -a urls=()
