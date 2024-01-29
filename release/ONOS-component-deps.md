@@ -11,7 +11,7 @@ ONOS Component Versions
 | [mcast](mcast/README.md)             | :green_circle: | |
 | [olt](olt/README.md)                 | :green_circle: | |
 | [olttopology](olttopology/README.md) | :green_circle: | |
-| [pppoeagent](pppoeagent/README.md)   | :hammer:       | |
+| [pppoeagent](pppoeagent/README.md)   | :green_circle: | |
 | [sadis](sadis/README.md)             | :green_circle: | |
  
 ## ONOS package dependencies: External
