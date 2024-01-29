@@ -11,8 +11,7 @@ voltha-system-tests
 segmentrouting
 
 ofagent-go
-openolt-agent
-    
+
 bbsim
 bbsim-sadis-server
 voltctl
