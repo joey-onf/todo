@@ -3,33 +3,42 @@ ONOS Component: olt
 
 | What | URL                    | Status | Notes |
 | ---- | ---------------------- | ------ | ----- |
-| Component  | [olt](https://gerrit.opencord.org/plugins/gitiles/olt) | :green_circle: | |
-| current    | 5.2.5-SNAPSHOT | :green_circle: | |
-| released   | [5.2.5](https://mvnrepository.com/artifact/org.opencord/olt) | :green_circle: | |
-| api-job    | [34985](https://gerrit.opencord.org/c/olt/+/34985)| :green_circle: | |
-| nexus-rel  | 5.2.5 [G:34997](https://gerrit.opencord.org/c/olt/+/34997) | :green_circle: | Merge patch: nexus staging, release artifact.<br>Staging:closed<br>Publish Started: 2024-01-26, 02:29:02 <br>Time: Sat Jan 27 08:42:47 AM EST 2024|
-| nexus-snap | 5.2.6-SNAP | :green_circle: | Merge patch: publish snapshot artifact to nexus |
-| maven      | [olt](https://mvnrepository.com/artifact/org.opencord/olt) | :green_circle: | | Release staged on nexus, publishing to mvc |
-
-## Released: olt[5.2.5]
-
+| Component  | [olt](https://gerrit.opencord.org/plugins/gitiles/olt) | :hammer: | |
+| current    | 5.2.7-SNAPSHOT | :green_circle: | |
+| released   | [5.2.6](https://mvnrepository.com/artifact/org.opencord/olt) | :green_circle: | |
+| api-job    | [G:35037](https://gerrit.opencord.org/c/olt/+/35037) <br> [J:314](https://jenkins.opencord.org/job/onos-app-release/314/console) | :green_circle: | |
+| nexus-snap | 5.2.7-SNAP | :hammer: | Merge patch: publish snapshot artifact to nexus |
+| maven      | [olt](https://mvnrepository.com/artifact/org.opencord/olt) | :hammer: | | Release staged on nexus, publishing to mvc |
 
 ARTIFACTS: Publishing
 =====================
 
 | Status         | Artifact         | Notes |
 | ------         | ---------------- | ----- |
-| :green_circle: | [maven-artifacts](maven-artifacts.md) | |
+| :hammer:       | [maven-artifacts](maven-artifacts.md) | |
+
+ARTIFACTS: Jenkins
+==================
+
+| Status | Task | URL | Notes |
+| ------ | ---- | --- | ----- |
+| :hammer: | jenkins-init  | [x]](https://jenkins.opencord.org/job/onos-app-release) | |
+| :hammer: | jenkins-stage | [x](https://jenkins.opencord.org/job/maven-publish_olt) | |
 
 ARTIFACTS: Published
 ====================
-    
-| Artifact | Notes |
-| -------- | ----- |
-| [package](https://mvnrepository.com/artifact/org.opencord/olt) | |
-| [API](https://mvnrepository.com/artifact/org.opencord/olt-api) | |
-| [APP](https://mvnrepository.com/artifact/org.opencord/olt-app) | |
-| -------- | ----- |
-| [package-5.2.5](https://mvnrepository.com/artifact/org.opencord/olt/5.2.5) | |
-| [API-5.2.5](https://mvnrepository.com/artifact/org.opencord/olt-api/5.2.5) | |
-| [APP-5.2.5](https://mvnrepository.com/artifact/org.opencord/olt-app/5.2.5) | |
+
+| Status | URL | Notes |    
+| ------ | --- | ----- |
+| :hammer: | [mvn-pkg](https://mvnrepository.com/artifact/org.opencord/olt)     | |
+| :hammer: | [mvn-api](https://mvnrepository.com/artifact/org.opencord/olt-api) | |
+| :hammer: | [mvn-app](https://mvnrepository.com/artifact/org.opencord/olt-app) | |
+
+ARTIFACTS: Versioned
+====================
+        
+| Status   | URL | Notes |
+| -------- | --- | ----- |
+| :hammer: | [pkg-5.2.6](https://mvnrepository.com/artifact/org.opencord/olt/5.2.6)     | |
+| :hammer: | [api-5.2.6](https://mvnrepository.com/artifact/org.opencord/olt-api/5.2.6) | |
+| :hammer: | [app-5.2.6](https://mvnrepository.com/artifact/org.opencord/olt-app/5.2.6) | |
