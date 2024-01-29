@@ -22,8 +22,9 @@ ARTIFACTS: Jenkins
 
 | Status | Task | URL | Notes |
 | ------ | ---- | --- | ----- |
-| :hammer: | jenkins-init  | [x]](https://jenkins.opencord.org/job/onos-app-release) | |
-| :hammer: | jenkins-stage | [x](https://jenkins.opencord.org/job/maven-publish_olt) | |
+| :green_circle: | jenkins-init  | [x](https://jenkins.opencord.org/job/onos-app-release)  | |
+| :hammer: | jenkins-stage | [x](https://jenkins.opencord.org/job/maven-publish_olt)       | |
+| :hammer: | [nexus-5.2.6](https://jenkins.opencord.org/job/maven-publish_olt/183/console) | |
 
 ARTIFACTS: Published
 ====================
