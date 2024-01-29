@@ -6,6 +6,41 @@
 declare -a urls=()
 urls+=('https://github.com/joey-onf/todo/blob/origin/master/release/release-meta.md')
 
+urls+=('https://github.com/joey-onf/todo/blob/origin/master/release/ONOS-component-deps.md')
+
+while [[ $# -gt 0 ]]; do
+    arg="$1"; shift
+    case "$arg" in
+        --pkg)
+            arg="$1"; shift
+            declare pkg="$arg"
+            ;;
+        --ver)
+            arg="$1"; shift
+            declare ver="$arg"
+            ;;
+        *) echo "[SKIP] unknown argument [$arg]" ;;
+    esac
+done
+# pkg='dhcpl2relay'
+# ver='2.11.'
+
+[[ -v pkg ]]  && { stem="https://gerrit.opencord.org/plugins/gitiles/${pkg}"; }
+
+if [[ -v stem ]]; then
+    urls+=("$stem")
+    urls+=("${stem}/+/refs/heads/master/pom.xml")
+    [[ -v ver ]] && { urls+=("${stem}/+/refs/tags/${ver}"); }
+fi
+
+# urls+=("https://gerrit.opencord.org/plugins/gitiles/${pkg}/+/refs/heads/master/pom.xml")
+# urls+=("https://gerrit.opencord.org/plugins/gitiles/${pkg}")#
+#
+#if [[ -v version ]]; then
+#    urls+=("https://gerrit.opencord.org/plugins/gitiles/${pkg}/+/refs/tags/${ver}")
+#fi
+
+
 "${BROWSER:-opera}" "${urls[@]}" >/dev/null 2>/dev/null &
 
 # [EOF]
