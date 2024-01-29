@@ -7,7 +7,7 @@ ONOS Component: olt
 | current    | 5.2.7-SNAPSHOT | :green_circle: | |
 | released   | [5.2.6](https://mvnrepository.com/artifact/org.opencord/olt) | :green_circle: | |
 | api-job    | [G:35037](https://gerrit.opencord.org/c/olt/+/35037) <br> [J:314](https://jenkins.opencord.org/job/onos-app-release/314/console) | :green_circle: | |
-| nexus-snap | 5.2.7-SNAP | :hammer: | Merge patch: publish snapshot artifact to nexus |
+| nexus-snap | 5.2.7-SNAP [G:35038](https://gerrit.opencord.org/c/olt/+/35038) | :hammer: | Merge patch: publish snapshot artifact to nexus |
 | maven      | [olt](https://mvnrepository.com/artifact/org.opencord/olt) | :hammer: | | Release staged on nexus, publishing to mvc |
 
 ARTIFACTS: Publishing

@@ -6,6 +6,7 @@ ONOS Component Versions
 | [aaa](aaa/README.md)                 | :green_circle: | |
 | [bng](bng/README.md)                 | :hammer:       | |
 | [dhcpl2relay](dhcpl2relay/README.md) | :hammer:       | |
+| [igmp](igmp/README.md)               | :question:     | |
 | [igmpproxy](igmpproxy/README.md)     | :green_circle: | |
 | [kafka](kafka-onos/README.md)        |                | |
 | [mcast](mcast/README.md)             | :green_circle: | |
