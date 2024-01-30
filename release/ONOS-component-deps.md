@@ -4,18 +4,18 @@ ONOS Component Versions
 | Component | Status | Notes |
 | --------- | ------ | ----- |
 | [aaa](aaa/README.md)                 | :green_circle: | |
-| [bng](bng/README.md)                 | :hammer:       | |
+| [bng](bng/README.md)                 | :green_circle: | |
 | [dhcpl2relay](dhcpl2relay/README.md) | :green_circle: | |
 | [igmpproxy](igmpproxy/README.md)     | :green_circle: | |
-| [kafka](kafka-onos/README.md)        |                | |
+| [kafka](kafka-onos/README.md)        | :question:     | |
 | [mcast](mcast/README.md)             | :green_circle: | |
 | [olt](olt/README.md)                 | :green_circle: | |
 | [olttopology](olttopology/README.md) | :green_circle: | |
-| [pppoeagent](pppoeagent/README.md)   | :green_circle: | |
+| [pppoeagent](pppoeagent/README.md)   | :green_cirlce: | |
 | [sadis](sadis/README.md)             | :green_circle: | |
  
 ## ONOS package dependencies: External
-   
+
 | Dependency | Package | Version |
 | ---------- | ------- | --------|
 | com.fasterxml.jackson.core | [jackson-databind](https://gerrit.opncord.org/plugins/gitiles/sadis/+/refs/heads/master/app/pom.xml#90) | 2.10.2 |     
