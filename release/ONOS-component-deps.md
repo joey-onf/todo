@@ -7,11 +7,11 @@ ONOS Component Versions
 | [bng](bng/README.md)                 | :green_circle: | |
 | [dhcpl2relay](dhcpl2relay/README.md) | :green_circle: | |
 | [igmpproxy](igmpproxy/README.md)     | :green_circle: | |
-| [kafka](kafka-onos/README.md)        | :question:     | |
+| [kafka](kafka-onos/README.md)        | :question:     | Main package exists, *-api & *-app are not searchable/missing |
 | [mcast](mcast/README.md)             | :green_circle: | |
 | [olt](olt/README.md)                 | :green_circle: | |
 | [olttopology](olttopology/README.md) | :green_circle: | |
-| [pppoeagent](pppoeagent/README.md)   | :green_cirlce: | |
+| [pppoeagent](pppoeagent/README.md)   | :green_circle: | |
 | [sadis](sadis/README.md)             | :green_circle: | |
  
 ## ONOS package dependencies: External
