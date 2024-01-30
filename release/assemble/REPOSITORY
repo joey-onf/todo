@@ -1,8 +1,0 @@
-REPOSITORY
-----------
-[voltha-protos](https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/heads/voltha-2.12)
-[voltha-lib-go]()
-[voltha-go]()
-[ofagent-go]()
-[voltha-openonu-adapter-go]()
-[voltha-openolt-adatper]()

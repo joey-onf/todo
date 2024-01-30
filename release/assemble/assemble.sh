@@ -147,7 +147,6 @@ function get_legend_fields()
     return
 }
 
-
 ##----------------##
 ##---]  MAIN  [---##
 ##----------------##

@@ -1,0 +1,15 @@
+| Repository | Version | REL | A | B | C | D | E | F |
+| ---------- | --------| --- | - | - | - | - | - | - |
+REPOSITORY ^ [device-management-interface](https://gerrit.opencord.org/plugins/gitiles/device-management-interface/+/refs/heads/voltha-2.12)
+VERSION    ^
+REL        ^
+A^ :green_circle: [x](device-management-interface/A.md)
+B^ :green_circle: [x](device-management-interface/B.md)
+C^ N/A            [x](device-management-interface/C.md)
+D^ :green_circle: [x](device-management-interface/D.md)
+E^ :green_circle: [x](device-management-interface/E.md)
+F^ :green_circle: [x](device-management-interface/F.md)
+G^ :green_circle: [x](device-management-interface/G.md)
+H^ :green_circle: [x](device-management-interface/H.md)
+I^
+Z^
