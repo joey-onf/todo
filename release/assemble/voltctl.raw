@@ -2,14 +2,13 @@
 | ---------- | --------| --- | - | - | - | - | - | - |
 REPOSITORY ^ [voltctl](https://gerrit.opencord.org/plugins/gitiles/voltctl)
 VERSION    ^
-REL        ^
-A^
-B^
-C^
-D^
-E^
-F^
-G^
-H^
-Z^
-    
+REL        ^ [x](voltctl/A.md)
+A^ :hammer: [x](voltctl/A.md)
+B^ [x](voltctl/B.md)
+C^ [x](voltctl/C.md)
+D^ [x](voltctl/D.md)
+E^ [x](voltctl/E.md)
+F^ [x](voltctl/F.md)
+G^ :red_square: [x](voltctl/G.md)
+H^ [x](voltctl/H.md)
+Z^ [x](voltctl/Z.md)
