@@ -1,0 +1,21 @@
+# Voltha v2.12 release
+
+## [docs.voltha.org](https://docs.voltha.org/master/release_notes/voltha_2.12.html)
+
+| URL | Description |
+| --- | ----------- |
+| [x](https://docs.voltha.org/master/release_notes/voltha_2.12.html#features-improvements) | Features and improvements  |
+| [x](https://docs.voltha.org/master/release_notes/voltha_2.12.html#bug-fixes) | Bug Fixes |
+| [x](https://docs.voltha.org/master/release_notes/voltha_2.12.html#test) | Testing |
+| [x](https://docs.voltha.org/master/release_notes/voltha_2.12.html#onos-components) | ONOS Components and versions     |
+| [x](https://docs.voltha.org/master/release_notes/voltha_2.12.html#voltha-components) | VOLTHA Components and versions |
+    
+----
+
+## See Also
+
+| URL | Description |
+| --- | ----------- | 
+| [x](https://docs.voltha.org/master/howto/code/release-bugfix.html) | HOWOT: Create a patch for the release branch |
+| [x](voltha-components/README.md) | VOLTHA Components v2.12 release detail |
+    
