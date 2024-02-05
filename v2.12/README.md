@@ -4,8 +4,8 @@
 
 | Repo | dev-ver | rel-ver | Detail | Jira | Jenkisn | Notes |
 | ---- | ------- | ------- | ------ | ---- | ------- | ----- |
-| voltha-onos | 5.2.0-dev | 5.1.10 | [x](#REPO:voltha-onos) | [VOL-5271](https://jira.opencord.org/browse/VOL-5271) | [2](https://jenkins.opencord.org/job/verify_voltha-onos_sanity-test-voltha-2.12/2/console) | volthaStackDeploy failing |
-    
+| voltha-onos | 5.2.0-dev  | 5.1.10 | [x](#REPO:voltha-onos) | [VOL-5271](https://jira.opencord.org/browse/VOL-5271) | [2](https://jenkins.opencord.org/job/verify_voltha-onos_sanity-test-voltha-2.12/2/console) | volthaStackDeploy failing |
+| voltctl     | 1.11.0-dev | 1.10.2 | | [VOL-5051](https://jira.opencord.org/browse/VOL-5051) | [508](https://jenkins.opencord.org/job/verify_voltctl_sanity-test/508/console) | Sanity test faiure reported |
     
 ## [docs.voltha.org](https://docs.voltha.org/master/release_notes/voltha_2.12.html)
 
