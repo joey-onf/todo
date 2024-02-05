@@ -8,8 +8,9 @@
 
 | Status | ID | Detail | Notes |
 | ------ | -- | ------ | ----- |
-| :hammer: | [G:34397](https://gerrit.opencord.org/c/voltha-onos/+/34397) | Prep work on master branch |
-| :red_square: | G:34397 | [J:346](https://jenkins.opencord.org/job/verify_voltha-onos_sanity-test/346) | Cancelling nested steps due to timeout |
+| :hammer: | [VOL-5031](https://jira.opencord.org/browse/VOL-5031) | | Relase REPO:votlha-onos |
+| :hammer: | [G:34397](https://gerrit.opencord.org/c/voltha-onos/+/34397) | VOL-5031 | Prep work on master branch |
+| :red_square: | [J:346](https://jenkins.opencord.org/job/verify_voltha-onos_sanity-test/346) | [VOL-5269](https://jira.opencord.org/browse/VOL-5269) | VOLTHA Stack deploy fail <br> Cancelling nested steps due to timeout |
     
 ## Legend
 

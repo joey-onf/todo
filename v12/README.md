@@ -1,5 +1,7 @@
 # Voltha v2.12 release
 
+- [VOLTHA Components v2.12 release detail](voltha-components/README.md)
+    
 ## [docs.voltha.org](https://docs.voltha.org/master/release_notes/voltha_2.12.html)
 
 | URL | Description |
@@ -17,5 +19,4 @@
 | URL | Description |
 | --- | ----------- | 
 | [x](https://docs.voltha.org/master/howto/code/release-bugfix.html) | HOWOT: Create a patch for the release branch |
-| [x](voltha-components/README.md) | VOLTHA Components v2.12 release detail |
     
