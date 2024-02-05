@@ -4,6 +4,11 @@
 | ---- | ------- | ------- | ------ | ---- | ----- |
 | voltha-protos | 5.1.9 | 5.1.9 | [x](#REPO:voltha-onos) | | |
 
+## WIP
+
+- Baseline cleanup for branch=master
+
+    
 ## REPO:voltha-onos
 
 | Status | ID | Detail | Notes |
@@ -11,6 +16,7 @@
 | :hammer: | [VOL-5031](https://jira.opencord.org/browse/VOL-5031) | | Relase REPO:votlha-onos |
 | :hammer: | [G:34397](https://gerrit.opencord.org/c/voltha-onos/+/34397) | VOL-5031 | Prep work on master branch |
 | :red_square: | [J:346](https://jenkins.opencord.org/job/verify_voltha-onos_sanity-test/346) | [VOL-5269](https://jira.opencord.org/browse/VOL-5269) | VOLTHA Stack deploy fail <br> Cancelling nested steps due to timeout |
+| :new: | [VOL-5270](https://jira.opencord.org/browse/VOL-5270) | VOL-5031 | QUESITON: What onos version should be used (?) v2.5.8 or v2.5.9 |
     
 ## Legend
 

@@ -5,9 +5,14 @@
 # -----------------------------------------------------------------------
 
 declare -a urls=()
-urls+=('https://github.com/joey-onf/todo/blob/origin/master/release/release-meta.md')
 
-urls+=('https://github.com/joey-onf/todo/blob/origin/master/release/ONOS-component-deps.md')
+if true; then
+    urls+=('https://github.com/joey-onf/todo/blob/origin/master/v12/voltha-components/README.md')
+else
+    urls+=('https://github.com/joey-onf/todo/blob/origin/master/release/release-meta.md')
+    urls+=('https://github.com/joey-onf/todo/blob/origin/master/release/ONOS-component-deps.md')
+fi
+
 
 while [[ $# -gt 0 ]]; do
     arg="$1"; shift
@@ -27,6 +32,7 @@ done
 # ver='2.11.'
 
 [[ -v pkg ]]  && { stem="https://gerrit.opencord.org/plugins/gitiles/${pkg}"; }
+
 
 if [[ -v stem ]]; then
     urls+=("$stem")
