@@ -1,12 +1,10 @@
 # Voltha v2.12 release
  
-- 
-   
 # [V2.12 VOLTHA Components Release](voltha-components/README.md)    
 
 | Repo | dev-ver | rel-ver | Detail | Jira | Jenkisn | Notes |
 | ---- | ------- | ------- | ------ | ---- | ------- | ----- |
-| voltha-onos | 5.2.0-dev | 5.1.10 | [x](#REPO:voltha-onos) | [VOL-5271](https://jira.opencord.org/browse/VOL-5271) | [2](https://jenkins.opencord.org/job/verify_voltha-onos_sanity-test-voltha-2.12/2/console) | |
+| voltha-onos | 5.2.0-dev | 5.1.10 | [x](#REPO:voltha-onos) | [VOL-5271](https://jira.opencord.org/browse/VOL-5271) | [2](https://jenkins.opencord.org/job/verify_voltha-onos_sanity-test-voltha-2.12/2/console) | volthaStackDeploy failing |
     
     
 ## [docs.voltha.org](https://docs.voltha.org/master/release_notes/voltha_2.12.html)
