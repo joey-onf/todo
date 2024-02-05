@@ -1,14 +1,13 @@
 # VOLTHA Components Release Detail
 
-| Repo | dev-ver | rel-ver | Detail | Jira | Notes |
-| ---- | ------- | ------- | ------ | ---- | ----- |
-| voltha-protos | 5.1.9 | 5.1.9 | [x](#REPO:voltha-onos) | | |
+| Repo | dev-ver | rel-ver | Detail | Jira | Jenkisn | Notes |
+| ---- | ------- | ------- | ------ | ---- | ------- | ----- |
+| voltha-onos | 5.2.0-dev | 5.1.10 | [x](#REPO:voltha-onos) | [VOL-5271](https://jira.opencord.org/browse/VOL-5271) | [2](https://jenkins.opencord.org/job/verify_voltha-onos_sanity-test-voltha-2.12/2/console) | |
 
 ## WIP
 
 - Baseline cleanup for branch=master
 
-    
 ## REPO:voltha-onos
 
 | Status | ID | Detail | Notes |
