@@ -1,7 +1,7 @@
 VOLTHA: Gerrit Queries
 ======================
 
-| URL | Description |                                           |
+| URL | Description |
 | --- | ----------- |
 | [x](https://gerrit.opencord.org/q/status:open) | Query for all unmerged patches (status:open) |
 | [x](https://gerrit.opencord.org/q/status:open+-is:wip) | Query for patches with attribute is:wip |
