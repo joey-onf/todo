@@ -8,7 +8,7 @@ JOBS: Periodic
 
 | status | jenkins | jira | gerrit | Notes |
 | ------ | ------- | ---- | ------ | ----- |
-| :red_square: |  [753](https://jenkins.opencord.org/job/periodic-voltha-memory-leak-test-bbsim/753/console) | [VOL-5287](https://jira.opencord.org/browse/VOL-5287) | | Memory Leak Test Openolt Adapter :: Test of try to catch memory le... { FAIL } |
+| :red_square: |  [753](https://jenkins.opencord.org/job/periodic-voltha-memory-leak-test-bbsim/769/console) | [VOL-5287](https://jira.opencord.org/browse/VOL-5287) | | Memory Leak Test Openolt Adapter :: Test of try to catch memory le... { FAIL } |
 
 - periodic-software-upgrade-test-bbsim
 
@@ -20,13 +20,13 @@ JOBS: Periodic
 
 | status | jenkins | jira | gerrit | Notes |
 | ------ | ------- | ---- | ------ | ----- |
-| :red_square: |  [298](https://jenkins.opencord.org/job/periodic-voltha-dt-test-bbsim-master/209/consoleFull) | [VOL-5120](https://jira.opencord.org/browse/VOL-5120) | | Strange restart test reported success twice then failed on the 3rd iteration. |
+| :red_square: |  [228](https://jenkins.opencord.org/job/periodic-voltha-dt-test-bbsim-master/228/consoleFull) | [VOL-5120](https://jira.opencord.org/browse/VOL-5120) | | Strange restart test reported success twice then failed on the 3rd iteration. |
 
 - periodic-voltha-memory-leak-test-bbsim
 
 | status | jenkins | jira | gerrit | Notes |
 | ------ | ------- | ---- | ------ | ----- |
-| :red_square: |  [753](https://jenkins.opencord.org/job/periodic-voltha-memory-leak-test-bbsim/753/console) | | Keyword 'Verify ONU in Groups' failed after retrying for 1 minute. |
+| :red_square: |  [769](https://jenkins.opencord.org/job/periodic-voltha-memory-leak-test-bbsim/769/console) | | Keyword 'Verify ONU in Groups' failed after retrying for 1 minute. |
 
 - periodic-voltha-multiple-olts-openonu-go-test-bbsim
 
