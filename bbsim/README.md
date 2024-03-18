@@ -32,30 +32,30 @@ JOBS: Periodic
 
 | status | jenkins | jira | gerrit | Notes |
 | ------ | ------- | ---- | ------ | ----- |
-| :red_square: |  [2359](https://jenkins.opencord.org/job/periodic-voltha-multiple-olts-openonu-go-test-bbsim/2359/console) | | Reconcile tests failing |
+| :red_square: |  [2385](https://jenkins.opencord.org/job/periodic-voltha-multiple-olts-openonu-go-test-bbsim/2385/console) | | Reconcile tests failing |
 
 - periodic-voltha-multi-uni-multiple-olts-test-bbsim
 
 | status | jenkins | jira | gerrit | Notes |
 | ------ | ------- | ---- | ------ | ----- |
-| :red_square: |  [10442](https://jenkins.opencord.org/job/periodic-voltha-pm-data-test-bbsim/1042/consoleFull) | | VOLTHA ONUPMTests failing |
+| :red_square: |  [1056](https://jenkins.opencord.org/job/periodic-voltha-pm-data-test-bbsim/1056/consoleFull) | | VOLTHA ONUPMTests failing |
 
 - periodic-voltha-openonu-go-test-bbsim
 
 | status | jenkins | jira | gerrit | Notes |
 | ------ | ------- | ---- | ------ | ----- |
-| :red_square: |  [2472](https://jenkins.opencord.org/job/periodic-voltha-openonu-go-test-bbsim/2472/console) | | | Could not get baseline ONU OMCI counter statistic of ONU |
+| :red_square: |  [2508](https://jenkins.opencord.org/job/periodic-voltha-openonu-go-test-bbsim/2508/console) | | | Could not get baseline ONU OMCI counter statistic of ONU |
 
 - periodic-voltha-pm-data-test-bbsim
 
 | status | jenkins | jira | gerrit | Notes |
 | ------ | ------- | ---- | ------ | ----- |
-| :red_square: |  [1042](https://jenkins.opencord.org/job/periodic-voltha-pm-data-test-bbsim/1042/console) | | | Wrong interval for UNI_Status of device  |
+| :red_square: |  [1056](https://jenkins.opencord.org/job/periodic-voltha-pm-data-test-bbsim/1056/console) | | | Wrong interval for UNI_Status of device  |
 - periodic-voltha-test-bbsim
 
 | status | jenkins | jira | gerrit | Notes |
 | ------ | ------- | ---- | ------ | ----- |
-| :red_square: |  [1390](https://jenkins.opencord.org/job/periodic-voltha-test-bbsim/3190/console) | | | Keyword 'Validate Device' failed after retrying for 1 minute. |
+| :red_square: |  [3209](https://jenkins.opencord.org/job/periodic-voltha-test-bbsim/3209/console) | | | Keyword 'Validate Device' failed after retrying for 1 minute. |
 
 
 JOBS: Verify
