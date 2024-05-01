@@ -1,0 +1,29 @@
+# -*- makefile -*-
+
+https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35227
+https://gerrit.opencord.org/c/voltha-go-controller/+/35217
+https://gerrit.opencord.org/c/voltctl/+/35216
+https://gerrit.opencord.org/c/voltha-protos/+/35128
+https://gerrit.opencord.org/c/openolt/+/35195
+https://gerrit.opencord.org/c/voltha-go/+/35252
+https://gerrit.opencord.org/c/voltha-docs/+/35242
+https://gerrit.opencord.org/c/voltha-system-tests/+/19890
+https://gerrit.opencord.org/c/openolt/+/34421
+https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35246
+https://gerrit.opencord.org/c/voltctl/+/35152
+https://gerrit.opencord.org/c/voltctl/+/35220
+https://gerrit.opencord.org/c/voltha-helm-charts/+/35226
+https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35209
+https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/34734
+https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35173
+https://gerrit.opencord.org/c/openolt/+/35177
+https://gerrit.opencord.org/c/voltctl/+/35236
+https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35228
+https://gerrit.opencord.org/c/openolt/+/35229
+https://gerrit.opencord.org/c/openolt/+/34962
+https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35165    
+https://gerrit.opencord.org/c/voltha-openolt-adapter/+/34993
+https://gerrit.opencord.org/c/olt/+/35043
+https://gerrit.opencord.org/c/openolt/+/35151
+
+# [EOF]
