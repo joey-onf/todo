@@ -31,7 +31,15 @@ function gen_header()
     declare -a fields=()
     fields+=('Gerrit')
     fields+=('Jira')
-    fields+=("${common[@]}")
+
+    local com
+    for com in "${common[@]}";
+    do
+        local link=''
+        get_jira_url link "$com"
+        # fields+=("${common[@]}")
+        fields+=("[$com]($link)")
+    done
     fields+=('Notes')
 
     ref=()

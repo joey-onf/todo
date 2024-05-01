@@ -7,7 +7,7 @@ Format helps track transient failures and unresovled problems.
 Patch Grid
 ----------
 
-| Gerrit | Jira | VOL-5291 | VOL-5331 | Notes |
+| Gerrit | Jira | [VOL-5291](https://jira.opencord.org/browse/VOL-5291) | [VOL-5331](https://jira.opencord.org/browse/VOL-5331) | Notes |
 | --- | --- | --- | --- | --- |
 | [19890](https://gerrit.opencord.org/c/voltha-system-tests/+/19890) | | | |  |
 | [34421](https://gerrit.opencord.org/c/openolt/+/34421) | [x]()| | | Compile failure |
