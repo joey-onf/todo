@@ -23,15 +23,15 @@ Patch Grid
 | [35177](https://gerrit.opencord.org/c/openolt/+/35177) | | | |  |
 | [35195](https://gerrit.opencord.org/c/openolt/+/35195) | | | |  |
 | [35209](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35209) | | | |  |
-| [35216](https://gerrit.opencord.org/c/voltctl/+/35216) | [x]() [x]()|| | |  |
+| [35216](https://gerrit.opencord.org/c/voltctl/+/35216) | [x]() [x]()|| | [x](https://jira.opencord.org/browse/VOL-5331) |  |
 | [35217](https://gerrit.opencord.org/c/voltha-go-controller/+/35217) | | | |  |
 | [35220](https://gerrit.opencord.org/c/voltctl/+/35220) | | | |  |
 | [35225](https://gerrit.opencord.org/c/bbsim/+/35225) | | | |  |
 | [35226](https://gerrit.opencord.org/c/voltha-helm-charts/+/35226) | | | |  |
 | [35227](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35227) | [x]()|| | |  |
 | [35228](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35228) | | | |  |
-| [35229](https://gerrit.opencord.org/c/openolt/+/35229) | [x]()|| | |  |
-| [35236](https://gerrit.opencord.org/c/voltctl/+/35236) | [x]()|| | |  |
+| [35229](https://gerrit.opencord.org/c/openolt/+/35229) | [x]()|| [x](https://jira.opencord.org/browse/VOL-5291) | |  |
+| [35236](https://gerrit.opencord.org/c/voltctl/+/35236) | [x]()|| [x](https://jira.opencord.org/browse/VOL-5291) | |  |
 | [35242](https://gerrit.opencord.org/c/voltha-docs/+/35242) | | | |  |
 | [35246](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35246) | | | |  |
 | [35252](https://gerrit.opencord.org/c/voltha-go/+/35252) | | | |  |
@@ -51,7 +51,6 @@ Legend
 | -------- | ----------- |
 | VOL-5331 | Voltha DT PODTests :: Test various end-to-end scenarios |
 | VOL-5311 | Test Perform BBSim Sanity :: Validates the BBSim Functionality for|
-https://gerrit.opencord.org/c/bbsim/+/35225
 
 See Also
 --------

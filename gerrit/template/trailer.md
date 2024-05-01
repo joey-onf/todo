@@ -13,7 +13,6 @@ Legend
 | -------- | ----------- |
 | VOL-5331 | Voltha DT PODTests :: Test various end-to-end scenarios |
 | VOL-5311 | Test Perform BBSim Sanity :: Validates the BBSim Functionality for|
-https://gerrit.opencord.org/c/bbsim/+/35225
 
 See Also
 --------

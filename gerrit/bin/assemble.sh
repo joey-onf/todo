@@ -139,13 +139,14 @@ EOGRID
         printf '| [%s](%s) ' "${patch##*/}" "${gerrit}"
 
         if [[ -f 'jira' ]]; then 
-           readarray -t jiras < <(grep '^VOL' 'jira' 2>/dev/null | sort)
+            readarray -t jiras < <(grep '^VOL' 'jira' 2>/dev/null | sort)
             printf '|'
             local jira
             for jira in "${jiras[@]}";
             do
                 local jira_url=''
-                gen_jira_url jira_url"$jira"
+                gen_jira_url jira_url "$jira"
+
                 printf ' [x](%s)' "$jira_url"
 #                printf ' [x](%s)' "https://jira.opencord.org/browse/${jira}"
             done
@@ -157,7 +158,8 @@ EOGRID
         local com
         for com in "${common[@]}";
         do
-            if [[ -e "$com" ]]; then
+            if grep -q "$com" 'jira' 2>/dev/null; then
+#            if [[ -e "$com" ]]; then
                 local link=''
                 get_jira_url link "$com"
                 printf "| [x](%s) " "$link"
