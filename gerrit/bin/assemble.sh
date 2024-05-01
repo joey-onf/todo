@@ -167,9 +167,10 @@ EOGRID
         done
 
         if [[ -f 'notes' ]]; then
-            echo "| $(cat notes)"
+            readarray -t < 'notes'
+            printf "| ${notes}"
         else
-            echo '| '
+            printf '| '
         fi
 
         printf ' |\n'
