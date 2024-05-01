@@ -150,7 +150,6 @@ EOGRID
                 printf ' [x](%s)' "$jira_url"
 #                printf ' [x](%s)' "https://jira.opencord.org/browse/${jira}"
             done
-            printf '|'
         else
             printf '| '
         fi
@@ -159,7 +158,6 @@ EOGRID
         for com in "${common[@]}";
         do
             if grep -q "$com" 'jira' 2>/dev/null; then
-#            if [[ -e "$com" ]]; then
                 local link=''
                 get_jira_url link "$com"
                 printf "| [x](%s) " "$link"
@@ -169,7 +167,8 @@ EOGRID
         done
 
         if [[ -f 'notes' ]]; then
-            readarray -t < 'notes'
+            readarray -t notes < 'notes'
+            # >&2 declare -p notes
             printf "| ${notes}"
         else
             printf '| '

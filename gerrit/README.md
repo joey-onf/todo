@@ -10,7 +10,7 @@ Patch Grid
 | Gerrit | Jira | VOL-5291 | VOL-5331 | Notes |
 | --- | --- | --- | --- | --- |
 | [19890](https://gerrit.opencord.org/c/voltha-system-tests/+/19890) | | | |  |
-| [34421](https://gerrit.opencord.org/c/openolt/+/34421) | [x]()|| | |  |
+| [34421](https://gerrit.opencord.org/c/openolt/+/34421) | [x]()| | | Compile failure |
 | [34734](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/34734) | | | |  |
 | [34962](https://gerrit.opencord.org/c/openolt/+/34962) | | | |  |
 | [34993](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/34993) | | | |  |
@@ -23,15 +23,15 @@ Patch Grid
 | [35177](https://gerrit.opencord.org/c/openolt/+/35177) | | | |  |
 | [35195](https://gerrit.opencord.org/c/openolt/+/35195) | | | |  |
 | [35209](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35209) | | | |  |
-| [35216](https://gerrit.opencord.org/c/voltctl/+/35216) | [x]() [x]()|| | [x](https://jira.opencord.org/browse/VOL-5331) |  |
+| [35216](https://gerrit.opencord.org/c/voltctl/+/35216) | [x]() [x]()| | [x](https://jira.opencord.org/browse/VOL-5331) | merge conflicts |
 | [35217](https://gerrit.opencord.org/c/voltha-go-controller/+/35217) | | | |  |
 | [35220](https://gerrit.opencord.org/c/voltctl/+/35220) | | | |  |
 | [35225](https://gerrit.opencord.org/c/bbsim/+/35225) | | | |  |
 | [35226](https://gerrit.opencord.org/c/voltha-helm-charts/+/35226) | | | |  |
-| [35227](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35227) | [x]()|| | |  |
+| [35227](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35227) | [x]()| | | [jenkins:1742](https://jenkins.opencord.org/job/verify_voltha-openonu-adapter-go_sanity-test/1742/consoleFull) - No failure detail |
 | [35228](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35228) | | | |  |
-| [35229](https://gerrit.opencord.org/c/openolt/+/35229) | [x]()|| [x](https://jira.opencord.org/browse/VOL-5291) | |  |
-| [35236](https://gerrit.opencord.org/c/voltctl/+/35236) | [x]()|| [x](https://jira.opencord.org/browse/VOL-5291) | |  |
+| [35229](https://gerrit.opencord.org/c/openolt/+/35229) | [x]()| [x](https://jira.opencord.org/browse/VOL-5291) | |  |
+| [35236](https://gerrit.opencord.org/c/voltctl/+/35236) | [x]()| [x](https://jira.opencord.org/browse/VOL-5291) | | merge conflict |
 | [35242](https://gerrit.opencord.org/c/voltha-docs/+/35242) | | | |  |
 | [35246](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35246) | | | |  |
 | [35252](https://gerrit.opencord.org/c/voltha-go/+/35252) | | | |  |

@@ -12,3 +12,8 @@ sterile ::
 	$(RM) -r data/3*
 
 clean ::
+
+github :
+	firefox 'https://github.com/joey-onf/todo/tree/origin/master/gerrit'
+
+# [EOF]
