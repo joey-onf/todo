@@ -7,7 +7,7 @@ Format helps track transient failures and unresovled problems.
 Patch Grid
 ----------
 
-| Gerrit | Jira | [VOL-5291](https://jira.opencord.org/browse/VOL-5291) | [VOL-5331](https://jira.opencord.org/browse/VOL-5331) | Notes |
+| Gerrit | Jira | [VOL-5311](https://jira.opencord.org/browse/VOL-5311) | [VOL-5331](https://jira.opencord.org/browse/VOL-5331) | Notes |
 | --- | --- | --- | --- | --- |
 | [19890](https://gerrit.opencord.org/c/voltha-system-tests/+/19890) | | | |  |
 | [34421](https://gerrit.opencord.org/c/openolt/+/34421) | [x]()| | | Compile failure |
@@ -30,8 +30,8 @@ Patch Grid
 | [35226](https://gerrit.opencord.org/c/voltha-helm-charts/+/35226) | | | |  |
 | [35227](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35227) | [x]()| | | [jenkins:1742](https://jenkins.opencord.org/job/verify_voltha-openonu-adapter-go_sanity-test/1742/consoleFull) - No failure detail |
 | [35228](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35228) | | | |  |
-| [35229](https://gerrit.opencord.org/c/openolt/+/35229) | [x]()| [x](https://jira.opencord.org/browse/VOL-5291) | |  |
-| [35236](https://gerrit.opencord.org/c/voltctl/+/35236) | [x]()| [x](https://jira.opencord.org/browse/VOL-5291) | | merge conflict |
+| [35229](https://gerrit.opencord.org/c/openolt/+/35229) | [x]()| | |  |
+| [35236](https://gerrit.opencord.org/c/voltctl/+/35236) | [x]()| | | merge conflict |
 | [35242](https://gerrit.opencord.org/c/voltha-docs/+/35242) | | | |  |
 | [35246](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35246) | | | |  |
 | [35252](https://gerrit.opencord.org/c/voltha-go/+/35252) | | | |  |
