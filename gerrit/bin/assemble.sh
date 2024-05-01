@@ -86,6 +86,17 @@ function get_jira_url()
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
+function gen_jira_url()
+{
+    local ref=$1; shift
+    local id="$1"; shift
+
+    ref="https://jira.opencord.org/browse/${id}"
+    return
+}
+
+## -----------------------------------------------------------------------
+## -----------------------------------------------------------------------
 function gen_patch_grid()
 {
     readarray -t patches < <(find data -maxdepth 1 -regex '.*/[0-9]+' -type d -print \
@@ -127,13 +138,16 @@ EOGRID
         label="${label:-X}"
         printf '| [%s](%s) ' "${patch##*/}" "${gerrit}"
 
-        if [[ -f 'jira' ]]; then
-            readarray -t jiras < <(grep '^VOL' 'jira' 2>/dev/null | sort)
+        if [[ -f 'jira' ]]; then 
+           readarray -t jiras < <(grep '^VOL' 'jira' 2>/dev/null | sort)
             printf '|'
             local jira
             for jira in "${jiras[@]}";
             do
-                printf ' [x](%s)' "https://jira.opencord.org/browse/${jira}"
+                local jira_url=''
+                gen_jira_url jira_url"$jira"
+                printf ' [x](%s)' "$jira_url"
+#                printf ' [x](%s)' "https://jira.opencord.org/browse/${jira}"
             done
             printf '|'
         else
@@ -152,7 +166,13 @@ EOGRID
             fi
         done
 
-        printf '| |\n'
+        if [[ -f 'notes' ]]; then
+            echo "| $(cat notes)"
+        else
+            echo '| '
+        fi
+
+        printf ' |\n'
 
         popd >/dev/null
 

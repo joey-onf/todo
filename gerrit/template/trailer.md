@@ -9,6 +9,10 @@ Legend
 | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | UNSET |
 | ![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png) | LIME  |
 
+| Jira     | Description |
+| -------- | ----------- |
+| VOL-5331 | Voltha DT PODTests :: Test various end-to-end scenarios |
+
 See Also
 --------
 [Open Gerrit Patches](https://gerrit.opencord.org/q/status:open)

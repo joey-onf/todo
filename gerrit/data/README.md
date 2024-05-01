@@ -27,6 +27,7 @@ Per-patch data
 
 - Add a list of jira tickets attached to the patch in gerrit/data/{gerrit-id}/jira.
 - A list of X urls will render beneath the 'Jira' column.
+- Create gerrit/data/{gerrit-id}/notes to track random comments.
 
 Track jira tickets across patches (grid column)
 -----------------------------------------------

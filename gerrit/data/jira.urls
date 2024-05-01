@@ -1,6 +1,14 @@
 # -*- makefile -*-
 
 https://jira.opencord.org/browse/VOL-5291
+
+https://jira.opencord.org/browse/VOL-4988
+
+# gerrit:35216
+https://jira.opencord.org/browse/VOL-5305
 https://jira.opencord.org/browse/VOL-5331
+
+# gerrit:35229
+https://jira.opencord.org/browse/VOL-5291
 
 # [EOF]
