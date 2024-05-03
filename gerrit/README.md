@@ -25,7 +25,7 @@ Patch Grid
 | [35209](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35209) | [x](https://jira.opencord.org/browse/VOL-5298), [x](https://jira.opencord.org/browse/VOL-5331) |  |   |   |   |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   |   |
 | [35216](https://gerrit.opencord.org/c/voltctl/+/35216) | [x](https://jira.opencord.org/browse/VOL-5305), [x](https://jira.opencord.org/browse/VOL-5331) |  |   |   |   |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   | merge conflicts |
 | [35217](https://gerrit.opencord.org/c/voltha-go-controller/+/35217) |   |  |   |   |   |   |   |   |   |   |
-| [35220](https://gerrit.opencord.org/c/voltctl/+/35220) |   |  |   |   |   |   |   |   |   |   |
+| [35220](https://gerrit.opencord.org/c/voltctl/+/35220) |   |  |   |   |   |   |   |   | ![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png) | buildssa: errors in package:<br>Undef reported |
 | [35225](https://gerrit.opencord.org/c/bbsim/+/35225) |   |  |   |   |   |   |   |   |   |   |
 | [35226](https://gerrit.opencord.org/c/voltha-helm-charts/+/35226) |   |  |   |   |   |   |   |   |   |   |
 | [35227](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35227) | [x](https://jira.opencord.org/browse/VOL-5303) |  |   |   |   |   |   |   |   | [jenkins:1742](https://jenkins.opencord.org/job/verify_voltha-openonu-adapter-go_sanity-test/1742/consoleFull) - No failure detail |
