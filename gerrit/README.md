@@ -67,8 +67,6 @@ Common / Transient unit test failures
 | [VOL-5331](https://jira.opencord.org/browse/VOL-5331) | Voltha DT PODTests :: Test various end-to-end scenarios |
 | [VOL-5335](https://jira.opencord.org/browse/VOL-5335) | Voltha TT PODTests :: Test various functional end-to-end scenarios for TT |
 
-https://jira.opencord.org/browse/VOL-5333
-
 See Also
 ========
 
