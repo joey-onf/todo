@@ -249,6 +249,14 @@ EOGRID
                     fi
                     ;;
 
+                Reviewed)
+                    if [[ -e 'reviewed' ]]; then
+                        buffer+=('![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png)')
+                    else
+                        buffer+=(' ')
+                    fi
+                    ;;
+                
                 [nN]otes)
                     buffer+=(' ')
                     if [[ -f 'notes' ]]; then

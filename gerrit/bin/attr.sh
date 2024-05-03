@@ -79,6 +79,7 @@ EOH
 
         --*conflict) do_attribute gerrit "$arg" ;;
          --*recheck) do_attribute gerrit "$arg" ;;
+         --*reviewed) do_attribute gerrit "$arg" ;;
 
          --edit)
              for id in "${gerrits[@]}";
