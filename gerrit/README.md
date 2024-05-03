@@ -8,7 +8,7 @@ Patch Grid
 ==========
 
 | Gerrit | Jira | Jenkins | Recheck | Conflict | [VOL-5291](https://jira.opencord.org/browse/VOL-5291) | [VOL-5331](https://jira.opencord.org/browse/VOL-5331) | Notes |
-|  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |  ---  |
+|  ---  |  ---  |  ---  |  :---:  |  :---:  |  ---  |  ---  |  ---  |
 | [19890](https://gerrit.opencord.org/c/voltha-system-tests/+/19890) |   |  |   |   |   |   |   |
 | [34421](https://gerrit.opencord.org/c/openolt/+/34421) | [x](https://jira.opencord.org/browse/VOL-4988) |  |   |   |   |   | Compile failure |
 | [34734](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/34734) |   |  |   |   |   |   |   |

@@ -90,10 +90,14 @@ function gen_header()
     ## Display table divider line
     ## --------------------------
     local -a divider=()
-    local -i idx
-    for idx in $(seq 1 ${#columns[@]});
+
+    for column in "${columns[@]}";
     do
-        divider+=(' --- ')
+        case "$column" in
+            [cC]onflict) divider+=(' :---: ') ;;
+             [rR]echeck) divider+=(' :---: ') ;;
+                      *) divider+=(' --- ') ;;
+        esac
     done
 
     local div
