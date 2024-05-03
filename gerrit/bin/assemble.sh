@@ -260,7 +260,7 @@ EOGRID
                 'VOL-'*)
                     if [[ -e "$column" ]]; then
                         local -i found=1
-                    elif false; then
+                    elif grep -q "$column" jira >/dev/null 2>/dev/null; then
                         local -i found=1
                     fi
 
