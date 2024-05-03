@@ -36,9 +36,6 @@ function do_attribute()
     for id in "${gerrits[@]}";
     do
         local path="data/${id}/${attr}"
-        declare -p path
-        declare -p arg
-        
         case "$arg" in
             *'-no-'*) /bin/rm -f "$path" ;;
                    *) date > "$path"     ;;
@@ -58,7 +55,8 @@ while [[ $# -gt 0 ]]; do
         --help)
             cat <<EOH
 Usage: $0
-  --ls                 Display attributes for a gerrit patch.
+  --edit                Modify metadata files for a patch
+  --ls                  Display attributes for a gerrit patch.
   --(no-)conflict [id]  Touch or remove attribute:(merge-)conflict
   --(no-)recheck  [id]  Touch or remove attribute:recheck  
 
@@ -81,6 +79,18 @@ EOH
 
         --*conflict) do_attribute gerrit "$arg" ;;
          --*recheck) do_attribute gerrit "$arg" ;;
+
+         --edit)
+             for id in "${gerrits[@]}";
+             do
+                 base="data/$id"
+                 declare -a files=()
+                 files+=("$base/jira")
+                 files+=("$base/jenkins")
+                 files+=("$base/notes")
+                 emacs "${emacs[@]}"
+             done
+             ;;
 
          --ls)
              for id in "${gerrits[@]}";

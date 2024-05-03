@@ -11,9 +11,6 @@ generate:
 view :: generate
 	pandoc README.md | lynx -stdin
 
-sterile ::
-	$(RM) -r data/3*
-
 clean ::
 
 github :

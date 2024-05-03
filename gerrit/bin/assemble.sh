@@ -117,7 +117,6 @@ function get_common()
                              | awk -F'/' '{print $2}' \
                              | sort )
     ref=("${tmp[@]}")
-    # >&2 declare -p common
     return
 }
 

@@ -29,12 +29,12 @@ Patch Grid
 | [35225](https://gerrit.opencord.org/c/bbsim/+/35225) |   |  |   |   |   |   |   |
 | [35226](https://gerrit.opencord.org/c/voltha-helm-charts/+/35226) |   |  |   |   |   |   |   |
 | [35227](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35227) | [x](https://jira.opencord.org/browse/VOL-5303) |  |   |   |   |   | [jenkins:1742](https://jenkins.opencord.org/job/verify_voltha-openonu-adapter-go_sanity-test/1742/consoleFull) - No failure detail |
-| [35228](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35228) |   |  |   |   |   |   |   |
-| [35229](https://gerrit.opencord.org/c/openolt/+/35229) | [x](https://jira.opencord.org/browse/VOL-5291) |  |   |   |   |   |   |
-| [35236](https://gerrit.opencord.org/c/voltctl/+/35236) | [x](https://jira.opencord.org/browse/VOL-5291) |  |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   | merge conflict |
-| [35242](https://gerrit.opencord.org/c/voltha-docs/+/35242) |   |  |   |   |   |   |   |
-| [35246](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35246) |   |  |   |   |   |   |   |
-| [35252](https://gerrit.opencord.org/c/voltha-go/+/35252) |   |  |   |   |   |   |   |
+| [35228](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35228) |   |  |   |   |   |   |  |
+| [35229](https://gerrit.opencord.org/c/openolt/+/35229) | [x](https://jira.opencord.org/browse/VOL-5291) |  |   |   |   |   | Patch compile problems. |
+| [35236](https://gerrit.opencord.org/c/voltctl/+/35236) | [x](https://jira.opencord.org/browse/VOL-5291) |  |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   | Fail due to undef |
+| [35242](https://gerrit.opencord.org/c/voltha-docs/+/35242) |   |  |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   |   |
+| [35246](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35246) | [x](https://jira.opencord.org/browse/VOL-5322), [x](https://jira.opencord.org/browse/VOL-5335) |  |   |   |   |   |   |
+| [35252](https://gerrit.opencord.org/c/voltha-go/+/35252) |   | [x](https://jenkins.opencord.org/job/verify_voltha-go_licensed/3066/) |   |   |   |   | Several failures, patch related. |
 
 
 Legend
