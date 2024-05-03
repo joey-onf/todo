@@ -27,6 +27,21 @@ function join_by()
     local d=${1-} f=${2-}; if shift 2; then printf %s "$f" "${@/#/$d}"; fi;
 }
 
+# -----------------------------------------------------------------------
+# -----------------------------------------------------------------------
+function get_patches()
+{
+    local -n ref=$1; shift
+
+    readarray -t data < <(\
+        find data -maxdepth 1 -regex '.*/[0-9]+' -type d -print \
+        | sort -n)
+    ref=("${data[@]}")
+    return
+}
+
+# -----------------------------------------------------------------------
+# -----------------------------------------------------------------------
 function get_columns()
 {
     local -n ref=$1; shift
@@ -35,7 +50,7 @@ function get_columns()
     return
 }
 
-## -----------------------------------------------------------------------
+# -----------------------------------------------------------------------
 ## Intent: Render grid header lines
 ##
 ## | Gerrit | Jira | VOL-5291 | VOL-5331 | Notes |
@@ -135,17 +150,11 @@ function gen_jira_url()
 ## -----------------------------------------------------------------------
 function gen_patch_grid()
 {
-    readarray -t patches < <(find data -maxdepth 1 -regex '.*/[0-9]+' -type d -print \
-                                 | sort -n)
-#    >&2 declare -p patches
-
-
     local -a columns
     get_columns columns
-    
-#    local div
-#    gen_grid_line div buffer
-#    ref+=("$div")
+
+    local -a patches
+    get_patches patches
 
     declare -a common=()
     get_common common
@@ -157,9 +166,6 @@ Patch Grid
 
 EOGRID
 
-#    readarray -t columns < "template/grid.columns"
-#    2&> declare -p columns
-        
     ## -----------
     ## Draw header
     ## ----------- 
@@ -204,7 +210,25 @@ EOGRID
                     fi # if -f jira
                     ;;
 
-                conflict|recheck)
+                'Jenkins')
+                    buffer+=(' ')
+
+                    local -a jenkins=()
+                    if [[ -f 'jenkins' ]]; then
+                        readarray -t jenkins < <(cut -d'#' -f1 'jenkins' | grep '://')
+                    fi
+
+                    local -a accum=()
+                    local url=''
+                    for url in "${jenkins[@]}";
+                    do
+                        local -a accum=()
+                        accum+=( $(printf '[x](%s)' "$url") )
+                    done # for jira
+                    buffer[-1]="$(join_by ', ' "${accum[@]}")"
+                    ;;
+
+                [cC]onflict|[rR]echeck)
                     if [[ -e "$column" ]]; then
                         buffer+=('X')
                     else
@@ -212,83 +236,25 @@ EOGRID
                     fi
                     ;;
 
+                [nN]otes)
+                    buffer+=(' ')
+                    if [[ -f 'notes' ]]; then
+                        readarray -t notes <'notes'
+                        buffer[-1]="$(join_by '<br>' "${notes[@]}")"
+                    fi
+                    ;;
+
                 *) buffer+=(' ') ;;
             esac
         done # for column
 
-        popd >/dev/null
+        local grid
+        gen_grid_line grid buffer
+        echo "$grid"
 
-        local val
-        gen_grid_line val buffer
-        printf '%s\n' "$val"
-#        ref+=("$val")
+        popd >/dev/null
 
     done # for patch
-
-
-    return
-    exit 1
-
-    
-    local gerrit
-    local jira
-
-    local label
-    local patch
-    for patch in "${patches[@]}";
-    do
-        pushd "$patch" >/dev/null
-
-        gerrit="$(grep '://' 'gerrit' 2>/dev/null)"
-        label="${gerrit##*}"
-        label="${label:-X}"
-        printf '| [%s](%s) ' "${patch##*/}" "${gerrit}"
-
-        if [[ -f 'jira' ]]; then 
-            readarray -t jiras < <(grep '^VOL' 'jira' 2>/dev/null | sort)
-            printf '|'
-            local jira
-            for jira in "${jiras[@]}";
-            do
-                local jira_url=''
-                gen_jira_url jira_url "$jira"
-
-                printf ' [x](%s)' "$jira_url"
-#                printf ' [x](%s)' "https://jira.opencord.org/browse/${jira}"
-            done
-        else
-            printf '| '
-        fi
-
-        local com
-        for com in "${common[@]}";
-        do
-            if grep -q "$com" 'jira' 2>/dev/null; then
-                local link=''
-                get_jira_url link "$com"
-                printf "| [x](%s) " "$link"
-            else
-                printf '| '
-            fi
-        done
-
-        if [[ -f 'notes' ]]; then
-            readarray -t notes < 'notes'
-            # >&2 declare -p notes
-            printf "| ${notes}"
-        else
-            printf '| '
-        fi
-
-        printf ' |\n'
-
-        popd >/dev/null
-
-#        case "$patch" in
-#            data/35216) exit 1;;
-#        esac
-    done
-
     return
 }
 
@@ -298,7 +264,9 @@ function generate()
 {
     cat template/header.md
 
-    gen_patch_grid
+    local -a grid=()
+    gen_patch_grid grid
+    echo "${grid[@]}"
     
     echo
     cat template/legend.md

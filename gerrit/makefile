@@ -5,6 +5,7 @@
 all:
 
 generate:
+#	./bin/assemble.sh 
 	./bin/assemble.sh > README.md
 
 view :: generate
