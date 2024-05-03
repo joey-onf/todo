@@ -256,7 +256,19 @@ EOGRID
                         buffer+=(' ')
                     fi
                     ;;
-                
+
+                'VOL-'*)
+                    if [[ -e "$column" ]]; then
+                        local -i found=1
+                    elif false; then
+                        local -i found=1
+                    fi
+
+                    [[ -v found ]] \
+                        && { buffer+=('![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)'); } \
+                        || { buffer+=(' '); }
+                    ;;
+
                 [nN]otes)
                     buffer+=(' ')
                     if [[ -f 'notes' ]]; then

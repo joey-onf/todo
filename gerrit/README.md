@@ -13,7 +13,7 @@ Patch Grid
 | [34421](https://gerrit.opencord.org/c/openolt/+/34421) | [x](https://jira.opencord.org/browse/VOL-4988) |  |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   |   |   |   | Compile failure |
 | [34734](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/34734) |   |  |   |   |   |   |   |   |   |   |
 | [34962](https://gerrit.opencord.org/c/openolt/+/34962) |   | [x](https://jenkins.opencord.org/job/verify_openolt_unit-test/479/console) |   |   |   |   |   |   |   |   |
-| [34993](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/34993) | [x](https://jira.opencord.org/browse/VOL-5255) |  |   |   |   |   |   |   |   | Locally modified files.<br>E2E pingtest fail |
+| [34993](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/34993) | [x](https://jira.opencord.org/browse/VOL-5255) |  |   |   |   |   |   |   | ![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png) | Locally modified files.<br>E2E pingtest fail |
 | [35043](https://gerrit.opencord.org/c/olt/+/35043) |   |  |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   |   |   |   |   |
 | [35128](https://gerrit.opencord.org/c/voltha-protos/+/35128) |   |  |   |   |   |   |   |   |   |   |
 | [35151](https://gerrit.opencord.org/c/openolt/+/35151) |   |  |   |   |   |   |   |   | ![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png) | Patch source problems |
