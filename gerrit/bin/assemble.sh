@@ -248,8 +248,9 @@ EOGRID
                     fi
                     ;;
 
-                Reviewed)
+                Reviewed|Rev*)
                     if [[ -e 'reviewed' ]]; then
+                        pwd >> ~/J
                         buffer+=('![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png)')
                     else
                         buffer+=(' ')
