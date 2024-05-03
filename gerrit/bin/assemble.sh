@@ -11,6 +11,15 @@ declare sandbox_root="${pgm[0]%/*}"
 sandbox_root="${sandbox_root%/*}"
 readonly sandbox_root
 
+##--------------------##
+##---]  INCLUDES  [---##
+##--------------------##
+declare libroot="${pgm%.sh}"
+readonly libroot
+
+source "$libroot/grid.sh"
+
+
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
 function join_by()
@@ -18,46 +27,65 @@ function join_by()
     local d=${1-} f=${2-}; if shift 2; then printf %s "$f" "${@/#/$d}"; fi;
 }
 
+function get_columns()
+{
+    local -n ref=$1; shift
+    readarray -t columns < "template/grid.columns"
+    ref=("${columns[@]}")
+    return
+}
+
 ## -----------------------------------------------------------------------
-## Intent:
+## Intent: Render grid header lines
+##
+## | Gerrit | Jira | VOL-5291 | VOL-5331 | Notes |
+## | ------ | ---- | -------- | -------- | ----- |
+##
 ## -----------------------------------------------------------------------
 function gen_header()
 {
     local -n ref=$1; shift
-
-    declare -a common=()
-    get_common common
-
-    declare -a fields=()
-    fields+=('Gerrit')
-    fields+=('Jira')
-
-    local com
-    for com in "${common[@]}";
-    do
-        local link=''
-        get_jira_url link "$com"
-        # fields+=("${common[@]}")
-        fields+=("[$com]($link)")
-    done
-    fields+=('Notes')
-
     ref=()
-    local hdr="$(join_by ' | ' "${fields[@]}")"
-    ref+=("| ${hdr} |")
- 
-    declare -a divider=()
-    local field
-    for field in "${fields[@]}";
+
+    local -a columns
+    get_columns columns
+
+    declare -a buffer=()
+    local column
+    for column in "${columns[@]}";
+    do
+        case "$column" in
+            'VOL-'*) 
+                local link=''
+                get_jira_url link "$column"
+                buffer+=("[$column]($link)")
+                ;;
+            *) buffer+=("${column^}") ;;
+        esac
+    done
+
+    ## ---------------------------
+    ## Display table column header
+    ## ---------------------------
+    local hdr
+    gen_grid_line hdr buffer
+    ref+=("$hdr")
+
+    ## --------------------------
+    ## Display table divider line
+    ## --------------------------
+    local -a divider=()
+    local -i idx
+    for idx in $(seq 1 ${#columns[@]});
     do
         divider+=(' --- ')
     done
- 
-    local div="$(join_by '|' "${divider[@]}")"
-    ref+=("|${div}|")
 
-# | Gerrit | Jira | VOL-5291 | VOL-5331 | Notes |
-# | ------ | ---- | -------- | -------- | ----- |
+    local div
+    gen_grid_line div divider
+    ref+=("$div")
+    
+    return    
 }
 
 ## -----------------------------------------------------------------------
@@ -96,7 +124,7 @@ function get_jira_url()
 ## -----------------------------------------------------------------------
 function gen_jira_url()
 {
-    local ref=$1; shift
+    local -n ref=$1; shift
     local id="$1"; shift
 
     ref="https://jira.opencord.org/browse/${id}"
@@ -111,27 +139,97 @@ function gen_patch_grid()
                                  | sort -n)
 #    >&2 declare -p patches
 
+
+    local -a columns
+    get_columns columns
+    
+#    local div
+#    gen_grid_line div buffer
+#    ref+=("$div")
+
     declare -a common=()
     get_common common
 
     cat <<EOGRID
 
 Patch Grid
-----------
+==========
 
 EOGRID
 
+#    readarray -t columns < "template/grid.columns"
+#    2&> declare -p columns
+        
     ## -----------
     ## Draw header
     ## ----------- 
     declare -a header=()
     gen_header header
-    local hdr
-    for hdr in "${header[@]}";
-    do
-        printf "$hdr\n"
-    done
+    printf '%s\n' "${header[@]}"
 
+    ## -----------------
+    ## Render patch grid
+    ## -----------------
+    local patch
+    for patch in "${patches[@]}";
+    do
+        pushd "$patch" >/dev/null
+    
+        local -a buffer=()
+        local column
+        for column in "${columns[@]}";
+        do
+            case "$column" in
+                'Gerrit')
+                    gerrit="$(grep '://' 'gerrit' 2>/dev/null)"
+                    local label="${gerrit##*}"
+                    label="${label:-X}"
+                    buffer+=( $(printf '[%s](%s) ' "${patch##*/}" "${gerrit}") )
+                    ;;
+
+                'Jira')
+                    buffer+=(' ')
+                    if [[ -f 'jira' ]]; then 
+                        readarray -t jiras < <(grep '^VOL' 'jira' 2>/dev/null | sort)
+
+                        local -a accum=()
+                        local jira
+                        for jira in "${jiras[@]}";
+                        do
+                            local jira_url=''
+                            gen_jira_url jira_url "$jira"
+                            accum+=( $(printf '[x](%s)' "$jira_url") )
+                        done # for jira
+                        buffer[-1]="$(join_by ', ' "${accum[@]}")"
+                    fi # if -f jira
+                    ;;
+
+                conflict|recheck)
+                    if [[ -e "$column" ]]; then
+                        buffer+=('X')
+                    else
+                        buffer+=(' ')
+                    fi
+                    ;;
+
+                *) buffer+=(' ') ;;
+            esac
+        done # for column
+
+        popd >/dev/null
+
+        local val
+        gen_grid_line val buffer
+        printf '%s\n' "$val"
+#        ref+=("$val")
+
+    done # for patch
+
+
+    return
+    exit 1
+
+    
     local gerrit
     local jira
 
@@ -203,7 +301,12 @@ function generate()
     gen_patch_grid
     
     echo
+    cat template/legend.md
+    echo
+    cat template/grid.md
+    echo
     cat template/trailer.md
+    return
 }
 
 ## -----------------------------------------------------------------------

@@ -1,5 +1,7 @@
 # -*- makefile -*-
 
+.DEFAULT_GOAL := generate
+
 all:
 
 generate:

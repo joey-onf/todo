@@ -34,3 +34,9 @@ Track jira tickets across patches (grid column)
 
 - Create gerrit/data/VOL-*/common for each jira ticket to track.
 - Each gerrit patch with a common jira task added in the file jira will render an 'X beneath the VOL-* column.
+
+HOWTO: Add a VOL-* column to the grid header
+--------------------------------------------
+
+- Modify template/grid.columns, columns will render in order by this file.
+- Modify template/grid.md - Display ticket and description
