@@ -277,7 +277,7 @@ EOGRID
                     if [[ -f 'notes' ]]; then
                         readarray -t notes <'notes'
                         local line="$(join_by '<br>' "${notes[@]}")"
-                        line="${line//[[:blank:]]/&nbsp;}"  
+                        line="${line//[[:blank:]]/\&nbsp;}"  
                         buffer[-1]="$line"
                     fi
                     ;;
