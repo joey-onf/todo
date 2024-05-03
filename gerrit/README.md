@@ -29,7 +29,7 @@ Patch Grid
 | [35225](https://gerrit.opencord.org/c/bbsim/+/35225) |   |  |   |   |   |   |   |   |   |   |
 | [35226](https://gerrit.opencord.org/c/voltha-helm-charts/+/35226) |   |  |   |   |   |   |   |   |   |   |
 | [35227](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35227) | [x](https://jira.opencord.org/browse/VOL-5303) |  |   |   |   |   |   |   |   | [jenkins:1742](https://jenkins.opencord.org/job/verify_voltha-openonu-adapter-go_sanity-test/1742/consoleFull) - No failure detail |
-| [35228](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35228) |   |  |   |   |   |   |   |   |   |  |
+| [35228](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35228) |   |  |   |   |   |   |   |   |   | Test coverage failure.<br>Problem with golang linter.<br>Undef atts reported. |
 | [35229](https://gerrit.opencord.org/c/openolt/+/35229) | [x](https://jira.opencord.org/browse/VOL-5291) |  |   |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   |   |   | Patch compile problems. |
 | [35236](https://gerrit.opencord.org/c/voltctl/+/35236) | [x](https://jira.opencord.org/browse/VOL-5291) |  |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   |   |   | Fail due to undef |
 | [35242](https://gerrit.opencord.org/c/voltha-docs/+/35242) |   |  |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   |   |   |   |   |

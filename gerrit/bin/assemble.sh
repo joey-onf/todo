@@ -261,12 +261,10 @@ EOGRID
                     [[ -v found ]] && { unset found; }
                     if [[ -e "$column" ]]; then
                         local -i found=1
-                        pwd >> ~/J
                     elif [[ ! -f 'jira' ]]; then
                         :
                     elif grep -q "$column" jira >/dev/null 2>/dev/null; then
                         local -i found=1
-                        pwd >> ~/J
                     fi
 
                     [[ -v found ]] \
