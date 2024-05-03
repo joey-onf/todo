@@ -94,9 +94,8 @@ function gen_header()
     for column in "${columns[@]}";
     do
         case "$column" in
-            [cC]onflict) divider+=(' :---: ') ;;
-             [rR]echeck) divider+=(' :---: ') ;;
-                      *) divider+=(' --- ') ;;
+            'Notes') divider+=(' --- ') ;;
+            *) divider+=(' :---: ') ;;
         esac
     done
 
