@@ -89,7 +89,7 @@ EOH
                  files+=("$base/jira")
                  files+=("$base/jenkins")
                  files+=("$base/notes")
-                 emacs "${emacs[@]}"
+                 emacs "${files[@]}"
              done
              ;;
 
