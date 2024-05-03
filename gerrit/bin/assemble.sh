@@ -228,9 +228,19 @@ EOGRID
                     buffer[-1]="$(join_by ', ' "${accum[@]}")"
                     ;;
 
-                [cC]onflict|[rR]echeck)
+                [cC]onflict)
                     if [[ -e "$column" ]]; then
-                        buffer+=('X')
+                        buffer+=('![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)')
+#                        buffer+=('X')
+                    else
+                        buffer+=(' ')
+                    fi
+                    ;;
+
+                [rR]echeck)
+                    if [[ -e "$column" ]]; then
+                        buffer+=('![#32CD32](https://placehold.co/15x15/633974/633974.png)')
+                        # buffer+=('X')
                     else
                         buffer+=(' ')
                     fi
