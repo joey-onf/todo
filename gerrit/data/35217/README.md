@@ -7,12 +7,12 @@ timeout=10 (error msg="Timeout exceeded)
 
 - ![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png) - PASS
 
-    [327](https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/237/consoleFull)
+    - https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/237/consoleFull
 
 - ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) - FAIL
 
-    - [265](https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/265/consoleText)
-    - [264](https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/264/consoleText)
+    - https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/265/consoleText
+    - https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/264/consoleText
 
 Log Compare
 -----------
@@ -30,6 +30,7 @@ Log Compare
 - 04:02:17 level=info msg="[runner/goanalysis_metalinter/goanalysis] analyzers took 4m23.288271345s with top 10 stages: buildssa: 1m10.544536832s, goimports: 37.227482004s gofmt: 21.910770424s, gosec: 20.27851237s, whitespace: 19.174731834s, ineffassign: 13.449203201s, misspell: 12.588779914s, inspect: 4.781534279s, SA4000: 3.743781118s, shadow: 3.687116567s"
 
 | What                                    | PASS     | FAIL     | Notes      |
+| --------------------------------------- | -------- | -------- | ---------- |
 | runner/goanalysis_metalinter/goanalysis | 1m29.279 | 4m23.288 | +3 minutes | buildssa | 54.058792647s |
 | buildssa     | 54.058792647s  | 1m10.544536832s | | 
 | goimports    | 6.895311733s   | 37.227482004s   | | 
@@ -53,13 +54,13 @@ Log Compare
 ---
 
 - 07:55:26 level=info msg="[runner] linters took 1m37.684736425s with stages: goanalysis_metalinter: 1m31.821743324s, unused: 5.837246218s"
-- 07:55:26 <testsuites></testsuites>level=info msg="File cache stats: 171 entries of total size 1.9MiB"
-- 07:55:26 level=info msg="Memory: 1116 samples, avg is 184.3MB, max is 744.1MB"
+- 07:55:26 &lt;testsuites&gt; &lt;/testsuites&gt; level=info msg="File cache stats: 171 entries of total size 1.9MiB"
+- ** 07:55:26 level=info msg="Memory: 1116 samples, avg is 184.3MB, max is 744.1MB" **
 - 07:55:26 level=info msg="Execution took 2m42.195509347s"
 
 265
 ---
 
 - 04:02:47 level=info msg="File cache stats: 171 entries of total size 1.9MiB"
-- 04:02:47 level=error msg="Timeout exceeded: try increase it by passing --timeout option"
+- ** 04:02:47 level=error msg="Timeout exceeded: try increase it by passing --timeout option" **
 - 04:02:48 Makefile:106: recipe for target 'sca' failed
