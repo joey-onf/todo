@@ -16,3 +16,15 @@ Common / Transient unit test failures
 | [VOL-5311](https://jira.opencord.org/browse/VOL-5311) | Test Perform BBSim Sanity :: Validates the BBSim Functionality for|
 | [VOL-5331](https://jira.opencord.org/browse/VOL-5331) | Voltha DT PODTests :: Test various end-to-end scenarios |
 | [VOL-5335](https://jira.opencord.org/browse/VOL-5335) | Voltha TT PODTests :: Test various functional end-to-end scenarios for TT |
+
+Sanity E2E Test for OLT/ONU on POD for DT :: Validates E2E Ping Co... | FAIL |
+------------------------------------------------------------------------------
+
+| Repo | Gerrit | Notes |
+| ---- | ------ | --- |
+| voltha-openolt-adapter    | [jenkins:1978](https://jenkins.opencord.org/job/verify_voltha-openolt-adapter_sanity-test/1978/consoleFull)   | NOP job, add pre-commit hook config file |
+| voltha-openonu-adapter-go | [jenkins:1747](https://jenkins.opencord.org/job/verify_voltha-openonu-adapter-go_sanity-test/1747/console)    | NOP job, add pre-commit hook config file |
+
+| Gerrit | URLs | Notes |
+| ---- | ------ | ----- |
+| [35261](https://gerrit.opencord.org/c/voltctl/+/35261) | [J:542](https://jenkins.opencord.org/job/verify_voltctl_sanity-test/542/console) | NOP job, add pre-commit hook |
