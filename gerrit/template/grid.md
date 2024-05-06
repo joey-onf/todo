@@ -25,6 +25,12 @@ Sanity E2E Test for OLT/ONU on POD for DT :: Validates E2E Ping Co... | FAIL |
 | voltha-openolt-adapter    | [jenkins:1978](https://jenkins.opencord.org/job/verify_voltha-openolt-adapter_sanity-test/1978/consoleFull)   | NOP job, add pre-commit hook config file |
 | voltha-openonu-adapter-go | [jenkins:1747](https://jenkins.opencord.org/job/verify_voltha-openonu-adapter-go_sanity-test/1747/console)    | NOP job, add pre-commit hook config file |
 
-| Gerrit | URLs | Notes |
-| ---- | ------ | ----- |
-| [35261](https://gerrit.opencord.org/c/voltctl/+/35261) | [J:542](https://jenkins.opencord.org/job/verify_voltctl_sanity-test/542/console) | NOP job, add pre-commit hook |
+| Gerrit | PASS | FAIL | Notes |
+| ------ | ---- | ---- | ----- |
+| [35261](https://gerrit.opencord.org/c/voltctl/+/35261) | 1 | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) - [J:542](https://jenkins.opencord.org/job/verify_voltctl_sanity-test/542/console) | NOP job, add pre-commit hook |
+
+35217
+-----
+
+- https://gerrit.opencord.org/c/voltha-go-controller/+/35217
+- https://github.com/joey-onf/todo/blob/origin/master/gerrit/data/35217"
