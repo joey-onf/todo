@@ -49,6 +49,8 @@ Log Compare
 | *1* nolint | 20.628318ms | 163.802257ms | |
 | [runner] linters took | 1m37.684736425s | 2m19.246703223s | |
 
+**NOTE ** - Passing job 237 contains &lt;testsuite&gt; job 265 does not
+
 
 237
 ---

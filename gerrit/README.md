@@ -83,7 +83,7 @@ Sanity E2E Test for OLT/ONU on POD for DT :: Validates E2E Ping Co... | FAIL |
 -----
 
 - https://gerrit.opencord.org/c/voltha-go-controller/+/35217
-- https://github.com/joey-onf/todo/blob/origin/master/gerrit/data/35217"
+- https://github.com/joey-onf/todo/blob/origin/master/gerrit/data/35217
 
 See Also
 ========
