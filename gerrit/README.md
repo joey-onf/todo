@@ -35,6 +35,7 @@ Patch Grid
 | [35242](https://gerrit.opencord.org/c/voltha-docs/+/35242) |   |  |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   |   |   |   |   |
 | [35246](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35246) | [x](https://jira.opencord.org/browse/VOL-5322), [x](https://jira.opencord.org/browse/VOL-5335) |  |   |   |   |   |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   |
 | [35252](https://gerrit.opencord.org/c/voltha-go/+/35252) |   | [x](https://jenkins.opencord.org/job/verify_voltha-go_licensed/3066/) |   |   |   |   |   |   | ![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png) | Several&nbsp;failures,&nbsp;patch&nbsp;related. |
+| [35267](https://gerrit.opencord.org/c/voltha-go-controller/+/35267) |   | [x](https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/266/console) |   |   |   |   |   |   |   |   |
 
 
 Legend
@@ -66,6 +67,7 @@ Common / Transient unit test failures
 | [VOL-5311](https://jira.opencord.org/browse/VOL-5311) | Test Perform BBSim Sanity :: Validates the BBSim Functionality for|
 | [VOL-5331](https://jira.opencord.org/browse/VOL-5331) | Voltha DT PODTests :: Test various end-to-end scenarios |
 | [VOL-5335](https://jira.opencord.org/browse/VOL-5335) | Voltha TT PODTests :: Test various functional end-to-end scenarios for TT |
+| [VOL-5332](https://jira.opencord.org/browse/VOL-5332) | SCA timeout failure (~python testing) |
 
 Sanity E2E Test for OLT/ONU on POD for DT :: Validates E2E Ping Co... | FAIL |
 ------------------------------------------------------------------------------
