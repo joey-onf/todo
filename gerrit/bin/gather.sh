@@ -4,9 +4,6 @@
 
 function init()
 { # loader
-    #declare pgm
-    #pgm="$(readlink "${BASH_SOURCE[0]}" --no-newline --canonicalize-existing)"
-    #readonly pgm
     declare -g pgm=''
     pgm="$(realpath --canonicalize-existing "$0")"
     readonly pgm
@@ -48,6 +45,43 @@ function error()
 EOERR
 
     exit 1
+}
+
+## -----------------------------------------------------------------------
+## Intent: Parse URLs and derive paths
+## -----------------------------------------------------------------------
+function get_paths()
+{
+    local -n ref=$1; shift
+
+    local gerr_url="$1"; shift
+    local jenk_url="$1"; shift
+
+    local -A temp
+    get_gerrit  "$jenk_gerrit" temp
+    get_jenkins "$jenk_url" temp
+
+    local repo="${temp['repo']}"
+    local patch="${temp['patch']}"
+    local job="${temp['job']}"
+    local patch_dir="data/${patch}"
+    local ger_path="${patch_dir}/jenkins"
+    local job_root="${patch_dir}/jobs"
+
+    temp['patch_dir']="$patch_dir"
+    temp['gerrit_dir']="$patch_dir"
+    temp['jenkins_urls']="${patch_dir}/jenkins"
+
+    temp['job_root']="$job_root"
+    temp['job_dir']="${job_root}/${job}"
+
+    ref=()
+    local key
+    for key in "${!temp[@]}"; do
+        ref["$key"]="${temp[$key]}"
+    done
+
+    return
 }
 
 ## -----------------------------------------------------------------------
@@ -186,7 +220,7 @@ function capture()
     local jenk_log="$jenk_dir/consoleText"
     if [[ ! -f "$jenk_log" ]]; then
         curl -o "$jenk_log" "$jenk_url";
-        echo "$jenk_url" > "$jenk_dir/jenkins"
+        echo "$jenk_url" >> "$jenk_dir/jenkins"
     fi
 
     ## -------------
@@ -206,41 +240,42 @@ function capture()
             awk '/Triggered by Gerrit/{ print $0 }' "$jenk_log" \
                 | tr '[[:blank:]]' '\n' | grep '://')
 
-        declare -p fields
-        
-        [[ ${#fields[@]} -eq 0 ]] \
-            && { error "Gerrit detect failed (LINENO:$LINENO) for $jenk_url"; }
+        if [[ ${#fields[@]} -eq 0 ]]; then
+            emacs "$jenk_log"
+            error "Gerrit detect failed (LINENO:$LINENO) for $jenk_url"
+        fi
 
         for gerrit_url in "${fields[@]}";
         do
-            declare -p gerrit_url
             parse_gerrit "$gerrit_url" # sanity check incoming args
             echo "$gerrit_url" >> "$jenk_gerrit"
         done
     fi
-    
+
     ## ----------------------------
     ## Update job list within patch
     ## ----------------------------
     parse_gerrit "$jenk_gerrit"
 
-    local -A vals
-    get_gerrit  "$jenk_gerrit" vals
-    get_jenkins "$jenk_url" vals
+    local -A vals=()
+    get_paths vals "$jenk_gerrit" "$jenk_url"
+    # declare -p vals | tr ' ' '\n'
 
-    declare -p vals
-
-    local repo="${vals['repo']}"
-    local patch="${vals['patch']}"
-    local job="${vals['job']}"
-    local patch_dir="data/${patch}"
-    local ger_path="${patch_dir}/jenkins"
-    local job_dir="${patch_dir}/jobs/${job}"
+    local repo="${vals[repo]}"
+    local job_root="${vals[job_root]}"
+    local gerrit_dir="${vals[gerrit_dir]}"
+    local job="${vals[job]}"
+    local job_name="${vals[job_name]}"
+    local job_dir="${vals[job_dir]}"
+    local patch_dir="${vals[patch_dir]}"
+    local jenkins_urls="${vals[jenkins_urls]}"
+    local patch="${vals[patch]}"
 
     mkdir -p "$patch_dir"
-    touch "$ger_path"
-    if ! grep -q "$jenk_url" "$ger_path"; then
-        echo "$jenk_url" >> "$ger_path"
+#    touch "$ger_path"
+    touch "$jenkins_urls"
+    if ! grep -q "$jenk_url" "$jenkins_urls"; then
+        echo "$jenk_url" >> "$jenkins_urls"
     fi
 
     local -a errs=()
@@ -255,23 +290,119 @@ function capture()
     return
 }
 
+## -----------------------------------------------------------------------
+## -----------------------------------------------------------------------
+function is_valid_repo()
+{
+    local repo="$1"; shift
+    case "$repo" in
+        votlha-docs) ;;
+        voltha-go-controller) ;;
+        voltha-lib-go) ;;
+        voltha-protos) ;;
+        *) error "Detect invalid repo: $repo" ;;
+    esac
+
+    return
+}
+
 ##---------------##
 ##---] MAIN  [---##
 ##---------------##
-#declare -g WORK
-#common_tempdir_mkdir WORK
-#declare -p WORK
+
+touch foo
 
 while [[ $# -gt 0 ]]; do
     arg="$1"; shift
 
+    declare -a gerrs=()
+    declare -a jenks=()
+
     case "$arg" in
-#        'https://gerrit.opencord.org/c/bbsim/+/35225' 
-        'https://gerrit.opencord.org/c/'*) parse_gerrit "$arg" ;;
-        'https://jenkins.opencord.org/'*) capture "$arg"  ;;
-        *) error "Detect invalid argument: $arg" ;;
+
+        '--repo')
+            arg="$1"; shift
+            is_valid_repo "$arg"
+            declare repo="$arg"
+            ;;
+
+        '--gerrit')
+            [[ ! -v repo ]] && { error '--repo is required'; }
+            declare -i id="$1"; shift
+            # ssh
+            gerrs+=("https://gerrit.opencord.org/c/${repo}/+/${id}")
+            unset repo
+            ;;
+
+        '--jenkins')
+            [[ ! -v subdir ]] && { error '--subdir is required'; }
+            declare -i id="$1"; shift
+            jenks+=("https://jenkins.opencord.org/job/${subdir}/${id}/consoleText")
+            unset subdir
+            ;;
+
+        '--subdir')
+            arg="$1"; shift
+            [[ "$arg" != *"$repo"* ]] && { error "--repo is required"; }
+            declare subdir="$arg"
+            unset repo
+            ;;
+
+        'https://gerrit.opencord.org/c/'*) gerr+=("$arg") ;;
+
+        ## URL copied from jenkins history
+        # --------------------------------------------------------------------------
+        # https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/264/
+        # https://jenkins.opencord.org/job/verify_bbsim_sanity-test/1295/consoleText
+        # --------------------------------------------------------------------------
+        'https://jenkins.opencord.org/'*)
+            url="$arg"
+            shopt -s extglob # ON
+            url="${url%%+(/)}"
+            shopt -u extglob # OFF
+            url+='/consoleText'
+            jenks+=("$url")
+            ;;
+
+        *)
+            if [[ -f "$arg" ]]; then
+                readarray -t -t fields < <(grep '://' "$arg")
+                set -- "${fields[@]}" "$@"
+            else
+                error "Detect invalid argument: $arg"
+            fi               
     esac
+
     
+    for gerr in "${gerrs[@]}";
+    do
+        if ! curl --head --silent "$gerr" > /dev/null 2>&1; then
+            error "URL is invalid: $gerr"
+        fi
+        parse_gerrit "$gerr"
+    done
+
+    for jenk in "${jenks[@]}";
+    do
+        if ! curl --head --silent "$jenk" > /dev/null 2>&1; then
+            error "URL is invalid: $jenk"
+        fi
+        capture "$jenk"
+    done
+
 done
+
+cat <<EOF
+
+** -----------------------------------------------------------------------
+** Files modified by the current run
+** -----------------------------------------------------------------------
+
+EOF
+find . -newer foo -ls
+
+
+find . -newer foo -name 'jenkins' -print0 \
+     | xargs -0 -I'{}' --no-run-if-empty sort -nr --output={} {}
 
 # [EOF]

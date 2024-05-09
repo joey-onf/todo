@@ -222,11 +222,11 @@ EOGRID
 
                     local -a accum=()
                     local url=''
+                    local -a accum=()
                     for url in "${jenkins[@]}";
                     do
-                        local -a accum=()
                         accum+=( $(printf '[x](%s)' "$url") )
-                    done # for jira
+                    done # for jenkins
                     buffer[-1]="$(join_by ', ' "${accum[@]}")"
                     ;;
 

@@ -1,0 +1,308 @@
+Triggered by Gerrit: https://gerrit.opencord.org/c/voltha-go-controller/+/35217
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on EC2 (CORDEC2) - ubuntu18.04-basebuild-1c-2g (i-0d52020468cd0d13f) (ubuntu18.04-basebuild-1c-2g) in workspace /w/workspace/verify_voltha-go-controller_unit-test
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-0mTvzxrWfNQj/agent.2299
+SSH_AGENT_PID=2302
+[ssh-agent] Started.
+Running ssh-add (command line suppressed)
+Identity added: /w/workspace/verify_voltha-go-controller_unit-test@tmp/private_key_10256646909099370227.key (/w/workspace/verify_voltha-go-controller_unit-test@tmp/private_key_10256646909099370227.key)
+[ssh-agent] Using credentials jenkins (cord-jenkins-ssh)
+The recommended git tool is: NONE
+using credential cord-jenkins-ssh
+Wiping out workspace first.
+Cloning the remote Git repository
+Cloning repository ssh://jenkins@gerrit.opencord.org:29418/voltha-go-controller
+ > git init /w/workspace/verify_voltha-go-controller_unit-test/voltha-go-controller # timeout=10
+Fetching upstream changes from ssh://jenkins@gerrit.opencord.org:29418/voltha-go-controller
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+using GIT_SSH to set credentials cord-jenkins-ssh
+Verifying host key using known hosts file, will automatically accept unseen keys
+ > git fetch --tags --progress -- ssh://jenkins@gerrit.opencord.org:29418/voltha-go-controller +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url ssh://jenkins@gerrit.opencord.org:29418/voltha-go-controller # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url ssh://jenkins@gerrit.opencord.org:29418/voltha-go-controller # timeout=10
+Fetching upstream changes from ssh://jenkins@gerrit.opencord.org:29418/voltha-go-controller
+using GIT_SSH to set credentials cord-jenkins-ssh
+Verifying host key using known hosts file, will automatically accept unseen keys
+ > git fetch --tags --progress -- ssh://jenkins@gerrit.opencord.org:29418/voltha-go-controller refs/changes/17/35217/11 # timeout=10
+ > git rev-parse 55f0f6c3f5e2dbe9e57272b5eb4f9557caa38dab^{commit} # timeout=10
+JENKINS-19022: warning: possible memory leak due to Git plugin usage; see: https://plugins.jenkins.io/git/#remove-git-plugin-buildsbybranch-builddata-script
+Checking out Revision 55f0f6c3f5e2dbe9e57272b5eb4f9557caa38dab (refs/changes/17/35217/11)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 55f0f6c3f5e2dbe9e57272b5eb4f9557caa38dab # timeout=10
+Commit message: "Use latest SCA-COMMON image for VOLTHA for JAVA/GO/Python Repositories"
+ > git rev-parse FETCH_HEAD^{commit} # timeout=10
+ > git rev-list --no-walk ec895f87f4ab78b790c18e010c75ae631c7a3152 # timeout=10
+provisioning config files...
+copy managed file [npmrc] to file:/home/jenkins/.npmrc
+copy managed file [pipconf] to file:/home/jenkins/.config/pip/pip.conf
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - Injecting as environment variables the properties content 
+DEST_GOPATH=github.com/opencord
+UNIT_TEST_KEEP_GOING=false
+UNIT_TEST_TARGETS=lint sca test
+GOPROXY=https://proxy.golang.org
+
+[EnvInject] - Variables injected successfully.
+[verify_voltha-go-controller_unit-test] $ /usr/bin/env bash /tmp/jenkins18250913588265211707.sh
+/w/workspace/verify_voltha-go-controller_unit-test/go/src/github.com/opencord/voltha-go-controller /w/workspace/verify_voltha-go-controller_unit-test
+Running dependency check...
+Unable to find image 'voltha/voltha-ci-tools:2.4.0-golang' locally
+2.4.0-golang: Pulling from voltha/voltha-ci-tools
+ca3cd42a7c95: Pulling fs layer
+dbcca316e5c3: Pulling fs layer
+b65b403d39c8: Pulling fs layer
+3e4189aff30b: Pulling fs layer
+f24a58abccf6: Pulling fs layer
+898fb73fc6b4: Pulling fs layer
+7cea6985e9c2: Pulling fs layer
+3e4189aff30b: Waiting
+f24a58abccf6: Waiting
+898fb73fc6b4: Waiting
+7cea6985e9c2: Waiting
+dbcca316e5c3: Verifying Checksum
+dbcca316e5c3: Download complete
+b65b403d39c8: Verifying Checksum
+b65b403d39c8: Download complete
+f24a58abccf6: Verifying Checksum
+f24a58abccf6: Download complete
+ca3cd42a7c95: Verifying Checksum
+ca3cd42a7c95: Download complete
+7cea6985e9c2: Verifying Checksum
+7cea6985e9c2: Download complete
+898fb73fc6b4: Verifying Checksum
+898fb73fc6b4: Download complete
+ca3cd42a7c95: Pull complete
+dbcca316e5c3: Pull complete
+b65b403d39c8: Pull complete
+3e4189aff30b: Verifying Checksum
+3e4189aff30b: Download complete
+3e4189aff30b: Pull complete
+f24a58abccf6: Pull complete
+898fb73fc6b4: Pull complete
+7cea6985e9c2: Pull complete
+Digest: sha256:a9a85b103040d5050f6f284651df937554d8967a851e1cdf55d4ead999ea48b2
+Status: Downloaded newer image for voltha/voltha-ci-tools:2.4.0-golang
+all modules verified
+Dependency check OK. Running vendor check...
+docker run --rm --user $(id -u):$(id -g) -v /w/workspace/verify_voltha-go-controller_unit-test/go/src/github.com/opencord/voltha-go-controller:/app  -v gocache:/.cache -v gocache-2.4.0:/go/pkg voltha/voltha-ci-tools:2.4.0-golang go mod tidy
+go: downloading github.com/opencord/voltha-lib-go/v7 v7.2.1
+go: downloading github.com/tinojj/gopacket v1.1.20-0.20220525133109-3e65a52a1a61
+go: downloading go.uber.org/atomic v1.9.0
+go: downloading github.com/golang/mock v1.4.4
+go: downloading github.com/stretchr/testify v1.8.2
+go: downloading github.com/opencord/voltha-protos/v5 v5.5.0
+go: downloading google.golang.org/grpc v1.25.1
+go: downloading github.com/golang/protobuf v1.5.3
+go: downloading github.com/jessevdk/go-flags v1.5.0
+go: downloading github.com/go-redis/redis/v8 v8.11.5
+go: downloading github.com/guumaster/tablewriter v0.0.10
+go: downloading github.com/gorilla/mux v1.8.1
+go: downloading go.etcd.io/etcd v3.3.25+incompatible
+go: downloading github.com/phayes/freeport v0.0.0-20180830031419-95f893ade6f2
+go: downloading github.com/opentracing/opentracing-go v1.2.0
+go: downloading github.com/uber/jaeger-client-go v2.29.1+incompatible
+go: downloading go.uber.org/zap v1.18.1
+go: downloading github.com/davecgh/go-spew v1.1.1
+go: downloading github.com/pmezard/go-difflib v1.0.0
+go: downloading gopkg.in/yaml.v3 v3.0.1
+go: downloading google.golang.org/genproto v0.0.0-20220208230804-65c12eb4c068
+go: downloading github.com/cevaris/ordered_map v0.0.0-20190319150403-3adeae072e73
+go: downloading google.golang.org/protobuf v1.27.1
+go: downloading golang.org/x/net v0.0.0-20210614182718-04defd469f4e
+go: downloading golang.org/x/sys v0.0.0-20211216021012-1d35b9e2eb4e
+go: downloading github.com/cespare/xxhash/v2 v2.1.2
+go: downloading github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f
+go: downloading github.com/onsi/ginkgo v1.16.5
+go: downloading github.com/onsi/gomega v1.18.1
+go: downloading github.com/mattn/go-runewidth v0.0.10
+go: downloading github.com/coreos/etcd v3.3.25+incompatible
+go: downloading github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f
+go: downloading github.com/google/uuid v1.3.0
+go: downloading github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
+go: downloading github.com/prometheus/client_golang v1.11.0
+go: downloading golang.org/x/crypto v0.0.0-20210616213533-5ff15b29337e
+go: downloading github.com/uber/jaeger-lib v2.4.1+incompatible
+go: downloading github.com/pkg/errors v0.9.1
+go: downloading go.uber.org/multierr v1.6.0
+go: downloading go.uber.org/goleak v1.1.10
+go: downloading github.com/benbjohnson/clock v1.1.0
+go: downloading gopkg.in/yaml.v2 v2.4.0
+go: downloading gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
+go: downloading github.com/google/go-cmp v0.5.5
+go: downloading github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
+go: downloading github.com/rivo/uniseg v0.1.0
+go: downloading github.com/gogo/protobuf v1.3.2
+go: downloading github.com/coreos/go-systemd v0.0.0-20191104093116-d3cd4ed1dbcf
+go: downloading github.com/coreos/go-semver v0.3.0
+go: downloading github.com/dgrijalva/jwt-go v3.2.0+incompatible
+go: downloading github.com/soheilhy/cmux v0.1.5
+go: downloading github.com/prometheus/client_model v0.2.0
+go: downloading github.com/prometheus/common v0.26.0
+go: downloading github.com/grpc-ecosystem/grpc-gateway v1.16.0
+go: downloading github.com/tmc/grpc-websocket-proxy v0.0.0-20201229170055-e5319fda7802
+go: downloading sigs.k8s.io/yaml v1.2.0
+go: downloading github.com/HdrHistogram/hdrhistogram-go v1.1.0
+go: downloading golang.org/x/lint v0.0.0-20200302205851-738671d3881b
+go: downloading github.com/kr/pretty v0.2.1
+go: downloading golang.org/x/text v0.3.6
+go: downloading github.com/nxadm/tail v1.4.8
+go: downloading go.etcd.io/bbolt v1.3.4
+go: downloading github.com/beorn7/perks v1.0.1
+go: downloading github.com/prometheus/procfs v0.6.0
+go: downloading github.com/json-iterator/go v1.1.11
+go: downloading github.com/modern-go/reflect2 v1.0.1
+go: downloading github.com/jonboulle/clockwork v0.2.2
+go: downloading github.com/dustin/go-humanize v1.0.0
+go: downloading github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
+go: downloading golang.org/x/time v0.0.0-20210723032227-1f47c861a9ac
+go: downloading github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2
+go: downloading github.com/matttproud/golang_protobuf_extensions v1.0.1
+go: downloading github.com/gorilla/websocket v1.4.2
+go: downloading github.com/sirupsen/logrus v1.8.1
+go: downloading github.com/stretchr/objx v0.5.0
+go: downloading github.com/kr/text v0.2.0
+go: downloading golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
+go: downloading gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7
+go: downloading github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+go: downloading github.com/google/btree v1.0.1
+go: downloading github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da
+go: downloading golang.org/x/tools v0.1.1
+go: downloading github.com/fsnotify/fsnotify v1.4.9
+docker run --rm --user $(id -u):$(id -g) -v /w/workspace/verify_voltha-go-controller_unit-test/go/src/github.com/opencord/voltha-go-controller:/app  -v gocache:/.cache -v gocache-2.4.0:/go/pkg voltha/voltha-ci-tools:2.4.0-golang go mod vendor
+Vendor check OK.
+Running Dockerfile lint check ...
+Unable to find image 'voltha/voltha-ci-tools:2.4.0-hadolint' locally
+2.4.0-hadolint: Pulling from voltha/voltha-ci-tools
+c9b1b535fdd9: Pulling fs layer
+253e0a33aa3d: Pulling fs layer
+7b303545a310: Pulling fs layer
+7b303545a310: Verifying Checksum
+7b303545a310: Download complete
+c9b1b535fdd9: Verifying Checksum
+c9b1b535fdd9: Download complete
+253e0a33aa3d: Verifying Checksum
+253e0a33aa3d: Download complete
+c9b1b535fdd9: Pull complete
+253e0a33aa3d: Pull complete
+7b303545a310: Pull complete
+Digest: sha256:76e7a95ab6f3cd20ccc9ea4b62b76904cbb0b7fd6e2d81916a9990893f867fe4
+Status: Downloaded newer image for voltha/voltha-ci-tools:2.4.0-hadolint
+Dockerfile lint check OK
+Running static code analysis...
+Unable to find image 'voltha/voltha-ci-tools:2.4.0-golangci-lint' locally
+2.4.0-golangci-lint: Pulling from voltha/voltha-ci-tools
+c9b1b535fdd9: Already exists
+cbb0d8da1b30: Pulling fs layer
+d909eff28200: Pulling fs layer
+f9e7c84be0a1: Pulling fs layer
+8a0c202c45df: Pulling fs layer
+f8156e56c61d: Pulling fs layer
+a208f23a94d1: Pulling fs layer
+cbc21da71d5c: Pulling fs layer
+1f8a59f389df: Pulling fs layer
+8a0c202c45df: Waiting
+f8156e56c61d: Waiting
+a208f23a94d1: Waiting
+cbc21da71d5c: Waiting
+1f8a59f389df: Waiting
+d909eff28200: Verifying Checksum
+d909eff28200: Download complete
+cbb0d8da1b30: Verifying Checksum
+cbb0d8da1b30: Download complete
+8a0c202c45df: Verifying Checksum
+8a0c202c45df: Download complete
+cbb0d8da1b30: Pull complete
+d909eff28200: Pull complete
+a208f23a94d1: Verifying Checksum
+a208f23a94d1: Download complete
+cbc21da71d5c: Verifying Checksum
+cbc21da71d5c: Download complete
+1f8a59f389df: Verifying Checksum
+1f8a59f389df: Download complete
+f8156e56c61d: Verifying Checksum
+f8156e56c61d: Download complete
+f9e7c84be0a1: Verifying Checksum
+f9e7c84be0a1: Download complete
+f9e7c84be0a1: Pull complete
+8a0c202c45df: Pull complete
+f8156e56c61d: Pull complete
+a208f23a94d1: Pull complete
+cbc21da71d5c: Pull complete
+1f8a59f389df: Pull complete
+Digest: sha256:52cb00fba4846d28155a92df3848a6e5fb6268383c6007da9f431eec0087c74d
+Status: Downloaded newer image for voltha/voltha-ci-tools:2.4.0-golangci-lint
+level=info msg="[config_reader] Config search paths: [./ /app /]"
+level=info msg="[config_reader] Used config file .golangci.yml"
+level=info msg="[lintersdb] Active 13 linters: [errcheck goconst gocyclo gofmt goimports gosec gosimple govet ineffassign misspell staticcheck unused whitespace]"
+level=info msg="[lintersdb] Active 13 linters: [errcheck goconst gocyclo gofmt goimports gosec gosimple govet ineffassign misspell staticcheck unused whitespace]"
+level=info msg="[loader] Go packages loading at mode 575 (compiled_files|deps|exports_file|imports|name|types_sizes|files) took 4m33.545876017s"
+level=info msg="[runner/filename_unadjuster] Pre-built 0 adjustments in 148.777832ms"
+level=info msg="Memory: 3099 samples, avg is 98.9MB, max is 474.3MB"
+level=info msg="Execution took 6m0.222178949s"
+level=info msg="[runner/goanalysis_metalinter/goanalysis] analyzers took 4m32.801755161s with top 10 stages: buildssa: 1m12.533481615s, goimports: 38.197976696s, gofmt: 20.225372081s, gosec: 19.408478806s, whitespace: 18.010694033s, ineffassign: 13.564311074s, misspell: 11.228212318s, vrp: 4.618570619s, inspect: 3.484525884s, shadow: 3.275143811s"
+level=info msg="[runner/unused/goanalysis] analyzers took 22.198072159s with top 10 stages: buildssa: 17.711727266s, U1000: 4.486344893s"
+level=info msg="[runner/skip dirs] Skipped 29 issues from dir internal/test/mocks by pattern internal/test/mocks"
+level=info msg="[runner] Issues before processing: 37, after processing: 0"
+level=info msg="[runner] Processors filtering stat (out/in): filename_unadjuster: 37/37, exclude: 2/8, nolint: 0/2, cgo: 37/37, autogenerated_exclude: 8/8, identifier_marker: 8/8, exclude-rules: 2/2, skip_files: 37/37, skip_dirs: 8/37, path_prettifier: 37/37"
+level=info msg="[runner] processing took 161.803019ms with stages: nolint: 142.32353ms, exclude: 17.725225ms, skip_dirs: 887.399µs, identifier_marker: 454.375µs, path_prettifier: 206.063µs, autogenerated_exclude: 99.566µs, cgo: 42.626µs, skip_files: 29.331µs, filename_unadjuster: 17.469µs, max_same_issues: 3.657µs, diff: 2.308µs, uniq_by_line: 2.18µs, max_from_linter: 2.072µs, source_code: 1.935µs, exclude-rules: 1.817µs, path_shortener: 1.773µs, max_per_file_from_linter: 1.693µs"
+level=info msg="[runner] linters took 2m26.808602312s with stages: goanalysis_metalinter: 1m54.982331885s, unused: 31.644253405s"
+level=info msg="File cache stats: 171 entries of total size 1.9MiB"
+level=error msg="Timeout exceeded: try increase it by passing --timeout option"
+<testsuites></testsuites>Makefile:106: recipe for target 'sca' failed
+make: *** [sca] Error 4
+Build step 'Execute shell' marked build as failure
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 2302 killed;
+[ssh-agent] Stopped.
+Recording test results
+[Checks API] No suitable checks publisher found.
+INFO: Processing GoogleTest-1.8
+INFO: [GoogleTest-1.8] - No test report file(s) were found with the pattern '**/*xunit.xml' relative to '/w/workspace/verify_voltha-go-controller_unit-test' for the testing framework 'GoogleTest-1.8'.
+Did you enter a pattern relative to (and within) the workspace directory?
+Did you generate the result report(s) for 'GoogleTest-1.8'?"
+WARNING: All test reports are empty.
+[Checks API] No suitable checks publisher found.
+INFO: Setting the build status to org.jenkinsci.plugins.xunit.XUnitProcessorResult@1cb00afe
+[Cobertura] Publishing Cobertura coverage report...
+
+FATAL: Unable to find coverage results
+java.io.IOException: /w/workspace/verify_voltha-go-controller_unit-test/go/src/github.com/opencord/voltha-go-controller/tests/results/go-test-coverage.xml is not an XML file, please check your report pattern
+	at hudson.plugins.cobertura.CoberturaPublisher$ParseReportCallable.invoke(CoberturaPublisher.java:919)
+	at hudson.plugins.cobertura.CoberturaPublisher$ParseReportCallable.invoke(CoberturaPublisher.java:883)
+	at hudson.FilePath$FileCallableWrapper.call(FilePath.java:3502)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:376)
+	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+	Suppressed: hudson.remoting.Channel$CallSiteStackTrace: Remote call to EC2 (CORDEC2) - ubuntu18.04-basebuild-1c-2g (i-0d52020468cd0d13f)
+		at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1784)
+		at hudson.remoting.UserRequest$ExceptionResponse.retrieve(UserRequest.java:356)
+		at hudson.remoting.Channel.call(Channel.java:1000)
+		at hudson.FilePath.act(FilePath.java:1194)
+		at hudson.FilePath.act(FilePath.java:1183)
+		at hudson.plugins.cobertura.CoberturaPublisher.perform(CoberturaPublisher.java:550)
+		at jenkins.tasks.SimpleBuildStep.perform(SimpleBuildStep.java:123)
+		at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:79)
+		at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:816)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:765)
+		at hudson.model.Build$BuildExecution.post2(Build.java:179)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:709)
+		at hudson.model.Run.execute(Run.java:1922)
+		at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+		at hudson.model.ResourceController.execute(ResourceController.java:101)
+		at hudson.model.Executor.run(Executor.java:442)
+ERROR: Step ‘Publish Cobertura Coverage Report’ failed: [Cobertura] Unable to find coverage results
+Finished: FAILURE
