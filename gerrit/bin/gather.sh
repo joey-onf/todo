@@ -18,6 +18,8 @@ function init()
 }
 init
 
+source "$sandbox_root/bin/assemble/string-to-jira.sh" # get_error_map
+
 # set -euo pipefail
 
 
@@ -72,6 +74,13 @@ function get_paths()
     temp['gerrit_dir']="$patch_dir"
     temp['jenkins_urls']="${patch_dir}/jenkins"
 
+    if [[ "$job" == "0" ]]; then
+        declare -p gerr_url >> ~/debug
+        declare -p jenk_url >> ~/debug
+        
+        exit 1
+    fi
+    
     temp['job_root']="$job_root"
     temp['job_dir']="${job_root}/${job}"
 
@@ -217,6 +226,9 @@ function capture()
     ## ------------
     ## Retrieve log
     ## ------------
+    case "$jenk_dir" in
+        *consoleText*) error "Detected console text in $(declare -p jenk_dir)" ;;
+    esac
     local jenk_log="$jenk_dir/consoleText"
     if [[ ! -f "$jenk_log" ]]; then
         curl -o "$jenk_log" "$jenk_url";
@@ -272,7 +284,6 @@ function capture()
     local patch="${vals[patch]}"
 
     mkdir -p "$patch_dir"
-#    touch "$ger_path"
     touch "$jenkins_urls"
     if ! grep -q "$jenk_url" "$jenkins_urls"; then
         echo "$jenk_url" >> "$jenkins_urls"
@@ -283,7 +294,26 @@ function capture()
         mkdir -p "$job_dir"
         pushd "$job_dir" >/dev/null || { error "pushd failed; $job_dir"; }
         printf '%s\n' "${errs[@]}" > 'FAIL'
-        echo "$jenk_log" >> logs
+        echo "$jenk_log" >> 'logs'
+        sort -u -o logs logs
+        exit 1
+
+        local -A E2J=()
+        get_error_map E2J
+
+        local key
+        for key in "${!E2J[@]}";
+        do
+            local val="${E2J[$key]}"
+            if [[ "${E2J[$key]}" == *"$val"* ]]; then
+                if ! grep -q "$key" jira; then
+                    echo "FOUND: $key" >> ~/debug
+                    
+                    echo "$key" >> jira
+                fi
+            fi
+        done
+        
         popd >/dev/null || { error "popd failed; $job_dir"; }
     fi
 
@@ -357,6 +387,7 @@ while [[ $# -gt 0 ]]; do
         # --------------------------------------------------------------------------
         'https://jenkins.opencord.org/'*)
             url="$arg"
+            url="${url/\/consoleText/}"
             shopt -s extglob # ON
             url="${url%%+(/)}"
             shopt -u extglob # OFF
@@ -403,6 +434,6 @@ find . -newer foo -ls
 
 
 find . -newer foo -name 'jenkins' -print0 \
-     | xargs -0 -I'{}' --no-run-if-empty sort -nr --output={} {}
+     | xargs -0 -I'{}' --no-run-if-empty sort -unr --output={} {}
 
 # [EOF]

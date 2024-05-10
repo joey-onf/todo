@@ -258,6 +258,9 @@ EOGRID
                     ;;
 
                 'VOL-'*)
+
+# function get_error_map()
+
                     [[ -v found ]] && { unset found; }
                     if [[ -e "$column" ]]; then
                         local -i found=1
