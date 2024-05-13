@@ -1,5 +1,6 @@
 # -*- makefile -*-
-    
+
+*.gz
 # tmp/
 
 # [EOF]

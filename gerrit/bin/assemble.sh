@@ -18,6 +18,7 @@ declare libroot="${pgm%.sh}"
 readonly libroot
 
 source "$libroot/grid.sh"
+source "$libroot/is_valid.sh"
 
 
 ## -----------------------------------------------------------------------
@@ -341,6 +342,14 @@ function init_gerrit()
 
         local repo="${fields[4]}"
         local patch="${fields[6]}"
+
+        if ! is_valid_repo "$repo"; then
+            printf 'ERROR: parse error\n'
+            printf '\trepo  :  %s\n' "$repo"
+            printf '\tpatch :  %s\n' "$patch"
+            printf '\t  URL : %s\n' "$url"
+            error "OUTA HERE"
+        fi
 
         [[ ! -d "$patch" ]]          && { >&2 mkdir -vp "$patch"; }
         [[ ! -f "${patch}/gerrit" ]] && { echo "$url" > "${patch}/gerrit"; }

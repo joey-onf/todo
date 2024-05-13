@@ -14,9 +14,10 @@ Topic(s)
 
 | Topic     | Description                                |
 | --------- | -------------------------------------------|
+| bin       | Repository helper scripts                  |
+| gerrit    | Tracker for E2E, timeouts & transient failures ||
 | onf-make  | Common makefile repository items           |
 | voltha    | Voltha related jira tickets and todo items |
-| bin       | Repository helper scripts                  |
 
 | Subdir    | Description                                |
 | --------- | -------------------------------------------|

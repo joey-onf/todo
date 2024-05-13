@@ -9,6 +9,7 @@ function get_error_map()
 
     ref=()
     ref['VOL-5291']="Build timed out"
+    ref['VOL-5291']='Timeout exceeded:'
     
     ref['VOL-5311']="Test Perform BBSim Sanity :: Validates the BBSim Functionality for... | FAIL |"
     

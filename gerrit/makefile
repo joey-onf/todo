@@ -1,12 +1,28 @@
 # -*- makefile -*-
 
+null :=#
+space := $(null) $(null)
+
 .DEFAULT_GOAL := generate
 
 all:
 
+## -----------------------------------------------------------------------
+## -----------------------------------------------------------------------
 generate:
-#	./bin/assemble.sh 
+#	./xy.sh
 	./bin/assemble.sh > README.md
+
+patch-ids = $(shell find data/[0-9]* -name 'repo' -print)
+$(foreach id,$(patch-ids),$(info ** id=$(id)))
+
+# patch-ids = $(shell find data -mindepth 1 -maxdepth 1 -name '[0-9]*' -print \
+#    | xargs -n1 basename \
+#    | sort -n)#
+
+# cgather-args += $(addprefix --gerrit$(space),$(patch-ids))
+gather :
+	./bin/gather.sh $(gather-args)
 
 view :: generate
 	pandoc README.md | lynx -stdin

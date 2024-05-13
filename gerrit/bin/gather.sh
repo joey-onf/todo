@@ -1,5 +1,7 @@
 #!/bin/bash
 ## -----------------------------------------------------------------------
+## Intent: Retrieve logs and aggregate patch and job state
+##         for rendering in the gerrit patch matrix
 ## -----------------------------------------------------------------------
 
 function init()
@@ -104,12 +106,16 @@ function detect_fail()
     local -n ref=$1 ; shift
     local log="$1"  ; shift
 
+    local excl="${sandbox_root}/bin/assemble/error-messages"
     ## Color red if file 'FAIL' exists in jobs
     declare -a wanted=()
-    wanted+=('-e' '| FAIL |')
+    wanted+=("--file=$excl")
+
     readarray -t strings < <(grep --fixed-strings "${wanted[@]}" "$log")
     ref=("${strings[@]}")
 
+    declare -p strings
+    declare -p log
     [[ ${#strings[@]} -gt 0 ]] && { true; } || { false; }
     return
 }
@@ -291,25 +297,32 @@ function capture()
 
     local -a errs=()
     if detect_fail errs "$jenk_log"; then
+
+        # % cat ./data/35217/jobs/262/FAIL
+        #   level=error msg="Timeout exceeded: try increase it by passing --timeout option"
+        # % cat ./data/35217/jobs/262/logs
+        # data/jenkins/497aac0bfe7a770f7ccbf13d58eb4f92/consoleText
+        
         mkdir -p "$job_dir"
         pushd "$job_dir" >/dev/null || { error "pushd failed; $job_dir"; }
         printf '%s\n' "${errs[@]}" > 'FAIL'
         echo "$jenk_log" >> 'logs'
         sort -u -o logs logs
-        exit 1
 
         local -A E2J=()
         get_error_map E2J
 
+        declare -p E2J >> ~/.data/xy.log
+        
         local key
         for key in "${!E2J[@]}";
         do
             local val="${E2J[$key]}"
             if [[ "${E2J[$key]}" == *"$val"* ]]; then
                 if ! grep -q "$key" jira; then
-                    echo "FOUND: $key" >> ~/debug
-                    
-                    echo "$key" >> jira
+                    echo "FOUND: $key" | tee -a ~/debug/xy.log
+                    ## URL not key
+                    echo "https://jira.opencord.org/browse/${key}" >> jira
                 fi
             fi
         done
@@ -357,18 +370,35 @@ while [[ $# -gt 0 ]]; do
             ;;
 
         '--gerrit')
-            [[ ! -v repo ]] && { error '--repo is required'; }
             declare -i id="$1"; shift
+            if [[ -f "data/${id}/repo" ]]; then
+                repo="$(cat "data/${id}/repo")"
+                declare -p repo
+            elif [[ ! -v repo ]]; then
+                error '--repo is required'
+            fi
+
             # ssh
             gerrs+=("https://gerrit.opencord.org/c/${repo}/+/${id}")
             unset repo
             ;;
 
         '--jenkins')
-            [[ ! -v subdir ]] && { error '--subdir is required'; }
-            declare -i id="$1"; shift
-            jenks+=("https://jenkins.opencord.org/job/${subdir}/${id}/consoleText")
-            unset subdir
+            arg="$1"
+            case "$arg" in
+
+                ## Recheck, fully formed URL passed
+                *'/consoleText')
+                    arg="$1"; shift
+                    jenks+=("$arg")
+                    ;;
+                *)
+                    [[ ! -v subdir ]] && { error '--subdir is required'; }
+                    declare -i id="$1"; shift
+                    jenks+=("https://jenkins.opencord.org/job/${subdir}/${id}/consoleText")
+                    unset subdir
+                    ;;
+            esac
             ;;
 
         '--subdir')
@@ -431,7 +461,7 @@ cat <<EOF
 
 EOF
 find . -newer foo -ls
-
+rm foo
 
 find . -newer foo -name 'jenkins' -print0 \
      | xargs -0 -I'{}' --no-run-if-empty sort -unr --output={} {}

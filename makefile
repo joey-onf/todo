@@ -72,9 +72,20 @@ help ::
 #	@printf '  %-33.33s %s\n' 'view' \
 #	  'Regenerate and load README.md for interactive viewing'
 
+## -----------------------------------------------------------------------
+## -----------------------------------------------------------------------
 edit ::
 	echo emacs $$(find release/assemble -mindepth 1 -maxdepth 1 -type f -print) &
 
+## -----------------------------------------------------------------------
+## -----------------------------------------------------------------------
+view-github :
+	firefox 'https://github.com/joey-onf/todo/tree/origin/master'
+	@printf '  %-33.33s %s\n' 'view-github' \
+	  'View rendered page on github'
+
+## -----------------------------------------------------------------------
+## -----------------------------------------------------------------------
 view-meta:
 	$(MAKE) regen
 	-emacs release/release-meta.md &

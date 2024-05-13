@@ -1,0 +1,291 @@
+Triggered by Gerrit: https://gerrit.opencord.org/c/voltctl/+/35152
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on EC2 (CORDEC2) - ubuntu18.04-basebuild-2c-4g (i-022b417f486512149) (ubuntu18.04-basebuild-2c-4g) in workspace /w/workspace/verify_voltctl_unit-test
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-D0oWn35nFcVP/agent.2400
+SSH_AGENT_PID=2402
+[ssh-agent] Started.
+Running ssh-add (command line suppressed)
+Identity added: /w/workspace/verify_voltctl_unit-test@tmp/private_key_3878389704048350435.key (/w/workspace/verify_voltctl_unit-test@tmp/private_key_3878389704048350435.key)
+[ssh-agent] Using credentials jenkins (cord-jenkins-ssh)
+The recommended git tool is: NONE
+using credential cord-jenkins-ssh
+Wiping out workspace first.
+Cloning the remote Git repository
+Cloning repository ssh://jenkins@gerrit.opencord.org:29418/voltctl
+ > git init /w/workspace/verify_voltctl_unit-test/voltctl # timeout=10
+Fetching upstream changes from ssh://jenkins@gerrit.opencord.org:29418/voltctl
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+using GIT_SSH to set credentials cord-jenkins-ssh
+Verifying host key using known hosts file, will automatically accept unseen keys
+ > git fetch --tags --progress -- ssh://jenkins@gerrit.opencord.org:29418/voltctl +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url ssh://jenkins@gerrit.opencord.org:29418/voltctl # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url ssh://jenkins@gerrit.opencord.org:29418/voltctl # timeout=10
+Fetching upstream changes from ssh://jenkins@gerrit.opencord.org:29418/voltctl
+using GIT_SSH to set credentials cord-jenkins-ssh
+Verifying host key using known hosts file, will automatically accept unseen keys
+ > git fetch --tags --progress -- ssh://jenkins@gerrit.opencord.org:29418/voltctl refs/changes/52/35152/3 # timeout=10
+ > git rev-parse 801f6b4a225323e68acad70e6a12e38d47eac325^{commit} # timeout=10
+JENKINS-19022: warning: possible memory leak due to Git plugin usage; see: https://plugins.jenkins.io/git/#remove-git-plugin-buildsbybranch-builddata-script
+Checking out Revision 801f6b4a225323e68acad70e6a12e38d47eac325 (refs/changes/52/35152/3)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 801f6b4a225323e68acad70e6a12e38d47eac325 # timeout=10
+Commit message: "[VOL-5291] - On demand onu stats from olt"
+ > git rev-parse FETCH_HEAD^{commit} # timeout=10
+ > git rev-list --no-walk ae754b04f0dc6875553e3aa09715406d42b59405 # timeout=10
+provisioning config files...
+copy managed file [npmrc] to file:/home/jenkins/.npmrc
+copy managed file [pipconf] to file:/home/jenkins/.config/pip/pip.conf
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - Injecting as environment variables the properties content 
+DEST_GOPATH=github.com/opencord
+UNIT_TEST_KEEP_GOING=false
+UNIT_TEST_TARGETS=lint sca test
+GOPROXY=https://proxy.golang.org
+
+[EnvInject] - Variables injected successfully.
+[verify_voltctl_unit-test] $ /usr/bin/env bash /tmp/jenkins8240196342032639634.sh
+/w/workspace/verify_voltctl_unit-test/go/src/github.com/opencord/voltctl /w/workspace/verify_voltctl_unit-test
+Running dependency check...
+Unable to find image 'voltha/voltha-ci-tools:2.4.0-golang' locally
+2.4.0-golang: Pulling from voltha/voltha-ci-tools
+ca3cd42a7c95: Pulling fs layer
+dbcca316e5c3: Pulling fs layer
+b65b403d39c8: Pulling fs layer
+3e4189aff30b: Pulling fs layer
+f24a58abccf6: Pulling fs layer
+898fb73fc6b4: Pulling fs layer
+7cea6985e9c2: Pulling fs layer
+3e4189aff30b: Waiting
+f24a58abccf6: Waiting
+898fb73fc6b4: Waiting
+7cea6985e9c2: Waiting
+b65b403d39c8: Verifying Checksum
+b65b403d39c8: Download complete
+dbcca316e5c3: Verifying Checksum
+dbcca316e5c3: Download complete
+f24a58abccf6: Verifying Checksum
+f24a58abccf6: Download complete
+ca3cd42a7c95: Verifying Checksum
+ca3cd42a7c95: Download complete
+7cea6985e9c2: Verifying Checksum
+7cea6985e9c2: Download complete
+898fb73fc6b4: Verifying Checksum
+898fb73fc6b4: Download complete
+ca3cd42a7c95: Pull complete
+dbcca316e5c3: Pull complete
+b65b403d39c8: Pull complete
+3e4189aff30b: Verifying Checksum
+3e4189aff30b: Download complete
+3e4189aff30b: Pull complete
+f24a58abccf6: Pull complete
+898fb73fc6b4: Pull complete
+7cea6985e9c2: Pull complete
+Digest: sha256:a9a85b103040d5050f6f284651df937554d8967a851e1cdf55d4ead999ea48b2
+Status: Downloaded newer image for voltha/voltha-ci-tools:2.4.0-golang
+all modules verified
+Dependency check OK. Running vendor check...
+
+ ** ---------------------------------------------------------------------------
+ ** make ENTER: Target go-version
+ ** ---------------------------------------------------------------------------
+docker run --rm --user $(id -u):$(id -g) -v /w/workspace/verify_voltctl_unit-test/go/src/github.com/opencord/voltctl:/app  -v gocache:/.cache -v gocache-2.4.0:/go/pkg voltha/voltha-ci-tools:2.4.0-golang go version
+go version go1.16.3 linux/amd64
+** make LEAVE: Target go-version
+
+ ** ---------------------------------------------------------------------------
+ ** make ENTER: Target mod-tidy
+ ** ---------------------------------------------------------------------------
+docker run --rm --user $(id -u):$(id -g) -v /w/workspace/verify_voltctl_unit-test/go/src/github.com/opencord/voltctl:/app  -v gocache:/.cache -v gocache-2.4.0:/go/pkg voltha/voltha-ci-tools:2.4.0-golang go mod tidy
+go: downloading github.com/jessevdk/go-flags v1.4.0
+go: downloading github.com/stretchr/testify v1.7.0
+go: downloading github.com/golang/protobuf v1.5.2
+go: downloading github.com/jhump/protoreflect v1.10.2
+go: downloading github.com/opencord/voltha-protos/v5 v5.4.11
+go: downloading k8s.io/api v0.0.0-20190819141258-3544db3b9e44
+go: downloading github.com/Shopify/sarama v1.29.1
+go: downloading github.com/opencord/voltha-lib-go/v7 v7.5.3
+go: downloading google.golang.org/grpc v1.25.1
+go: downloading gopkg.in/yaml.v2 v2.4.0
+go: downloading k8s.io/apimachinery v0.0.0-20190817020851-f2f3a405f61d
+go: downloading k8s.io/client-go v0.0.0-20190819141724-e14f31a72a77
+go: downloading github.com/davecgh/go-spew v1.1.1
+go: downloading github.com/pmezard/go-difflib v1.0.0
+go: downloading gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
+go: downloading google.golang.org/protobuf v1.27.1
+go: downloading google.golang.org/genproto v0.0.0-20220208230804-65c12eb4c068
+go: downloading github.com/eapache/go-resiliency v1.2.0
+go: downloading github.com/eapache/go-xerial-snappy v0.0.0-20180814174437-776d5712da21
+go: downloading github.com/eapache/queue v1.1.0
+go: downloading github.com/jcmturner/gofork v1.0.0
+go: downloading github.com/jcmturner/gokrb5/v8 v8.4.2
+go: downloading github.com/klauspost/compress v1.12.2
+go: downloading github.com/pierrec/lz4 v2.6.0+incompatible
+go: downloading github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475
+go: downloading golang.org/x/net v0.0.0-20210614182718-04defd469f4e
+go: downloading github.com/Shopify/toxiproxy v2.1.4+incompatible
+go: downloading github.com/fortytw2/leaktest v1.3.0
+go: downloading github.com/google/go-cmp v0.5.5
+go: downloading github.com/go-redis/redis/v8 v8.3.4
+go: downloading go.etcd.io/etcd v3.3.25+incompatible
+go: downloading github.com/phayes/freeport v0.0.0-20180830031419-95f893ade6f2
+go: downloading github.com/opentracing/opentracing-go v1.2.0
+go: downloading github.com/uber/jaeger-client-go v2.29.1+incompatible
+go: downloading go.uber.org/zap v1.18.1
+go: downloading github.com/gogo/protobuf v1.3.2
+go: downloading gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
+go: downloading github.com/google/gofuzz v1.0.0
+go: downloading sigs.k8s.io/yaml v1.2.0
+go: downloading github.com/imdario/mergo v0.3.7
+go: downloading github.com/spf13/pflag v1.0.1
+go: downloading golang.org/x/crypto v0.0.0-20210616213533-5ff15b29337e
+go: downloading k8s.io/klog v0.3.1
+go: downloading github.com/golang/snappy v0.0.3
+go: downloading github.com/jcmturner/dnsutils/v2 v2.0.0
+go: downloading github.com/hashicorp/go-uuid v1.0.2
+go: downloading github.com/jcmturner/goidentity/v6 v6.0.1
+go: downloading github.com/cespare/xxhash/v2 v2.1.1
+go: downloading github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f
+go: downloading go.opentelemetry.io/otel v0.13.0
+go: downloading github.com/onsi/ginkgo v1.16.4
+go: downloading github.com/onsi/gomega v1.14.0
+go: downloading github.com/coreos/etcd v3.3.25+incompatible
+go: downloading github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f
+go: downloading github.com/google/uuid v1.3.0
+go: downloading github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
+go: downloading github.com/prometheus/client_golang v1.11.0
+go: downloading github.com/pkg/errors v0.9.1
+go: downloading github.com/uber/jaeger-lib v2.4.1+incompatible
+go: downloading go.uber.org/atomic v1.7.0
+go: downloading go.uber.org/multierr v1.6.0
+go: downloading github.com/benbjohnson/clock v1.1.0
+go: downloading go.uber.org/goleak v1.1.10
+go: downloading golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1
+go: downloading github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
+go: downloading gopkg.in/inf.v0 v0.9.1
+go: downloading github.com/json-iterator/go v1.1.11
+go: downloading github.com/modern-go/reflect2 v1.0.1
+go: downloading github.com/kr/pretty v0.2.1
+go: downloading github.com/googleapis/gnostic v0.3.0
+go: downloading golang.org/x/time v0.0.0-20210723032227-1f47c861a9ac
+go: downloading k8s.io/utils v0.0.0-20190221042446-c2654d5206da
+go: downloading golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
+go: downloading github.com/jcmturner/rpc/v2 v2.0.3
+go: downloading golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1
+go: downloading github.com/frankban/quicktest v1.11.3
+go: downloading github.com/grpc-ecosystem/grpc-gateway v1.16.0
+go: downloading github.com/soheilhy/cmux v0.1.5
+go: downloading github.com/tmc/grpc-websocket-proxy v0.0.0-20201229170055-e5319fda7802
+go: downloading github.com/coreos/go-semver v0.3.0
+go: downloading github.com/coreos/go-systemd v0.0.0-20191104093116-d3cd4ed1dbcf
+go: downloading github.com/dgrijalva/jwt-go v3.2.0+incompatible
+go: downloading github.com/HdrHistogram/hdrhistogram-go v1.1.0
+go: downloading github.com/prometheus/client_model v0.2.0
+go: downloading github.com/prometheus/common v0.26.0
+go: downloading golang.org/x/lint v0.0.0-20190930215403-16217165b5de
+go: downloading golang.org/x/text v0.3.6
+go: downloading github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+go: downloading github.com/kr/text v0.2.0
+go: downloading golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
+go: downloading github.com/jcmturner/aescts/v2 v2.0.0
+go: downloading github.com/jonboulle/clockwork v0.2.2
+go: downloading github.com/dustin/go-humanize v1.0.0
+go: downloading github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
+go: downloading github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2
+go: downloading github.com/gorilla/websocket v1.4.2
+go: downloading github.com/sirupsen/logrus v1.6.0
+go: downloading github.com/nxadm/tail v1.4.8
+go: downloading go.etcd.io/bbolt v1.3.4
+go: downloading github.com/beorn7/perks v1.0.1
+go: downloading github.com/prometheus/procfs v0.6.0
+go: downloading github.com/stretchr/objx v0.1.1
+go: downloading github.com/matttproud/golang_protobuf_extensions v1.0.1
+go: downloading github.com/google/btree v1.0.1
+go: downloading github.com/konsorten/go-windows-terminal-sequences v1.0.3
+go: downloading gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7
+go: downloading github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da
+go: downloading golang.org/x/tools v0.1.1
+go: downloading google.golang.org/appengine v1.6.1
+go: downloading github.com/fsnotify/fsnotify v1.4.9
+** make LEAVE: Target mod-tidy
+
+ ** ---------------------------------------------------------------------------
+ ** make ENTER: Target mod-vendor
+ ** ---------------------------------------------------------------------------
+docker run --rm --user $(id -u):$(id -g) -v /w/workspace/verify_voltctl_unit-test/go/src/github.com/opencord/voltctl:/app  -v gocache:/.cache -v gocache-2.4.0:/go/pkg voltha/voltha-ci-tools:2.4.0-golang go mod vendor
+** make LEAVE: Target mod-vendor
+Vendor check OK.
+Running static code analysis...
+Unable to find image 'voltha/voltha-ci-tools:2.4.0-golangci-lint' locally
+2.4.0-golangci-lint: Pulling from voltha/voltha-ci-tools
+c9b1b535fdd9: Pulling fs layer
+cbb0d8da1b30: Pulling fs layer
+d909eff28200: Pulling fs layer
+f9e7c84be0a1: Pulling fs layer
+8a0c202c45df: Pulling fs layer
+f8156e56c61d: Pulling fs layer
+a208f23a94d1: Pulling fs layer
+cbc21da71d5c: Pulling fs layer
+1f8a59f389df: Pulling fs layer
+f9e7c84be0a1: Waiting
+8a0c202c45df: Waiting
+f8156e56c61d: Waiting
+a208f23a94d1: Waiting
+cbc21da71d5c: Waiting
+1f8a59f389df: Waiting
+cbb0d8da1b30: Verifying Checksum
+cbb0d8da1b30: Download complete
+d909eff28200: Download complete
+8a0c202c45df: Verifying Checksum
+8a0c202c45df: Download complete
+c9b1b535fdd9: Verifying Checksum
+c9b1b535fdd9: Download complete
+a208f23a94d1: Verifying Checksum
+a208f23a94d1: Download complete
+cbc21da71d5c: Verifying Checksum
+cbc21da71d5c: Download complete
+1f8a59f389df: Verifying Checksum
+1f8a59f389df: Download complete
+c9b1b535fdd9: Pull complete
+cbb0d8da1b30: Pull complete
+d909eff28200: Pull complete
+f8156e56c61d: Verifying Checksum
+f8156e56c61d: Download complete
+f9e7c84be0a1: Verifying Checksum
+f9e7c84be0a1: Download complete
+f9e7c84be0a1: Pull complete
+8a0c202c45df: Pull complete
+f8156e56c61d: Pull complete
+a208f23a94d1: Pull complete
+cbc21da71d5c: Pull complete
+1f8a59f389df: Pull complete
+Digest: sha256:52cb00fba4846d28155a92df3848a6e5fb6268383c6007da9f431eec0087c74d
+Status: Downloaded newer image for voltha/voltha-ci-tools:2.4.0-golangci-lint
+level=warning msg="[runner] Can't run linter goanalysis_metalinter: SA1004: failed prerequisites: inspect@github.com/opencord/voltctl/cmd/voltctl"
+level=warning msg="[runner] Can't run linter unused: buildssa: analysis skipped: errors in package: [/app/internal/pkg/commands/devices.go:2211:24: GetValueRequest_OnuStatsFromOlt not declared by package extension /app/internal/pkg/commands/devices.go:2212:33: GetOnuStatsFromOltRequest not declared by package extension /app/internal/pkg/commands/devices.go:2232:47: rv.GetResponse().GetOnuStatsFromOltResponse undefined (type *extension.GetValueResponse has no field or method GetOnuStatsFromOltResponse) -: could not load export data: no export data for \"github.com/opencord/voltctl/internal/pkg/commands\"]"
+level=error msg="Running error: buildssa: analysis skipped: errors in package: [/app/internal/pkg/commands/devices.go:2211:24: GetValueRequest_OnuStatsFromOlt not declared by package extension /app/internal/pkg/commands/devices.go:2212:33: GetOnuStatsFromOltRequest not declared by package extension /app/internal/pkg/commands/devices.go:2232:47: rv.GetResponse().GetOnuStatsFromOltResponse undefined (type *extension.GetValueResponse has no field or method GetOnuStatsFromOltResponse) -: could not load export data: no export data for \"github.com/opencord/voltctl/internal/pkg/commands\"]"
+Makefile:180: recipe for target 'sca' failed
+make: *** [sca] Error 3
+Build step 'Execute shell' marked build as failure
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 2402 killed;
+[ssh-agent] Stopped.
+Recording test results
+[Checks API] No suitable checks publisher found.
+INFO: Processing GoogleTest-1.8
+INFO: [GoogleTest-1.8] - No test report file(s) were found with the pattern '**/*xunit.xml' relative to '/w/workspace/verify_voltctl_unit-test' for the testing framework 'GoogleTest-1.8'.
+Did you enter a pattern relative to (and within) the workspace directory?
+Did you generate the result report(s) for 'GoogleTest-1.8'?"
+WARNING: All test reports are empty.
+[Checks API] No suitable checks publisher found.
+INFO: Setting the build status to org.jenkinsci.plugins.xunit.XUnitProcessorResult@5f91aa8
+[Cobertura] Publishing Cobertura coverage report...
+
+Finished: FAILURE
