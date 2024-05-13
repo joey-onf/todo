@@ -121,6 +121,8 @@ function get_common()
 }
 
 ## -----------------------------------------------------------------------
+## Add: function get_jira_urls()
+
 ## -----------------------------------------------------------------------
 function get_jira_url()
 {
@@ -128,13 +130,22 @@ function get_jira_url()
     local val="$1"; shift
 
     ref=''
-    local data="$sandbox_root/data/${val}/jira"
-    if [[ -f "$data" ]]; then
-        local url
-        url="$(grep '://' "$data")"
-        ref="$url"
-    fi
-    
+    case "$val" in
+        'VOL-'*)
+            ref="https://jira.opencord.org/browse/${val}"
+            ;;
+
+        *)
+            local data="$sandbox_root/data/${val}/jira"
+            ref="https://jira.opencord.org/browse"
+            if [[ -f "$data" ]]; then
+
+                readarray -t urls < <(grep '://' "$data")
+                ref="${urls[0]}"
+            fi
+            ;;
+    esac
+
     return
 }
 
