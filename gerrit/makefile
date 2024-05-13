@@ -11,8 +11,11 @@ all:
 ## -----------------------------------------------------------------------
 generate:
 #	./xy.sh
+ifdef VERBOSE
 	./bin/assemble.sh 
-#	./bin/assemble.sh > README.md
+else
+	./bin/assemble.sh > README.md
+endif
 
 patch-ids = $(shell find data/[0-9]* -name 'repo' -print)
 $(foreach id,$(patch-ids),$(info ** id=$(id)))

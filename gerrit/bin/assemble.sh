@@ -211,7 +211,6 @@ EOGRID
                     buffer+=(' ')
                     if [[ -f 'jira' ]]; then
 
-                        echo "$(pwd)" >> ~/log
 #                        readarray -t jiras < <(grep '^VOL' 'jira' 2>/dev/null | sort)
                         readarray -t jiras < <(cat jira \
                             | cut -d'#' -f1 \
