@@ -20,6 +20,16 @@ readonly libroot
 source "$libroot/grid.sh"
 source "$libroot/is_valid.sh"
 
+function error()
+{
+    cat <<EOF
+
+** -----------------------------------------------------------------------
+** ERROR: $@
+** -----------------------------------------------------------------------
+EOF
+    exit 1
+}
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
@@ -86,12 +96,11 @@ function gen_header()
     local hdr
     gen_grid_line hdr buffer
     ref+=("$hdr")
-
+    
     ## --------------------------
     ## Display table divider line
     ## --------------------------
     local -a divider=()
-
     for column in "${columns[@]}";
     do
         case "$column" in
@@ -103,7 +112,7 @@ function gen_header()
     local div
     gen_grid_line div divider
     ref+=("$div")
-    
+
     return    
 }
 
@@ -194,9 +203,9 @@ EOGRID
     ## -----------
     ## Draw header
     ## ----------- 
-    declare -a header=()
-    gen_header header
-    printf '%s\n' "${header[@]}"
+    declare -a headers=()
+    gen_header headers
+    printf '%s\n' "${headers[@]}"
 
     ## -----------------
     ## Render patch grid
