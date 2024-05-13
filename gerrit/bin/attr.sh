@@ -38,8 +38,12 @@ function do_attribute()
         local path="data/${id}/${attr}"
         case "$arg" in
             *'-no-'*) /bin/rm -f "$path" ;;
-            *'reviewed'*) date > 'REVIEWED' ;; # will change as req refreshed
-                   *) date > "$path"     ;;
+            *'reviewed'*) # name changes over time when revisiting
+                rm -f "data/${id}/[rR][eE][vV][iI][eE][wW]"*
+                path="data/${id}/REVIEWED"
+                date > "$path"
+                ;;
+            *) date > "$path"     ;;
         esac
     done
 
