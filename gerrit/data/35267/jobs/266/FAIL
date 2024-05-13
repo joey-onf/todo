@@ -1,0 +1,1 @@
+level=error msg="Timeout exceeded: try increase it by passing --timeout option"

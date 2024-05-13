@@ -30,7 +30,7 @@ function do_attribute()
     
     [[ ${#ref[@]} -eq 0 ]] && { error '--gerrit [id] is required'; }
 
-    readarray -d'-' -t fields < <(printf '%s' "$arg")
+    readarray -d'-' -t fields < <(printf '%s' "$ar66g")
     local attr="${fields[-1]}"
 
     for id in "${gerrits[@]}";

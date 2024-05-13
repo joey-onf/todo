@@ -24,7 +24,7 @@ Patch Grid
 | [35195](https://gerrit.opencord.org/c/openolt/+/35195) |   |  |   |   |   |   |   |   |   |   | core.h&nbsp;error:&nbsp;'openolt::OnuAllocIdStatistics'&nbsp;has&nbsp;not&nbsp;been&nbsp;declared |
 | [35209](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35209) | [x](https://jira.opencord.org/browse/VOL-5298), [x](https://jira.opencord.org/browse/VOL-5331) |  |   |   |   |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   |   |   |
 | [35216](https://gerrit.opencord.org/c/voltctl/+/35216) | [x](https://jira.opencord.org/browse/VOL-5305), [x](https://jira.opencord.org/browse/VOL-5331) | [x](https://jenkins.opencord.org/job/verify_voltctl_sanity-test/536/consoleText), [x](https://jenkins.opencord.org/job/verify_voltctl_sanity-test/531/consoleText) |   |   |   |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   | ![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png) | merge&nbsp;conflicts |
-| [35217](https://gerrit.opencord.org/c/voltha-go-controller/+/35217) |   | [x](https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/264/consoleText), [x](https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/261/consoleText), [x](https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/260/consoleText) |   |   |   |   |   |   |   |   |   |
+| [35217](https://gerrit.opencord.org/c/voltha-go-controller/+/35217) | [x](https://jira.opencord.org/browse/VOL-5302), [x](https://jira.opencord.org/browse/VOL-5346) | [x](https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/264/consoleText), [x](https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/261/consoleText), [x](https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/260/consoleText), [x](https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/265/consoleText) |   |   |   |   |   |   |   |   |   |
 | [35220](https://gerrit.opencord.org/c/voltctl/+/35220) |   |  |   |   |   |   |   |   |   | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | buildssa:&nbsp;errors&nbsp;in&nbsp;package:<br>Undef&nbsp;reported |
 | [35225](https://gerrit.opencord.org/c/bbsim/+/35225) |   | [x](https://jenkins.opencord.org/job/verify_bbsim_sanity-test/1295/consoleText) |   |   |   |   |   |   |   |   |   |
 | [35226](https://gerrit.opencord.org/c/voltha-helm-charts/+/35226) |   |  |   |   |   |   |   |   |   |   |   |
@@ -35,7 +35,7 @@ Patch Grid
 | [35242](https://gerrit.opencord.org/c/voltha-docs/+/35242) |   |  |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   |   |   |   |   |   |
 | [35246](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35246) | [x](https://jira.opencord.org/browse/VOL-5322), [x](https://jira.opencord.org/browse/VOL-5335) |  |   |   |   |   |   |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   |
 | [35252](https://gerrit.opencord.org/c/voltha-go/+/35252) |   | [x](https://jenkins.opencord.org/job/verify_voltha-go_unit-test-lint/2813/), [x](https://jenkins.opencord.org/job/verify_voltha-go_unit-test-tests/2816/), [x](https://jenkins.opencord.org/job/verify_voltha-go_licensed/3066/) |   |   |   |   |   |   |   | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | Several&nbsp;failures,&nbsp;patch&nbsp;related. |
-| [35267](https://gerrit.opencord.org/c/voltha-go-controller/+/35267) |   | [x](https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/266/console) |   |   |   |   |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   |   |
+| [35267](https://gerrit.opencord.org/c/voltha-go-controller/+/35267) | [x](https://jira.opencord.org/browse/VOL-5332), [x](https://jira.opencord.org/browse/VOL-5346) | [x](https://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/266/consolehttps://jenkins.opencord.org/job/verify_voltha-go-controller_unit-test/266/consoleText) |   |   |   |   |   | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) |   |   |   |
 
 
 Legend
@@ -68,6 +68,8 @@ Common / Transient unit test failures
 | [VOL-5331](https://jira.opencord.org/browse/VOL-5331) | Voltha DT PODTests :: Test various end-to-end scenarios |
 | [VOL-5335](https://jira.opencord.org/browse/VOL-5335) | Voltha TT PODTests :: Test various functional end-to-end scenarios for TT |
 | [VOL-5332](https://jira.opencord.org/browse/VOL-5332) | SCA timeout failure (~python testing) |
+| [VOL-5346](https://jira.opencord.org/browse/VOL-5346) | repo:voltha-go-controller timeout |
+
 
 Sanity E2E Test for OLT/ONU on POD for DT :: Validates E2E Ping Co... | FAIL |
 ------------------------------------------------------------------------------

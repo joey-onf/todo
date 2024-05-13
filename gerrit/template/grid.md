@@ -17,6 +17,8 @@ Common / Transient unit test failures
 | [VOL-5331](https://jira.opencord.org/browse/VOL-5331) | Voltha DT PODTests :: Test various end-to-end scenarios |
 | [VOL-5335](https://jira.opencord.org/browse/VOL-5335) | Voltha TT PODTests :: Test various functional end-to-end scenarios for TT |
 | [VOL-5332](https://jira.opencord.org/browse/VOL-5332) | SCA timeout failure (~python testing) |
+| [VOL-5346](https://jira.opencord.org/browse/VOL-5346) | repo:voltha-go-controller timeout |
+
 
 Sanity E2E Test for OLT/ONU on POD for DT :: Validates E2E Ping Co... | FAIL |
 ------------------------------------------------------------------------------
