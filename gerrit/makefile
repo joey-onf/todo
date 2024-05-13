@@ -11,7 +11,8 @@ all:
 ## -----------------------------------------------------------------------
 generate:
 #	./xy.sh
-	./bin/assemble.sh > README.md
+	./bin/assemble.sh 
+#	./bin/assemble.sh > README.md
 
 patch-ids = $(shell find data/[0-9]* -name 'repo' -print)
 $(foreach id,$(patch-ids),$(info ** id=$(id)))

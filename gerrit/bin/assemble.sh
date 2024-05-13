@@ -145,7 +145,9 @@ function gen_jira_url()
     local -n ref=$1; shift
     local id="$1"; shift
 
-    ref="https://jira.opencord.org/browse/${id}"
+    ## Normalize URL handling to avoid this sillyness
+    readarray -d'+' -t fields < <(printf '%s' "$id")
+    ref="https://jira.opencord.org/browse/${fields[-1]}"
     return
 }
 
@@ -198,8 +200,14 @@ EOGRID
 
                 'Jira')
                     buffer+=(' ')
-                    if [[ -f 'jira' ]]; then 
-                        readarray -t jiras < <(grep '^VOL' 'jira' 2>/dev/null | sort)
+                    if [[ -f 'jira' ]]; then
+
+                        echo "$(pwd)" >> ~/log
+#                        readarray -t jiras < <(grep '^VOL' 'jira' 2>/dev/null | sort)
+                        readarray -t jiras < <(cat jira \
+                            | cut -d'#' -f1 \
+                            | grep '://' 'jira' 2>/dev/null\
+                            | sort)
 
                         local -a accum=()
                         local jira
