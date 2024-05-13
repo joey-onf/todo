@@ -18,7 +18,7 @@ else
 endif
 
 patch-ids = $(shell find data/[0-9]* -name 'repo' -print)
-$(foreach id,$(patch-ids),$(info ** id=$(id)))
+#$(foreach id,$(patch-ids),$(info ** id=$(id)))
 
 # patch-ids = $(shell find data -mindepth 1 -maxdepth 1 -name '[0-9]*' -print \
 #    | xargs -n1 basename \

@@ -266,8 +266,12 @@ EOGRID
                     ;;
 
                 Reviewed|Rev*)
+
+                    ## Sentinel value changes when review column cleared
                     if [[ -e 'reviewed' ]]; then
-                        pwd >> ~/J
+                        buffer+=('![#32CD32](https://placehold.co/15x15/633974/633974.png)')
+                    elif [[ -e 'REVIEWED' ]]; then
+                        rm -f 'reviewed'
                         buffer+=('![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png)')
                     else
                         buffer+=(' ')
