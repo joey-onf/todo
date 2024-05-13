@@ -145,9 +145,18 @@ function gen_jira_url()
     local -n ref=$1; shift
     local id="$1"; shift
 
+    # ref="https://jira.opencord.org/browse/${fields[-1]}"
+    ref="https://jira.opencord.org/browse"
+
     ## Normalize URL handling to avoid this sillyness
-    readarray -d'+' -t fields < <(printf '%s' "$id")
-    ref="https://jira.opencord.org/browse/${fields[-1]}"
+    readarray -d'/' -t fields < <(printf '%s' "$id")
+    for field in "${fields[@]}";
+    do
+        case "$field" in
+            'VOL-'*) ref+="/$field" ;;
+        esac
+    done
+
     return
 }
 
