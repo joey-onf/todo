@@ -1,4 +1,12 @@
+# -*- makefile -*- # colorization
+
 README.html
-*~
+*~                     # editor temp files
+#\.~lock.jobs.ods\#
+\.~*\#
+
+# Skip local helper(s)
 xy.sh
-    
+jobs.ods
+
+# [EOF]
