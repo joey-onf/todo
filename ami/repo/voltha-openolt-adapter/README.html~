@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>README.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<h2 id="repovoltha-docs">repo:voltha-docs</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 10%" />
+<col style="width: 15%" />
+<col style="width: 17%" />
+<col style="width: 15%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>repo</th>
+<th>status</th>
+<th>jira</th>
+<th>gerrit</th>
+<th>jenkins</th>
+<th>Triage</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://placehold.co/15x15/633974/633974.png"
+alt="#32CD32" /></td>
+<td></td>
+<td></td>
+<td><a
+href="https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35284">35284</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 21%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>status</th>
+<th>job</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://placehold.co/15x15/c5f015/c5f015.png"
+alt="#c5f015" /></td>
+<td><a
+href="https://jenkins.opencord.org/job/verify_voltha-openolt-adapter_licensed/2612/console">verify_voltha-openolt-adapter_licensed:2612</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><img src="https://placehold.co/15x15/f03c15/f03c15.png"
+alt="#f03c15" /></td>
+<td><a
+href="https://jenkins.opencord.org/job/verify_voltha-openolt-adapter_sanity-test/1986/consoel">verify_voltha-openolt-adapter_sanity-test:1986</a></td>
+<td>kubectl not found</td>
+</tr>
+<tr class="odd">
+<td><img src="https://placehold.co/15x15/f03c15/f03c15.png"
+alt="#f03c15" /></td>
+<td><a
+href="https://jenkins.opencord.org/job/verify_voltha-openolt-adapter_unit-test-lint/2472/console">verify_voltha-openolt-adapter_unit-test-lint:2472</a></td>
+<td>docker:permission denied</td>
+</tr>
+<tr class="even">
+<td><img src="https://placehold.co/15x15/f03c15/f03c15.png"
+alt="#f03c15" /></td>
+<td><a
+href="https://jenkins.opencord.org/job/verify_voltha-openolt-adapter_unit-test-lint/2472/console">verify_voltha-openolt-adapter_unit-test-lint:2472</a></td>
+<td>docker:permission denied</td>
+</tr>
+</tbody>
+</table>
+<h2 id="legend">Legend</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://placehold.co/15x15/f03c15/f03c15.png"
+alt="#f03c15" /></td>
+<td>FAIL</td>
+</tr>
+<tr class="even">
+<td><img src="https://placehold.co/15x15/c5f015/c5f015.png"
+alt="#c5f015" /></td>
+<td>PASS</td>
+</tr>
+<tr class="odd">
+<td><img src="https://placehold.co/15x15/808080/808080.png"
+alt="#808080" /></td>
+<td>IDLE</td>
+</tr>
+<tr class="even">
+<td><img src="https://placehold.co/15x15/633974/633974.png"
+alt="#32CD32" /></td>
+<td>WIP</td>
+</tr>
+<tr class="odd">
+<td><img src="https://placehold.co/15x15/32CD32/32CD32.png"
+alt="#32CD32" /></td>
+<td>LIME</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

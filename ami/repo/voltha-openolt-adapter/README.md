@@ -8,13 +8,21 @@ repo:voltha-docs
 |       |        |      |        |         |        |       |
 |       |        |      |        |         |        |       |
 
+| status | job | Notes |
+| ------ | --- | ----- |
+| ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) | [verify_voltha-openolt-adapter_licensed:2612](https://jenkins.opencord.org/job/verify_voltha-openolt-adapter_licensed/2612/console) | |
+| ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | [verify_voltha-openolt-adapter_sanity-test:1986](https://jenkins.opencord.org/job/verify_voltha-openolt-adapter_sanity-test/1986/consoel) | kubectl not found |
+| ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | [verify_voltha-openolt-adapter_unit-test-lint:2472](https://jenkins.opencord.org/job/verify_voltha-openolt-adapter_unit-test-lint/2472/console) | docker:permission denied |
+| ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | [verify_voltha-openolt-adapter_unit-test-lint:2472](https://jenkins.opencord.org/job/verify_voltha-openolt-adapter_unit-test-lint/2472/console) | docker:permission denied |
+| | [docker-publish_voltha-openolt-adapter](https://jenkins.opencord.org/job/docker-publish_voltha-openolt-adapter) | |
+
 Legend
 ------
 
 | Status | Description |
 | ------ | ------------------------------------------------------  |
 | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | FAIL  |
-| ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) | PASS  |
+| ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) | PASS |
 | ![#808080](https://placehold.co/15x15/808080/808080.png) | IDLE  |
 | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | WIP   |
 | ![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png) | LIME  |
