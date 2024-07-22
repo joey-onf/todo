@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>README.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<h2 id="triage-builds">Triage Builds</h2>
+<p>Builds on this page are used to flush out problems building VOLTHA
+using a re-created AMI image.</p>
+<p><a href="https://jenkins.opencord.org">jenkins</a></p>
+<hr />
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 10%" />
+<col style="width: 15%" />
+<col style="width: 17%" />
+<col style="width: 15%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>repo</th>
+<th>status</th>
+<th>jira</th>
+<th>gerrit</th>
+<th>jenkins</th>
+<th>Triage</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>voltha-protos</td>
+<td><img src="https://placehold.co/15x15/f03c15/f03c15.png"
+alt="#f03c15" /></td>
+<td></td>
+<td><a
+href="https://gerrit.opencord.org/c/voltha-protos/+/35288">35288</a></td>
+<td><a
+href="https://jenkins.opencord.org/job/verify_voltha-protos_unit-test/664/console">664</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>voltha-docs</td>
+<td>nop</td>
+<td></td>
+<td><a
+href="https://gerrit.opencord.org/c/voltha-docs/+/35291">35291</a></td>
+<td><a
+href="https://gerrit.opencord.org/c/voltha-docs/+/35071">35071-merged</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>voltha-docs</td>
+<td><img src="https://placehold.co/15x15/f03c15/f03c15.png"
+alt="#f03c15" /></td>
+<td></td>
+<td><a
+href="https://gerrit.opencord.org/c/voltha-docs/+/35071">35071-merged</a></td>
+<td><a
+href="https://jenkins.opencord.org/job/verify_voltha-docs_unit-test/550/console">550</a></td>
+<td>linkcheck fail</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="legend">Legend</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://placehold.co/15x15/f03c15/f03c15.png"
+alt="#f03c15" /></td>
+<td>FAIL</td>
+</tr>
+<tr class="even">
+<td><img src="https://placehold.co/15x15/c5f015/c5f015.png"
+alt="#c5f015" /></td>
+<td>PASS</td>
+</tr>
+<tr class="odd">
+<td><img src="https://placehold.co/15x15/808080/808080.png"
+alt="#808080" /></td>
+<td>IDLE</td>
+</tr>
+<tr class="even">
+<td><img src="https://placehold.co/15x15/633974/633974.png"
+alt="#32CD32" /></td>
+<td>WIP</td>
+</tr>
+<tr class="odd">
+<td><img src="https://placehold.co/15x15/32CD32/32CD32.png"
+alt="#32CD32" /></td>
+<td>LIME</td>
+</tr>
+</tbody>
+</table>
+<h1 id="search">SEARCH</h1>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Repo</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a
+href="https://jenkins.opencord.org/search/?q=voltha-openolt-adapter&amp;Jenkins-Crumb=123f3d8f227c841c76a00612d59eb799c178bb574b50d3bc78ef94ec3b57cd34">voltha-openolt-adapter</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a
+href="repo/voltha-openolt-adapter/README.md">repo:voltha-openolt-adapter</a></p>
+<h1 id="repovoltha-docs">repo:voltha-docs</h1>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>URL</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a
+href="https://jenkins.opencord.org/search/?q=voltha-docs&amp;Jenkins-Crumb=123f3d8f227c841c76a00612d59eb799c178bb574b50d3bc78ef94ec3b57cd34">index</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="https://gerrit.opencord.org/c/ci-management/+/35292">JJB-35292</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 37%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>job</th>
+<th>status</th>
+<th>new-ami</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a
+href="https://jenkins.opencord.org/job/tag-check_voltha-docs/">tag-check-voltha-docs</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
