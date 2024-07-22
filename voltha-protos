@@ -1,0 +1,9 @@
+.gitignore
+.pre-commit-config.yaml
+.reuse/dep5
+.reuse/templates/open_networking_foundation.jinja2
+.reuse/templates/urls
+LICENSES/Apache-2.0.txt
+protoset.go
+requirements.txt
+tox.ini
