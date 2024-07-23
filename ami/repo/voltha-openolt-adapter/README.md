@@ -1,4 +1,4 @@
-repo:voltha-docs
+repo:voltha-openolt-adapter
 ----------------
 
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
