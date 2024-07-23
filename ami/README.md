@@ -11,6 +11,7 @@ Builds on this page are used to flush out problems building VOLTHA using a re-cr
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
 | ----- | ------ | ---- | ------ | ------- | ------ | ----- |
 | voltha-protos | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | | [35288](https://gerrit.opencord.org/c/voltha-protos/+/35288) | [664](https://jenkins.opencord.org/job/verify_voltha-protos_unit-test/664/console) | | |
+| [voltha-lib-go](repo/voltha-lib-go/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | | |  | | |
 | voltha-docs | nop | | [35291](https://gerrit.opencord.org/c/voltha-docs/+/35291) | [35071-merged](https://gerrit.opencord.org/c/voltha-docs/+/35071) | | |
 | [voltha-openolt-adapter](repo/voltha-openolt-adapter/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | | [35071-merged](https://gerrit.opencord.org/c/voltha-docs/+/35071) | [550](https://jenkins.opencord.org/job/verify_voltha-docs_unit-test/550/console) | linkcheck fail | |
 

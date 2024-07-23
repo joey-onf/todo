@@ -9,6 +9,6 @@ edit :
 	$(RM) $(edit-files)
 
 clean :
-	$(RM) README.html
+	@find . -name 'README.html' -print0 | xargs -0 $(RM)
 
 # [EOF]
