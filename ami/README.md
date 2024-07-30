@@ -8,16 +8,17 @@ Builds on this page are used to flush out problems building VOLTHA using a re-cr
 
 ---
 
-| repo  | status | jira | gerrit | jenkins | Triage | Notes |
-| ----- | ------ | ---- | ------ | ------- | ------ | ----- |
-| [helm-repo-tools](repo/helm-repo-tools/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | | |  | | |
-| [voltha-docs](repo/voltha-docs/README.md) | nop | | [35291](https://gerrit.opencord.org/c/voltha-docs/+/35291) | [35071-merged](https://gerrit.opencord.org/c/voltha-docs/+/35071) | | |
-| [voltha-go-controller](repo/voltha-go-controller/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | | |  | | |
-| [votlha-helm-charts](repo/votlha-helm-charts/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | | |  | | |
-| [voltha-lib-go](repo/voltha-lib-go/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | | |  | | |
-| [voltha-openolt-adapter](repo/voltha-openolt-adapter/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | | [35071-merged](https://gerrit.opencord.org/c/voltha-docs/+/35071) | [550](https://jenkins.opencord.org/job/verify_voltha-docs_unit-test/550/console) | linkcheck fail | |
-| voltha-protos | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | | [35288](https://gerrit.opencord.org/c/voltha-protos/+/35288) | [664](https://jenkins.opencord.org/job/verify_voltha-protos_unit-test/664/console) | | |
-| [votlha-system-tests](repo/votlha-system-tests/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | | |  | | |
+| repo  | status | Notes |
+| ----- | ------ | ----- |
+| [helm-repo-tools](repo/helm-repo-tools/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
+| [voltha-docs](repo/voltha-docs/README.md) | nop | |
+| [voltha-go-controller](repo/voltha-go-controller/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
+| [votlha-helm-charts](repo/votlha-helm-charts/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
+| [voltha-lib-go](repo/voltha-lib-go/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
+| [voltha-openolt-adapter](repo/voltha-openolt-adapter/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
+| [voltha-openolt-adapter](repo/voltha-openolt-adapter/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
+| [voltha-openonu-adapter-go](repo/voltha-openonu-adapter-go/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
+| [votlha-system-tests](repo/votlha-system-tests/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
 
 
 Legend
