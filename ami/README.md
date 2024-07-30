@@ -13,11 +13,11 @@ Builds on this page are used to flush out problems building VOLTHA using a re-cr
 | [helm-repo-tools](repo/helm-repo-tools/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
 | [voltha-docs](repo/voltha-docs/README.md) | nop | |
 | [voltha-go-controller](repo/voltha-go-controller/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
-| [votlha-helm-charts](repo/votlha-helm-charts/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
+| [voltha-helm-charts](repo/voltha-helm-charts/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
 | [voltha-lib-go](repo/voltha-lib-go/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
 | [voltha-openolt-adapter](repo/voltha-openolt-adapter/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
 | [voltha-openonu-adapter-go](repo/voltha-openonu-adapter-go/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
-| [votlha-system-tests](repo/voltha-system-tests/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
+| [voltha-system-tests](repo/voltha-system-tests/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
 
 
 Legend
