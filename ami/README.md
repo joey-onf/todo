@@ -10,6 +10,7 @@ Builds on this page are used to flush out problems building VOLTHA using a re-cr
 
 | repo  | status | Notes |
 | ----- | ------ | ----- |
+| [bbsim](repo/bbsim/README.md) | | |
 | [helm-repo-tools](repo/helm-repo-tools/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
 | [voltha-docs](repo/voltha-docs/README.md) | nop | |
 | [voltha-go-controller](repo/voltha-go-controller/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
