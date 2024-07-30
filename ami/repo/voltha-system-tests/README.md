@@ -3,13 +3,13 @@ repo: votlha-system-tests
 
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
 | ----- | ------ | ---- | ------ | ------- | ------ | ----- |
-|       |        |      |        |         |        |       |
+|       |        |      | [35299](https://gerrit.opencord.org/c/voltha-system-tests/+/35299)       |         |        |       |
 |       |        |      |        |         |        |       |
 |       |        |      |        |         |        |       |
 
 | status | job | Notes |
 | ------ | --- | ----- |
-|        |     |       |
+| ABORTED | [3678](https://jenkins.opencord.org/job/verify_voltha-system-tests_sanity-test/3678/console) | Very likely a casualty of clearing the jenkins job queue |
 
 Legend
 ------
