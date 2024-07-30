@@ -3,13 +3,14 @@ repo: voltha-protos
 
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
 | ----- | ------ | ---- | ------ | ------- | ------ | ----- |
-|       |        |      |        |         |        |       |
+|       |        |      | [35288](https://gerrit.opencord.org/c/voltha-protos/+/35288)       |         |        |       |
 |       |        |      |        |         |        |       |
 |       |        |      |        |         |        |       |
 
-| status | job | Notes |
-| ------ | --- | ----- |
-|        |     |       |
+| Task | status | job | Notes |
+| | ------ | --- | ----- |
+| [verify_voltha-protos_licensed](https://jenkins.opencord.org/job/verify_voltha-protos_licensed) | ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) | [https://jenkins.opencord.org/job/verify_voltha-protos_unit-test/670/console](https://jenkins.opencord.org/job/verify_voltha-protos_unit-test/670/console)  |       |
+| [verify_voltha-protos_unit-test/](https://jenkins.opencord.org/job/verify_voltha-protos_unit-test) | | [verify_voltha-protos_unit-test/](https://jenkins.opencord.org/job/verify_voltha-protos_unit-test) | |
 
 Legend
 ------
