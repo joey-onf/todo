@@ -18,6 +18,7 @@ Builds on this page are used to flush out problems building VOLTHA using a re-cr
 | [voltha-lib-go](repo/voltha-lib-go/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
 | [voltha-openolt-adapter](repo/voltha-openolt-adapter/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
 | [voltha-openonu-adapter-go](repo/voltha-openonu-adapter-go/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
+| [voltha-protos](repo/voltha-protos/README.md) | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | |
 | [voltha-system-tests](repo/voltha-system-tests/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
 
 
