@@ -7,7 +7,7 @@ repo:voltha-openolt-adapter
 |       |        |      | [35298](https://gerrit.opencord.org/c/bbsim/+/35298)       |         |        |       |
 |       |        | [VOL-5125](https://jira.opencord.org/browse/VOL-5125) |        |         |        | Tracking ticket for bbsim testing failures |
 |       |        | [VOL-5146](https://jira.opencord.org/browse/VOL-5146) |        |         |        |       |
-|       |        |      |        |         |        |       |
+|       |        | [VOL-5167](https://jira.opencord.org/browse/VOL-5167) |        |         |        |       |
 |       |        |      |        |         |        |       |
 |       |        |      |        |         |        |       |
 
