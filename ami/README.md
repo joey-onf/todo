@@ -14,7 +14,7 @@ a re-created AMI image.
 | [voltha-docs](repo/voltha-docs/README.md) | nop | | |
 | [voltha-go-controller](repo/voltha-go-controller/README.md) | | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | |
 | [voltha-helm-charts](repo/voltha-helm-charts/README.md) | | | |
-| [voltha-lib-go](repo/voltha-lib-go/README.md) | | | |
+| [voltha-lib-go](repo/voltha-lib-go/README.md) | | 08/22 | |
 | [voltha-openolt-adapter](repo/voltha-openolt-adapter/README.md) | | | |
 | [voltha-openonu-adapter-go](repo/voltha-openonu-adapter-go/README.md) | | | |
 | [voltha-protos](repo/voltha-protos/README.md) | | | |
@@ -39,6 +39,13 @@ a re-created AMI image.
 
 [repo:voltha-openolt-adapter](repo/voltha-openolt-adapter/README.md)
 [repo:ci-management](repo/ci-management/README.md)
+
+## Epics
+
+| URL | Description |
+| :-: | ----------- |
+| [VOL-5352](https://jira.opencord.org/browse/VOL-5352) | AWS AMI Recreation |
+| [VOL-5358](https://jira.opencord.org/browse/VOL-5358) | | 
 
 ## repo:voltha-docs
 

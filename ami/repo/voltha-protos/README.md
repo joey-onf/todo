@@ -5,6 +5,7 @@ repo:voltha-protos
 | ----- | ------ | :--: | :----: | :-----: | ------ | ----- |
 |       |        |      |        |         |        |       |
 |       |        | [VOL-5122](https://jira.opencord.org/browse/VOL-5122) | [35288](https://gerrit.opencord.org/c/voltha-protos/+/35288) | [682](https://jenkins.opencord.org/job/verify_voltha-protos_unit-test/682/console) | | Python wheel (package creation) fails with compile errors) |
+|       |        | [VOL-5358](https://jira.opencord.org/browse/VOL-5358) |        |         |        |       |
 |       |        |      |        |         |        |       |
 
 Jobs / status
