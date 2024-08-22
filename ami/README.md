@@ -10,6 +10,7 @@ a re-created AMI image.
 | repo  | status | AMI | Notes |
 | ----- | ------ | :-: | ----- |
 | [bbsim](repo/bbsim/README.md) | | | |
+| [repo:ci-management](repo/ci-management/README.md) | | | |
 | [helm-repo-tools](repo/helm-repo-tools/README.md) | | | |
 | [voltha-docs](repo/voltha-docs/README.md) | nop | | |
 | [voltha-go-controller](repo/voltha-go-controller/README.md) | | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | |
@@ -19,6 +20,7 @@ a re-created AMI image.
 | [voltha-openonu-adapter-go](repo/voltha-openonu-adapter-go/README.md) | | | |
 | [voltha-protos](repo/voltha-protos/README.md) | | | |
 | [voltha-system-tests](repo/voltha-system-tests/README.md) | | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | |
+
 
 ## Legend
 
@@ -34,11 +36,10 @@ a re-created AMI image.
 
 | Repo | Notes |
 | ---- | ----- |
+| [voltha-go-controller](https://jenkins.opencord.org/job/verify_voltha-go-controller_licensed/270/search/?q=voltha-go-contro) | |
 | [voltha-openolt-adapter](https://jenkins.opencord.org/search/?q=voltha-openolt-adapter&Jenkins-Crumb=123f3d8f227c841c76a00612d59eb799c178bb574b50d3bc78ef94ec3b57cd34) | |
 | [voltha-protos](https://jenkins.opencord.org/job/verify_voltha-openolt-adapter_unit-test-tests/search/?q=voltha-pro&Jenkins-Crumb=123f3d8f227c841c76a00612d59eb799c178bb574b50d3bc78ef94ec3b57cd34) | |
 
-[repo:voltha-openolt-adapter](repo/voltha-openolt-adapter/README.md)
-[repo:ci-management](repo/ci-management/README.md)
 
 ## Epics
 
