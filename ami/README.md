@@ -7,7 +7,7 @@ a re-created AMI image.
 ## By Repository
 ---
 
-- By Repository itemizes jira tickets, patches and AMI testing by repository
+- Details per-repository jira tickets, test failures and patches.
 - Failures reported using the new replacement AMI image based on Ubuntu 24.04.
 - Testing failures captured in jira tickets.
 
