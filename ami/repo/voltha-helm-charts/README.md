@@ -2,8 +2,8 @@ repo: votlha-helm-charts
 ------------------------
 
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
-| ----- | ------ | ---- | ------ | ------- | ------ | ----- |
-|       |        |      |        |         |        |       |
+| ----- | ------ | :--: | :----: | :-----: | ------ | ----- |
+|       |        | [VOL-5360](https://jira.opencord.org/browse/VOL-5360) |        |         |        | Problems while linting helm charts. |
 |       |        |      |        |         |        |       |
 |       |        |      |        |         |        |       |
 

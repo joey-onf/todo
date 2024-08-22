@@ -2,7 +2,7 @@
 
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
 | ----- | ------ | :--: | :----: | :-----: | ------ | ----- |
-|       |        |      | [35297](https://gerrit.opencord.org/c/voltha-go-controller/+/35297) |         |        |       |
+|       |        | [VOL-5365](https://jira.opencord.org/browse/VOL-5365) | [35297](https://gerrit.opencord.org/c/voltha-go-controller/+/35297) | | | mv error reported while building under new AMI image |
 |       | ![#32CD32](https://placehold.co/15x15/633974/633974.png) |      | [35285](https://gerrit.opencord.org/c/voltha-go-controller/+/35285) |         |        |       |
 |       |        |      |        |         |        |       |
 

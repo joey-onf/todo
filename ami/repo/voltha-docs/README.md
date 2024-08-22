@@ -3,7 +3,7 @@ repo: voltha-docs
 
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
 | ----- | ------ | ---- | ------ | ------- | ------ | ----- |
-|       |        |      |        |         |        |       |
+|       |        | [VOL-5356](https://jira.opencord.org/browse/VOL-5356) |        |         |        | repo:voltha-docs make test failures |
 |       |        |      |        |         |        |       |
 |       |        |      |        |         |        |       |
 

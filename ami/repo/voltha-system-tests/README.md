@@ -5,6 +5,7 @@ repo: votlha-system-tests
 | ----- | ------ | :--: | :----: | :-----: | ------ | ----- |
 |       |        |      | [35299](https://gerrit.opencord.org/c/voltha-system-tests/+/35299) |         |        |       |
 |       | ![#32CD32](https://placehold.co/15x15/633974/633974.png) |      | [35303](https://gerrit.opencord.org/c/voltha-system-tests/+/35303) |         |        |       |
+|       |        | [VOL-5364](https://jira.opencord.org/browse/VOL-5364) |        |         |        | Add repo:onf-make as a git submodule (lf/onf-make) |
 |       |        |      |        |         |        |       |
 
 | status | job | Notes |
