@@ -1,11 +1,15 @@
-# Triage Builds
+# Triage Builds [jenkins.opencord.org](https://jenkins.opencord.org)
 
 Builds on this page are used to flush out problems building VOLTHA using
 a re-created AMI image.
 
-[jenkins](https://jenkins.opencord.org)
 
+## By Repository
 ---
+
+- By Repository itemizes jira tickets, patches and AMI testing by repository
+- Failures reported using the new replacement AMI image based on Ubuntu 24.04.
+- Testing failures captured in jira tickets.
 
 | repo  | status | AMI | Notes |
 | ----- | ------ | :-: | ----- |
@@ -35,6 +39,10 @@ a re-created AMI image.
 
 ## SEARCH
 
+---
+
+- jenkins queries used to show per-repository pipeline jobs (not exhaustive, simple string match)
+
 | Repo | Notes |
 | ---- | ----- |
 | [voltha-go-controller](https://jenkins.opencord.org/job/verify_voltha-go-controller_licensed/270/search/?q=voltha-go-contro) | |
@@ -43,6 +51,11 @@ a re-created AMI image.
 
 
 ## Epics
+
+---
+
+- Meta tickets used to track classes of errors.
+- Subtasks attached to these tickets captures test failures, etc.
 
 | URL | Description |
 | :-: | ----------- |
