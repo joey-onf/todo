@@ -12,6 +12,7 @@ a re-created AMI image.
 | [bbsim](repo/bbsim/README.md) | | | |
 | [repo:ci-management](repo/ci-management/README.md) | | | |
 | [helm-repo-tools](repo/helm-repo-tools/README.md) | | | |
+| [voltctl](repo/voltctl/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | | |  | | |
 | [voltha-docs](repo/voltha-docs/README.md) | nop | | |
 | [voltha-go-controller](repo/voltha-go-controller/README.md) | | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | |
 | [voltha-helm-charts](repo/voltha-helm-charts/README.md) | | | |
@@ -47,6 +48,8 @@ a re-created AMI image.
 | :-: | ----------- |
 | [VOL-5352](https://jira.opencord.org/browse/VOL-5352) | AWS AMI Recreation |
 | [VOL-5358](https://jira.opencord.org/browse/VOL-5358) | | 
+| [VOL-5004](https://jira.opencord.org/browse/VOL-5004) | Release v2.12 tracking ticket |
+| [VOL-5019](https://jira.opencord.org/browse/VOL-5019) | Publish latest version of VOLTHA software |
 
 ## repo:voltha-docs
 

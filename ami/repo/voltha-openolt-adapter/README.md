@@ -4,7 +4,7 @@ repo:voltha-openolt-adapter
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
 | ----- | ------ | ---- | ------ | ------- | ------ | ----- |
 | ![#32CD32](https://placehold.co/15x15/633974/633974.png) |        |      | [35284](https://gerrit.opencord.org/c/voltha-openolt-adapter/+/35284) |         |        |       |
-|       |        |      |        |         |        |       |
+|       |        | [VOL-5146](https://jira.opencord.org/browse/VOL-5146) |        |         |        | voltha-openolt-adapter test failures |
 |       |        |      |        |         |        |       |
 |       |        |      |        |         |        |       |
 
