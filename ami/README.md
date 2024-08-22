@@ -1,8 +1,7 @@
+# Triage Builds
 
-Triage Builds
--------------
-
-Builds on this page are used to flush out problems building VOLTHA using a re-created AMI image.
+Builds on this page are used to flush out problems building VOLTHA using
+a re-created AMI image.
 
 [jenkins](https://jenkins.opencord.org)
 
@@ -11,19 +10,17 @@ Builds on this page are used to flush out problems building VOLTHA using a re-cr
 | repo  | status | Notes |
 | ----- | ------ | ----- |
 | [bbsim](repo/bbsim/README.md) | | |
-| [helm-repo-tools](repo/helm-repo-tools/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
+| [helm-repo-tools](repo/helm-repo-tools/README.md) | | |
 | [voltha-docs](repo/voltha-docs/README.md) | nop | |
-| [voltha-go-controller](repo/voltha-go-controller/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
-| [voltha-helm-charts](repo/voltha-helm-charts/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
-| [voltha-lib-go](repo/voltha-lib-go/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
-| [voltha-openolt-adapter](repo/voltha-openolt-adapter/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
-| [voltha-openonu-adapter-go](repo/voltha-openonu-adapter-go/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
-| [voltha-protos](repo/voltha-protos/README.md) | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | |
-| [voltha-system-tests](repo/voltha-system-tests/README.md) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | |
+| [voltha-go-controller](repo/voltha-go-controller/README.md) | | |
+| [voltha-helm-charts](repo/voltha-helm-charts/README.md) | | |
+| [voltha-lib-go](repo/voltha-lib-go/README.md) | | |
+| [voltha-openolt-adapter](repo/voltha-openolt-adapter/README.md) | | |
+| [voltha-openonu-adapter-go](repo/voltha-openonu-adapter-go/README.md) | | |
+| [voltha-protos](repo/voltha-protos/README.md) | | |
+| [voltha-system-tests](repo/voltha-system-tests/README.md) | | |
 
-
-Legend
-------
+## Legend
 
 | Status | Description |
 | ------ | ------------------------------------------------------  |
@@ -33,9 +30,7 @@ Legend
 | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | WIP   |
 | ![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png) | LIME  |
 
-
-SEARCH
-======
+## SEARCH
 
 | Repo | Notes |
 | ---- | ----- |
@@ -45,10 +40,7 @@ SEARCH
 [repo:voltha-openolt-adapter](repo/voltha-openolt-adapter/README.md)
 [repo:ci-management](repo/ci-management/README.md)
 
-
-
-repo:voltha-docs
-================
+## repo:voltha-docs
 
 | URL | Description |
 | --- | ----------- |
