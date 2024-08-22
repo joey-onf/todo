@@ -2,9 +2,9 @@ repo: votlha-system-tests
 -------------------------
 
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
-| ----- | ------ | ---- | ------ | ------- | ------ | ----- |
-|       |        |      | [35299](https://gerrit.opencord.org/c/voltha-system-tests/+/35299)       |         |        |       |
-|       |        |      |        |         |        |       |
+| ----- | ------ | :--: | :----: | :-----: | ------ | ----- |
+|       |        |      | [35299](https://gerrit.opencord.org/c/voltha-system-tests/+/35299) |         |        |       |
+|       | ![#32CD32](https://placehold.co/15x15/633974/633974.png) |      | [35303](https://gerrit.opencord.org/c/voltha-system-tests/+/35303) |         |        |       |
 |       |        |      |        |         |        |       |
 
 | status | job | Notes |
@@ -21,3 +21,9 @@ Legend
 | ![#808080](https://placehold.co/15x15/808080/808080.png) | IDLE  |
 | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | WIP   |
 | ![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png) | LIME  |
+
+
+| Job | Descripton |
+| :-: | ---------- |
+| [verify_voltha-system-tests_sanity-test](https://jenkins.opencord.org/job/verify_voltha-system-tests_sanity-test/) | |
+| [verify_voltha-system-tests_unit-test](https://jenkins.opencord.org/job/verify_voltha-system-tests_unit-test/) | |

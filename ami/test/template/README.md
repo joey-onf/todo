@@ -1,4 +1,4 @@
-# repo: template
+# test: template
 
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
 | ----- | ------ | ---- | ------ | ------- | ------ | ----- |

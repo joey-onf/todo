@@ -7,18 +7,18 @@ a re-created AMI image.
 
 ---
 
-| repo  | status | Notes |
-| ----- | ------ | ----- |
-| [bbsim](repo/bbsim/README.md) | | |
-| [helm-repo-tools](repo/helm-repo-tools/README.md) | | |
-| [voltha-docs](repo/voltha-docs/README.md) | nop | |
-| [voltha-go-controller](repo/voltha-go-controller/README.md) | | |
-| [voltha-helm-charts](repo/voltha-helm-charts/README.md) | | |
-| [voltha-lib-go](repo/voltha-lib-go/README.md) | | |
-| [voltha-openolt-adapter](repo/voltha-openolt-adapter/README.md) | | |
-| [voltha-openonu-adapter-go](repo/voltha-openonu-adapter-go/README.md) | | |
-| [voltha-protos](repo/voltha-protos/README.md) | | |
-| [voltha-system-tests](repo/voltha-system-tests/README.md) | | |
+| repo  | status | AMI | Notes |
+| ----- | ------ | :-: | ----- |
+| [bbsim](repo/bbsim/README.md) | | | |
+| [helm-repo-tools](repo/helm-repo-tools/README.md) | | | |
+| [voltha-docs](repo/voltha-docs/README.md) | nop | | |
+| [voltha-go-controller](repo/voltha-go-controller/README.md) | | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | |
+| [voltha-helm-charts](repo/voltha-helm-charts/README.md) | | | |
+| [voltha-lib-go](repo/voltha-lib-go/README.md) | | | |
+| [voltha-openolt-adapter](repo/voltha-openolt-adapter/README.md) | | | |
+| [voltha-openonu-adapter-go](repo/voltha-openonu-adapter-go/README.md) | | | |
+| [voltha-protos](repo/voltha-protos/README.md) | | | |
+| [voltha-system-tests](repo/voltha-system-tests/README.md) | | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | |
 
 ## Legend
 

@@ -2,7 +2,8 @@ repo:voltha-openolt-adapter
 ----------------
 
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
-| ----- | ------ | ---- | ------ | ------- | ------ | ----- |
+| ----- | ------ | :--: | :----: | :-----: | ------ | ----- |
+|       |        | [VOL-5125](https://jira.opencord.org/browse/VOL-5125) |        |         |        |       |
 |       |        |      | [35298](https://gerrit.opencord.org/c/bbsim/+/35298)       |         |        |       |
 |       |        |      |        |         |        |       |
 
