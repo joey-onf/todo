@@ -1,19 +1,13 @@
-repo: votlha-system-tests
--------------------------
+# repo: votlha-system-tests
 
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
 | ----- | ------ | :--: | :----: | :-----: | ------ | ----- |
-|       |        |      | [35299](https://gerrit.opencord.org/c/voltha-system-tests/+/35299) |         |        |       |
-|       | ![#32CD32](https://placehold.co/15x15/633974/633974.png) |      | [35303](https://gerrit.opencord.org/c/voltha-system-tests/+/35303) |         |        |       |
+|       |        | [VOL-5358](https://jira.opencord.org/browse/VOL-5358) | [35299](https://gerrit.opencord.org/c/voltha-system-tests/+/35299) |         |        |       |
+|       | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | [VOL-5358](https://jira.opencord.org/browse/VOL-5358) | [35303](https://gerrit.opencord.org/c/voltha-system-tests/+/35303) |         |        |       |
 |       |        | [VOL-5364](https://jira.opencord.org/browse/VOL-5364) |        |         |        | Add repo:onf-make as a git submodule (lf/onf-make) |
 |       |        |      |        |         |        |       |
 
-| status | job | Notes |
-| ------ | --- | ----- |
-| ABORTED | [3678](https://jenkins.opencord.org/job/verify_voltha-system-tests_sanity-test/3678/console) | Very likely a casualty of clearing the jenkins job queue |
-
-Legend
-------
+## Legend
 
 | Status | Description |
 | ------ | ------------------------------------------------------  |
@@ -23,6 +17,10 @@ Legend
 | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | WIP   |
 | ![#32CD32](https://placehold.co/15x15/32CD32/32CD32.png) | LIME  |
 
+
+## Pipeline Jobs
+
+---
 
 | Job | Descripton |
 | :-: | ---------- |

@@ -2,7 +2,7 @@
 
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
 | ----- | ------ | :--: | :----: | :-----: | ------ | ----- |
-|       | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | [VOL-5361](https://jira.opencord.org/browse/VOL-5361) | [35276](https://gerrit.opencord.org/c/voltha-lib-go/+/35276) | | | |
+|       | ![#32CD32](https://placehold.co/15x15/633974/633974.png) | [VOL-5361](https://jira.opencord.org/browse/VOL-5361) | [35276](https://gerrit.opencord.org/c/voltha-lib-go/+/35276) | | | make lint-mod failing |
 |       |        |      |        |         |        |       |
 |       |        |      |        |         |        |       |
 

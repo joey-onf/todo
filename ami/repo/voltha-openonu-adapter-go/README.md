@@ -2,8 +2,8 @@ repo:voltha-openolt-adapter
 ----------------
 
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
-| ----- | ------ | ---- | ------ | ------- | ------ | ----- |
-|       |        |      | [35301](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35301)       |         |        |       |
+| ----- | ------ | :--: | :----: | :-----: | ------ | ----- |
+|       |        | [VOL-5358](https://jira.opencord.org/browse/VOL-5358) | [35301](https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/35301)       |         |        | Build triage for ubuntu 24.04 |
 |       |        |      |        |         |        |       |
 |       |        |      |        |         |        |       |
 

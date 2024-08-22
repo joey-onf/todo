@@ -2,8 +2,8 @@ repo: helm-repo-tools
 ---------------------
 
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
-| ----- | ------ | ---- | ------ | ------- | ------ | ----- |
-|       |        |      |        |         |        |       |
+| ----- | ------ | :--: | :----: | :-----: | ------ | ----- |
+|       |        | [VOL-5360](https://jira.opencord.org/browse/VOL-5360) |        |         |        | Version problems reported in Chart.yaml |
 |       |        |      |        |         |        |       |
 |       |        |      |        |         |        |       |
 

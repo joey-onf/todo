@@ -3,11 +3,10 @@ repo:voltha-openolt-adapter
 
 | repo  | status | jira | gerrit | jenkins | Triage | Notes |
 | ----- | ------ | :--: | :----: | :-----: | ------ | ----- |
-|       |        | [VOL-5125](https://jira.opencord.org/browse/VOL-5125) |        |         |        |       |
+|       |        | [VOL-5125](https://jira.opencord.org/browse/VOL-5125) |        |         |        | Tracking ticket for bbsim failures |
 |       |        |      | [35298](https://gerrit.opencord.org/c/bbsim/+/35298)       |         |        |       |
 |       |        | [VOL-5125](https://jira.opencord.org/browse/VOL-5125) |        |         |        | Tracking ticket for bbsim testing failures |
-|       |        | [VOL-5146](https://jira.opencord.org/browse/VOL-5146) |        |         |        |       |
-|       |        | [VOL-5167](https://jira.opencord.org/browse/VOL-5167) |        |         |        |       |
+|       |        | [VOL-5167](https://jira.opencord.org/browse/VOL-5167) |        |         |        | Verify voltctl binary is not stale |
 |       |        |      |        |         |        |       |
 |       |        |      |        |         |        |       |
 
