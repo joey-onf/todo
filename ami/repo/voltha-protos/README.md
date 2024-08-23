@@ -14,6 +14,7 @@ Jobs / status
 | Task | status | job | Notes |
 | ---- | ------ | --- | ----- |
 |      |        |     |       |
+| [684](https://jenkins.opencord.org/job/verify_voltha-protos_unit-test/684/console) | ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) | | ERROR: Could not find a version that satisfies the requirement ansys-pre-commit-hooks (from versions: none) |
 | [verify_voltha-protos_licensed](https://jenkins.opencord.org/job/verify_voltha-protos_licensed) | ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) | [https://jenkins.opencord.org/job/verify_voltha-protos_unit-test/670/console](https://jenkins.opencord.org/job/verify_voltha-protos_unit-test/670/console) | |
 | [verify_voltha-protos_unit-test/](https://jenkins.opencord.org/job/verify_voltha-protos_unit-test) | | [verify_voltha-protos_unit-test/](https://jenkins.opencord.org/job/verify_voltha-protos_unit-test) | |
 |      |        |     |       |

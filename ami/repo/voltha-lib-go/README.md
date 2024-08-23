@@ -6,9 +6,14 @@
 |       |        |      |        |         |        |       |
 |       |        |      |        |         |        |       |
 
-| status | job | Notes |
-| ------ | --- | ----- |
-|        |     |       |
+| Date       | URL | Status | Notes |
+| ---------- | --- | :----: | ----- |
+| 2024-08-23 | [1007](https://jenkins.opencord.org/job/verify_voltha-lib-go_unit-test/1007/console) |        |       |
+|            |     |        |       |
+|            |     |        |       |
+
+
+https://jenkins.opencord.org/job/verify_voltha-lib-go_unit-test/1007/console
 
 ## Legend
 
